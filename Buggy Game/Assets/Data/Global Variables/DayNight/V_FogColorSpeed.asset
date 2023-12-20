@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 424371a7241434cf4bc0a2cfde71d138, type: 3}
+  m_Name: V_FogColorSpeed
+  m_EditorClassIdentifier: 
+  Description: The speed the fog color is multiplied by.
+  initialValue: 1
+  currentValue: 0
+  ResetOnStart: 1
+  BuildStackTrace: 1
+  OnChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  stackTrace: "[Frames since start: 3160] Got an Current Value of 0.\n StackTrace:\n 
+    at System.Environment.get_StackTrace () [0x00000] in <203f5167a25b4933add34ea720293f4c>:0
+    \n  at GlobalVar`1[T].get_CurrentValue () [0x0000c] in /Users/samik/Documents/buggy/Buggy
+    Game/Assets/Scripts/GlobalVars/GlobalVar.cs:66 \n  at DayCycleController.UpdateTime
+    () [0x000b5] in /Users/samik/Documents/buggy/Buggy Game/Assets/Scripts/DayNightCycle/DayCycleController.cs:84
+    \n  at DayCycleController.OnValidate () [0x00001] in /Users/samik/Documents/buggy/Buggy
+    Game/Assets/Scripts/DayNightCycle/DayCycleController.cs:62 \n  at UnityEditor.SerializedObject.ApplyModifiedPropertiesWithoutUndo_Injected
+    (System.IntPtr ) [0x00000] in <0af4eda461eb4be984619067988ff53c>:0 \n  at UnityEditor.SerializedObject.ApplyModifiedPropertiesWithoutUndo
+    () [0x00000] in <0af4eda461eb4be984619067988ff53c>:0 \n  at UnityEditor.UIElements.Bindings.SerializedObjectBindingPropertyToBaseField`2[TProperty,TValue].SyncFieldValueToProperty
+    () [0x0005f] in /Users/bokken/build/output/unity/unity/Modules/UIElementsEditor/Bindings/BindingExtensions.cs:1847
+    \n  at UnityEditor.UIElements.Bindings.SerializedObjectBindingToBaseField`2[TValue,TField].FieldValueChanged
+    (UnityEngine.UIElements.ChangeEvent`1[T] evt) [0x0009b] in /Users/bokken/build/output/unity/unity/Modules/UIElementsEditor/Bindings/BindingExtensions.cs:1685
+    \n  at UnityEngine.UIElements.EventCallbackFunctor`1[TEventType].Invoke (UnityEngine.UIElements.EventBase
+    evt) [0x00010] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventCallback.cs:64
+    \n  at UnityEngine.UIElements.EventCallbackRegistry+DynamicCallbackList.Invoke
+    (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.BaseVisualElementPanel
+    panel, UnityEngine.UIElements.VisualElement target) [0x0008f] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventCallbackRegistry.cs:228
+    \n  at UnityEngine.UIElements.EventDispatchUtilities.HandleEvent_TrickleDownCallbacks
+    (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.BaseVisualElementPanel
+    panel, UnityEngine.UIElements.VisualElement element) [0x00001] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventDispatchUtilities.cs:379
+    \n  at UnityEngine.UIElements.EventDispatchUtilities.HandleEventAcrossPropagationPath
+    (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.BaseVisualElementPanel
+    panel, UnityEngine.UIElements.VisualElement target, System.Boolean isCapturingTarget)
+    [0x000ac] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventDispatchUtilities.cs:150
+    \n  at UnityEngine.UIElements.EventDispatchUtilities.PropagateEvent (UnityEngine.UIElements.EventBase
+    evt, UnityEngine.UIElements.BaseVisualElementPanel panel, UnityEngine.UIElements.VisualElement
+    target, System.Boolean isCapturingTarget) [0x00031] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventDispatchUtilities.cs:61
+    \n  at UnityEngine.UIElements.EventDispatchUtilities.DefaultDispatch (UnityEngine.UIElements.EventBase
+    evt, UnityEngine.UIElements.BaseVisualElementPanel panel) [0x0001d] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventDispatchUtilities.cs:564
+    \n  at UnityEngine.UIElements.EventBase.Dispatch (UnityEngine.UIElements.BaseVisualElementPanel
+    panel) [0x00001] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Events/EventBase.cs:110
+    \n  at UnityEngine.UIElements.EventDispatcher.ProcessEvent (UnityEngine.UIElements.EventBase
+    evt, UnityEngine.UIElements.BaseVisualElementPanel panel) [0x00039] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/EventDispatcher.cs:336
+    \n  at UnityEngine.UIElements.EventDispatcher.ProcessEventQueue () [0x0003d]
+    in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/EventDispatcher.cs:291
+    \n  at UnityEngine.UIElements.EventDispatcher.OpenGate () [0x00040] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/EventDispatcher.cs:255
+    \n  at UnityEngine.UIElements.EventDispatcherGate.Dispose () [0x00001] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/EventDispatcher.cs:78
+    \n  at UnityEngine.UIElements.EventDispatcher.ProcessEvent (UnityEngine.UIElements.EventBase
+    evt, UnityEngine.UIElements.BaseVisualElementPanel panel) [0x0007e] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/EventDispatcher.cs:346
+    \n  at UnityEngine.UIElements.EventDispatcher.Dispatch (UnityEngine.UIElements.EventBase
+    evt, UnityEngine.UIElements.BaseVisualElementPanel panel, UnityEngine.UIElements.DispatchMode
+    dispatchMode) [0x00046] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/EventDispatcher.cs:200
+    \n  at UnityEngine.UIElements.BaseVisualElementPanel.SendEvent (UnityEngine.UIElements.EventBase
+    e, UnityEngine.UIElements.DispatchMode dispatchMode) [0x00015] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/Panel.cs:567
+    \n  at UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel
+    panel) [0x0011a] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/UIElementsUtility.cs:498
+    \n  at UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent
+    (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled)
+    [0x0003d] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/UIElementsUtility.cs:225
+    \n  at UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32
+    instanceID, System.IntPtr nativeEventPtr) [0x0001a] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/UIElementsUtility.cs:74
+    \n  at UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32
+    i, System.IntPtr ptr) [0x00001] in /Users/bokken/build/output/unity/unity/Modules/UIElements/Core/UIElementsUtility.cs:28
+    \n  at UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr
+    nativeEventPtr, System.Boolean& result) [0x0003e] in /Users/bokken/build/output/unity/unity/Modules/IMGUI/GUIUtility.cs:206
+    \n\n"
