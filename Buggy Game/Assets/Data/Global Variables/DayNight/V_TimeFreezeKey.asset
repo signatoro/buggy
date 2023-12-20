@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description: Key used to freeze time.
   initialValue: 122
-  currentValue: 0
-  ResetOnStart: 0
-  BuildStackTrace: 1
+  currentValue: 122
+  ResetOnStart: 1
+  BuildStackTrace: 0
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
