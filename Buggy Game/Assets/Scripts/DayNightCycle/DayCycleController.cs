@@ -77,7 +77,7 @@ public class DayCycleController : MonoBehaviour
         UnityEngine.Rendering.HighDefinition.Fog fog;
         skyFog.profile.TryGet(out fog);
 
-        Color targColor = isNight ? nightColor.CurrentValue : dayColor.CurrentValue;
+        Color targColor = isNight.CurrentValue ? nightColor.CurrentValue : dayColor.CurrentValue;
 
         Color currColor = fog.albedo.value;
 
@@ -92,7 +92,7 @@ public class DayCycleController : MonoBehaviour
     /// </summary>
     private void CheckNightDayTransition()
     {
-        if (isNight)
+        if (isNight.CurrentValue)
         {
             if (moon.transform.rotation.eulerAngles.x > 180)
             {
