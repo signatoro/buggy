@@ -1,5 +1,4 @@
 using System;
-using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -39,9 +38,9 @@ public class GlobalVar<T> : ScriptableObject
         {
             if (BuildStackTrace)
             {
-                stackTrace =
-                    $"[Frames since start: {Time.frameCount}] Got an Initial Value of {initialValue}.\n StackTrace:\n{Environment.StackTrace}\n\n" +
-                    stackTrace;
+                Debug.Log(
+                    $"Stacktrace for {name}: \n[Frames since start: {Time.frameCount}] Got an Initial Value of {initialValue}.\n\nStackTrace:",
+                    this);
             }
 
             return initialValue;
@@ -63,9 +62,9 @@ public class GlobalVar<T> : ScriptableObject
         {
             if (BuildStackTrace)
             {
-                stackTrace =
-                    $"[Frames since start: {Time.frameCount}] Got an Current Value of {currentValue}.\n StackTrace:\n{Environment.StackTrace}\n\n" +
-                    stackTrace;
+                Debug.Log(
+                    $"Stacktrace for {name}: \n[Frames since start: {Time.frameCount}] Got a Current Value of {currentValue}.\n\nStackTrace:",
+                    this);
             }
 
             return currentValue;
@@ -74,9 +73,9 @@ public class GlobalVar<T> : ScriptableObject
         {
             if (BuildStackTrace)
             {
-                stackTrace =
-                    $"[Frames since start: {Time.frameCount}] Current Value is being set to {value} from {currentValue}.\n StackTrace:\n{Environment.StackTrace}\n\n" +
-                    stackTrace;
+                Debug.Log(
+                    $"Stacktrace for {name}: \n[Frames since start: {Time.frameCount}] Current Value is being set to {value} from {currentValue}.\n\nStackTrace:",
+                    this);
             }
 
             if (!Equals(currentValue, value))
@@ -99,19 +98,13 @@ public class GlobalVar<T> : ScriptableObject
     /// </summary>
     [Tooltip(
         "Should a stack trace be continually built for this variable as it's being saved/loaded/accessed/changed?")]
-    public bool BuildStackTrace = true;
+    public bool BuildStackTrace = false;
 
     /// <summary>
     /// Event for when the variable's current value has been changed to a different value.
     /// </summary>
     [Tooltip("Event for when the variable's current value has been changed to a different value.")]
     public UnityEvent<T> OnChanged = new UnityEvent<T>();
-
-    /// <summary>
-    /// The stacktrace of any time something happened on this variable.
-    /// </summary>
-    [Tooltip("The stacktrace of any time something happened on this variable.")] [TextArea] [SerializeField] [ReadOnly]
-    private string stackTrace = "";
 
     #endregion
 
@@ -125,9 +118,9 @@ public class GlobalVar<T> : ScriptableObject
     {
         if (BuildStackTrace)
         {
-            stackTrace =
-                $"[Frames since start: {Time.frameCount}] Saved current value of {currentValue}.\n StackTrace:\n{Environment.StackTrace}\n\n" +
-                stackTrace;
+            Debug.Log(
+                $"Stacktrace for {name}: \n[Frames since start: {Time.frameCount}] Saved current value of {currentValue}.\n\nStackTrace:",
+                this);
         }
 
         return currentValue;
@@ -140,12 +133,11 @@ public class GlobalVar<T> : ScriptableObject
     public void Load(T value = default)
     {
         if (ResetOnStart) return;
-        stackTrace = "";
         if (BuildStackTrace)
         {
-            stackTrace =
-                $"[Frames since start: {Time.frameCount}] Loading the current value of {value}.\n StackTrace:\n{Environment.StackTrace}\n\n" +
-                stackTrace;
+            Debug.Log(
+                $"Stacktrace for {name}: \n[Frames since start: {Time.frameCount}] Loading the current value of {value}.\n\nStackTrace:",
+                this);
         }
 
         currentValue = value;
@@ -157,7 +149,6 @@ public class GlobalVar<T> : ScriptableObject
     private void OnEnable()
     {
         if (!ResetOnStart) return;
-        stackTrace = "";
         ResetValue();
     }
 
@@ -172,9 +163,9 @@ public class GlobalVar<T> : ScriptableObject
     {
         if (BuildStackTrace)
         {
-            stackTrace =
-                $"[Frames since start: {Time.frameCount}] Current value is being reset to an initial value of {initialValue}.\n StackTrace:\n{Environment.StackTrace}\n\n" +
-                stackTrace;
+            Debug.Log(
+                $"Stacktrace for {name}: \n[Frames since start: {Time.frameCount}] Current value is being reset to an initial value of {initialValue}.\n\nStackTrace:",
+                this);
         }
 
         currentValue = initialValue;

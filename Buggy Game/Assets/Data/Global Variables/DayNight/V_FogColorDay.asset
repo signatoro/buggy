@@ -16,8 +16,14 @@ MonoBehaviour:
   initialValue: {r: 0.34950158, g: 0.9622642, b: 0.9503853, a: 1}
   currentValue: {r: 0.34950158, g: 0.9622642, b: 0.9503853, a: 1}
   ResetOnStart: 1
-  BuildStackTrace: 0
+  BuildStackTrace: 1
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
-  stackTrace: 
+  stackTrace:
+  - "[Frames since start: 0] Current value is being reset to an initial value of
+    RGBA(0.350, 0.962, 0.950, 1.000).\n StackTrace:\n  at System.Environment.get_StackTrace
+    () [0x00000] in <4ba27aa039714eafa1e8892e51af2932>:0 \n  at GlobalVar`1[T].ResetValue
+    () [0x0000c] in /Users/samik/Documents/buggy/Buggy Game/Assets/Scripts/GlobalVars/GlobalVar.cs:176
+    \n  at GlobalVar`1[T].OnEnable () [0x0001c] in /Users/samik/Documents/buggy/Buggy
+    Game/Assets/Scripts/GlobalVars/GlobalVar.cs:162 \n\nSystem.Collections.Generic.List`1[System.String]"
