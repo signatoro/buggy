@@ -300,3 +300,145 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 328634.565218 seconds.
+  path: Assets/Materials/AntMaterial.mat
+  artifactKey: Guid(9c6d0306d680b424ab1b7ca0c1a518cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/AntMaterial.mat using Guid(9c6d0306d680b424ab1b7ca0c1a518cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8d34bb0a10cb2571488d0403996a79b') in 2.440162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Materials/ceiling.mat
+  artifactKey: Guid(3c5e7698f2d55744f83bd00ca2267836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/ceiling.mat using Guid(3c5e7698f2d55744f83bd00ca2267836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cfff68b1b10ee8bf48b830f108d71cc') in 0.023115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Materials/glass Special.mat
+  artifactKey: Guid(023c05e650e0949be9e4c1316cbdb327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/glass Special.mat using Guid(023c05e650e0949be9e4c1316cbdb327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aef28be8e87e6fa73de972ea2cf863c') in 0.025626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Materials/glass 5.mat
+  artifactKey: Guid(fe93b6031dd9e514bafa7da5605932a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/glass 5.mat using Guid(fe93b6031dd9e514bafa7da5605932a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf857cc4ac772c8c04b740adedeb2433') in 0.021306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Materials/star5.mat
+  artifactKey: Guid(d70a370d561c1ba4498d0b1d8774abed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/star5.mat using Guid(d70a370d561c1ba4498d0b1d8774abed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735187605bd6dab649335de7b842a733') in 0.020917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Materials/comfort.mat
+  artifactKey: Guid(bd71ed10f466cf641bfa173e0a3af2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/comfort.mat using Guid(bd71ed10f466cf641bfa173e0a3af2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '178de86df2cb6e199cef50386fe89864') in 0.022565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Materials/ladybug body.mat
+  artifactKey: Guid(b035ff3eab2b85d4f8bd29318dc7def2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/ladybug body.mat using Guid(b035ff3eab2b85d4f8bd29318dc7def2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5d087197f9c0544d831321749bf7359') in 0.020850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Materials/SnailBody.mat
+  artifactKey: Guid(2a597790d9f1a4c4f8bbf1d7d6a69a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SnailBody.mat using Guid(2a597790d9f1a4c4f8bbf1d7d6a69a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8571f7a30f8eea6246de4e8024d51468') in 0.022540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Materials/bug net.mat
+  artifactKey: Guid(4b0ce8ee57f7d384f956eb14d97a30eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/bug net.mat using Guid(4b0ce8ee57f7d384f956eb14d97a30eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '440080263f0a9e0ede803671de6f6c93') in 0.022911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Materials/ButterFly.mat
+  artifactKey: Guid(e3e20667bab5541ceaf782050459874f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/ButterFly.mat using Guid(e3e20667bab5541ceaf782050459874f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce191fc9de109982d7ce4656ada50197') in 0.018532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Materials/glass 1.mat
+  artifactKey: Guid(cca2d2de4b1d71840a772b9e6fd66075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/glass 1.mat using Guid(cca2d2de4b1d71840a772b9e6fd66075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d81aec91dfeabd71b935f6d6f530e86') in 0.022932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Materials/fold.mat
+  artifactKey: Guid(bacb51f5ac9c8cc4d9a8841385bedf5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/fold.mat using Guid(bacb51f5ac9c8cc4d9a8841385bedf5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0957485593432cdde5204244646da564') in 0.023568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Materials/star2.mat
+  artifactKey: Guid(6459a9c7e2f780149b05abb7ab49f1b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/star2.mat using Guid(6459a9c7e2f780149b05abb7ab49f1b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d93292e4594d03ec102973b56ea06da') in 0.018391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Materials/SpiderMaterial.mat
+  artifactKey: Guid(f0bf2ab7648ae4fb6bd1eccb2e8126d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SpiderMaterial.mat using Guid(f0bf2ab7648ae4fb6bd1eccb2e8126d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f48feff822f0d7789cafe453a622a3') in 0.019473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Materials/darker page.mat
+  artifactKey: Guid(1850588e977f3e04091833405bb6e7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/darker page.mat using Guid(1850588e977f3e04091833405bb6e7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea26c2ce247b5822b6775f68c960dfd9') in 0.621043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Materials/mansion1 1.mat
+  artifactKey: Guid(52e2af1bd87b8a74da9df7ed80664c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/mansion1 1.mat using Guid(52e2af1bd87b8a74da9df7ed80664c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80555720fd8b1c2a2f695487b4fc657') in 0.024911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Materials/wood.mat
+  artifactKey: Guid(38d003b8e17239842ad01ba398d61590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/wood.mat using Guid(38d003b8e17239842ad01ba398d61590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e303e591dbefbd37035c9f89ee1ef3b') in 0.041665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Materials/wood2.mat
+  artifactKey: Guid(868413a413e5ae04e91cf263a0f85935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/wood2.mat using Guid(868413a413e5ae04e91cf263a0f85935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b6f0476ab686ffd01b9d30bea11bbb9') in 0.020805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Materials/jar lid.mat
+  artifactKey: Guid(b8d6ff5fb20ccd34aa38f6dc1b6c1340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/jar lid.mat using Guid(b8d6ff5fb20ccd34aa38f6dc1b6c1340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce930d1f6c3404479e507aa4baae5e0b') in 0.019914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Materials/wood floor.mat
+  artifactKey: Guid(2d7859fed699c9544980564e2f2c417e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/wood floor.mat using Guid(2d7859fed699c9544980564e2f2c417e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db55119b4aaad8021efea88d7185053b') in 0.034953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Materials/star1.mat
+  artifactKey: Guid(94eea620938e09440acaafb630acd158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/star1.mat using Guid(94eea620938e09440acaafb630acd158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab2ba8d6b0ac0aa3c575f13e3e8c56fe') in 0.020775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Materials/WormMaterial.mat
+  artifactKey: Guid(8ef80ed56904c44e398d61860f469f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WormMaterial.mat using Guid(8ef80ed56904c44e398d61860f469f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe84fd7634db4dd4c3e1e2b9dc74a73') in 0.020200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Materials/rug.mat
+  artifactKey: Guid(0e69663134b93874aa5709f720d7e4b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/rug.mat using Guid(0e69663134b93874aa5709f720d7e4b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4ddc71430a41104d80a520302716a0d') in 0.023942 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
