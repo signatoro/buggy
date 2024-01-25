@@ -31,7 +31,7 @@ public class DayCycleController : MonoBehaviour
     private GlobalFloat fogColorSpeed;
 
     [Tooltip("KeyCode for freezing time.")] [SerializeField]
-    private GlobalKeyCode freezeKey;
+    private GlobalKeyCodeList freezeKey;
 
     [Tooltip("Is it night?")] [SerializeField]
     private GlobalBool isNight;
@@ -43,7 +43,7 @@ public class DayCycleController : MonoBehaviour
     void Update()
     {
         // Freezes Time
-        if (Input.GetKeyDown(freezeKey.CurrentValue))
+        if (freezeKey.PressingOneOfTheKeys())
         {
             freeze.ToggleValue();
         }
