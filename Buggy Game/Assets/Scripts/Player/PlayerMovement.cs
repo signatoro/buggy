@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 /// <summary>
@@ -24,6 +23,7 @@ using UnityEngine;
 ///     - Different terrain types have different sound effects & different volume
 ///         - Crouching decreases the sound you make
 /// </summary>
+[RequireComponent(typeof(CameraController))]
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
@@ -53,8 +53,37 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     private Vector3 _velocity;
 
-    [Header("Crouching")] [Tooltip("Crouch Walking Multiplier.")] [SerializeField]
-    private GlobalFloat crouchMultiplier;
+    /// <summary>
+    /// - Crouch
+    ///     - Becomes smaller
+    ///         - Shrink Hitbox
+    ///         - Lower camera
+    ///         - Needs smooth transition
+    ///     - Moves slower
+    ///     - Needs to be able to detect if there is something above before transitioning to walk
+    /// </summary>
+    [Header("Crouching")]
+    [Tooltip("The speed of the player while crouching based on the amount of unique bugs they have caught.")]
+    [SerializeField]
+    private AnimationCurve speedGraphCrouch;
+
+    [Tooltip("Transform that checks for the ceiling.")] [SerializeField]
+    private Transform ceilingCheck;
+
+    [Tooltip("Distance that counts as touching a ceiling.")] [SerializeField]
+    private GlobalFloat ceilingDistance;
+
+    [Tooltip("What counts as a ceiling?")] [SerializeField]
+    private LayerMask ceilingMask;
+
+    [Tooltip("Standing Height")] [SerializeField]
+    private GlobalFloat standingHeight;
+
+    [Tooltip("Crouching Height")] [SerializeField]
+    private GlobalFloat crouchingHeight;
+
+    [Tooltip("Are we on the crouching?")] [SerializeField]
+    private GlobalBool isCrouching;
 
 
     [Header("Movement Input")] [Tooltip("Forward Movement Key")] [SerializeField]
@@ -93,11 +122,14 @@ public class PlayerMovement : MonoBehaviour
 
 
     [Header("Required Components")] private CharacterController _characterController;
+    private CameraController _cameraController;
 
     private void Awake()
     {
         waterWalking.OnChanged.AddListener(WaterWalking);
         _characterController = GetComponent<CharacterController>();
+        _cameraController = GetComponent<CameraController>();
+        _cameraController.SetUpIsCrouching(isCrouching);
     }
 
     private void OnDestroy()
@@ -110,6 +142,12 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     /// <returns>The max speed.</returns>
     private float GetMaxSpeed() => speedGraph.Evaluate(BugInventory.NumberOfBugsCaught());
+
+    /// <summary>
+    /// Returns the max crouching speed of the player based on the number of bugs they've caught.
+    /// </summary>
+    /// <returns>The max crouching speed.</returns>
+    private float GetMaxCrouchingSpeed() => speedGraphCrouch.Evaluate(BugInventory.NumberOfBugsCaught());
 
     /// <summary>
     /// Sets our ability to walk on water.
@@ -125,7 +163,30 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovementController()
     {
+        CrouchCheck();
         InfluenceVelocity();
+    }
+
+    private void CrouchCheck()
+    {
+        if (crouchMovementInputs.PressingOneOfTheKeys() && !isCrouching.CurrentValue)
+        {
+            isCrouching.CurrentValue = true;
+            _characterController.height = crouchingHeight.CurrentValue;
+            float distanceBetweenCenters = standingHeight.CurrentValue / 2f - crouchingHeight.CurrentValue / 2f;
+            float centerY = standingHeight.CurrentValue >= crouchingHeight.CurrentValue
+                ? _characterController.center.y - distanceBetweenCenters
+                : _characterController.center.y + distanceBetweenCenters;
+            _characterController.center =
+                new Vector3(_characterController.center.x, centerY, _characterController.center.z);
+        }
+        else if (!Physics.CheckSphere(ceilingCheck.position, ceilingDistance.CurrentValue, ceilingMask) &&
+                 isCrouching.CurrentValue && !crouchMovementInputs.PressingOneOfTheKeys())
+        {
+            isCrouching.CurrentValue = false;
+            _characterController.height = standingHeight.CurrentValue;
+            _characterController.center = Vector3.zero;
+        }
     }
 
     private void InfluenceVelocity()
@@ -164,7 +225,9 @@ public class PlayerMovement : MonoBehaviour
         // Movement Vector Controls
         Vector3 moveVector = transform.right * _xInput + transform.forward * _zInput;
 
-        _velocity = moveVector.normalized * GetMaxSpeed();
+        _velocity = isCrouching.CurrentValue
+            ? moveVector.normalized * GetMaxCrouchingSpeed()
+            : moveVector.normalized * GetMaxSpeed();
 
         // Gravity
         if (isGrounded.CurrentValue)

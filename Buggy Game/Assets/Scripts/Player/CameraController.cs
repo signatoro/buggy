@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -10,10 +11,22 @@ public class CameraController : MonoBehaviour
     [Tooltip("Mouse Sensitivity.")] [SerializeField]
     private GlobalFloat mouseSensitivity;
 
-    private float _xRotation = 0f;
+    private float _xRotation;
 
     [FormerlySerializedAs("tempDisabled")] [Tooltip("Camera Disabled.")] [SerializeField]
     private GlobalBool cameraDisabled;
+
+    [Tooltip("Standing Camera Height")] [SerializeField]
+    private GlobalFloat standingCameraHeight;
+
+    [Tooltip("Crouching Camera Height")] [SerializeField]
+    private GlobalFloat crouchingCameraHeight;
+
+    [Tooltip("Time To Lerp Between Crouching and Standing")] [SerializeField]
+    private GlobalFloat crouchLerpTime;
+
+    private GlobalBool _isCrouching;
+    private Coroutine _crouchCoroutine;
 
     private void OnEnable()
     {
@@ -21,10 +34,71 @@ public class CameraController : MonoBehaviour
         Cursor.visible = false;
     }
 
+    public void SetUpIsCrouching(GlobalBool c)
+    {
+        _isCrouching = c;
+        _isCrouching.OnChanged.AddListener(HandleCrouch);
+    }
+
+    private void HandleCrouch(bool isCrouching)
+    {
+        if (_crouchCoroutine != null)
+        {
+            StopCoroutine(_crouchCoroutine);
+        }
+
+        _crouchCoroutine = StartCoroutine(isCrouching ? Crouch() : StandUp());
+    }
+
+    private IEnumerator Crouch()
+    {
+        camera.transform.position =
+            new Vector3(transform.position.x, standingCameraHeight.CurrentValue, transform.position.z);
+        float elapsedTime = 0;
+        while (elapsedTime < crouchLerpTime.CurrentValue)
+        {
+            camera.transform.position = Vector3.Lerp(transform.position,
+                new Vector3(transform.position.x, crouchingCameraHeight.CurrentValue, transform.position.z),
+                elapsedTime / crouchLerpTime.CurrentValue);
+            elapsedTime += Time.deltaTime;
+
+            yield return null;
+        }
+
+        camera.transform.position =
+            new Vector3(transform.position.x, crouchingCameraHeight.CurrentValue, transform.position.z);
+        yield return null;
+    }
+
+    private IEnumerator StandUp()
+    {
+        camera.transform.position =
+            new Vector3(transform.position.x, crouchingCameraHeight.CurrentValue, transform.position.z);
+        float elapsedTime = 0;
+        while (elapsedTime < crouchLerpTime.CurrentValue)
+        {
+            camera.transform.position = Vector3.Lerp(transform.position,
+                new Vector3(transform.position.x, standingCameraHeight.CurrentValue, transform.position.z),
+                elapsedTime / crouchLerpTime.CurrentValue);
+            elapsedTime += Time.deltaTime;
+
+            yield return null;
+        }
+
+        camera.transform.position =
+            new Vector3(transform.position.x, standingCameraHeight.CurrentValue, transform.position.z);
+        yield return null;
+    }
+
     private void OnDisable()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+
+    private void OnDestroy()
+    {
+        _isCrouching.OnChanged.RemoveListener(HandleCrouch);
     }
 
     private void Update()
