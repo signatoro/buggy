@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 424371a7241434cf4bc0a2cfde71d138, type: 3}
-  m_Name: V_OrbitSpeed
+  m_Name: V_Gravity
   m_EditorClassIdentifier: 
-  Description: Speed that time.deltatime is multiplied by.
-  initialValue: 0.1
-  currentValue: 0.1
+  Description: Strength of gravity.
+  initialValue: 2
+  currentValue: 0
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
