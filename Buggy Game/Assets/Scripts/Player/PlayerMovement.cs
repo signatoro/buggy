@@ -128,6 +128,7 @@ public class PlayerMovement : MonoBehaviour
     {
         waterWalking.OnChanged.AddListener(WaterWalking);
         _characterController = GetComponent<CharacterController>();
+        _characterController.height = standingHeight.CurrentValue;
         _cameraController = GetComponent<CameraController>();
         _cameraController.SetUpIsCrouching(isCrouching);
     }
