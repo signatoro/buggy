@@ -27,12 +27,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097031226631847304}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1097031227134608347}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1097031226631847306
 Camera:
@@ -221,7 +221,6 @@ GameObject:
   - component: {fileID: 1097031227134608347}
   - component: {fileID: 1097031227134608346}
   - component: {fileID: 1097031227134608345}
-  - component: {fileID: 1097031227134608344}
   - component: {fileID: 1097031227134608295}
   - component: {fileID: 1097031227134608294}
   - component: {fileID: 1097031227134608293}
@@ -245,6 +244,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1097031227623224459}
+  - {fileID: 27308029036204518}
   - {fileID: 1097031226631847307}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -299,20 +299,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &1097031227134608344
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097031227134608292}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &1097031227134608295
 CharacterController:
   m_ObjectHideFlags: 0
@@ -346,6 +332,11 @@ MonoBehaviour:
   camera: {fileID: 1097031226631847306}
   mouseSensitivity: {fileID: 11400000, guid: 44c97182c827843a39c28888182a509c, type: 2}
   cameraDisabled: {fileID: 11400000, guid: 19725624738614025bbb3df8e7e8da28, type: 2}
+  standingCameraHeight: {fileID: 11400000, guid: 85b77458ae5b44dba8bd61d1f453d36a,
+    type: 2}
+  crouchingCameraHeight: {fileID: 11400000, guid: a1f4dbe782b104b82a9604e9a376259d,
+    type: 2}
+  crouchLerpTime: {fileID: 11400000, guid: a634e49081e9d4048a0cc4659cc4c648, type: 2}
 --- !u!114 &1097031227134608293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,7 +376,38 @@ MonoBehaviour:
   movementEnabled: {fileID: 11400000, guid: f43821c6f460e4eadb2fcf8b9e7206a4, type: 2}
   waterWalking: {fileID: 11400000, guid: 13c53afe7e7af46a0b029b2e2c4a7a0c, type: 2}
   gravity: {fileID: 11400000, guid: 0bedfc289eb1841a7b17eaa19e621b90, type: 2}
-  crouchMultiplier: {fileID: 0}
+  speedGraphCrouch:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  ceilingCheck: {fileID: 27308029036204518}
+  ceilingDistance: {fileID: 11400000, guid: c8a08e5f1d722461f9f878957ec9d0dc, type: 2}
+  ceilingMask:
+    serializedVersion: 2
+    m_Bits: 1
+  standingHeight: {fileID: 11400000, guid: 71ac170f1b48e453db3afa5fe7dc4e4d, type: 2}
+  crouchingHeight: {fileID: 11400000, guid: cc09e0833a3fd454e9c7f13e1a0b244a, type: 2}
+  isCrouching: {fileID: 11400000, guid: 4e82f3ed45d9141789a215d14ed3f33b, type: 2}
   forwardMovementInputs: {fileID: 11400000, guid: 7fa5512be3cc64a418146e08937f7bf2,
     type: 2}
   backwardMovementInputs: {fileID: 11400000, guid: 7660737c79c3c4942910d01b68611df6,
@@ -393,7 +415,8 @@ MonoBehaviour:
   leftMovementInputs: {fileID: 11400000, guid: f1999bd07a18742418e3db78537f0905, type: 2}
   rightMovementInputs: {fileID: 11400000, guid: ac958ca29b5264fc9bb72d37e052e002,
     type: 2}
-  crouchMovementInputs: {fileID: 0}
+  crouchMovementInputs: {fileID: 11400000, guid: e20144e0aa8f24d23bfb821b9bad23e6,
+    type: 2}
   groundCheck: {fileID: 1097031227623224459}
   groundDistance: {fileID: 11400000, guid: 1fb2f5ad8c76346458bff2e1169a44df, type: 2}
   groundMask:
@@ -430,4 +453,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1097031227134608347}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7332665910704728875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 27308029036204518}
+  m_Layer: 3
+  m_Name: Ceiling Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &27308029036204518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7332665910704728875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1097031227134608347}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
