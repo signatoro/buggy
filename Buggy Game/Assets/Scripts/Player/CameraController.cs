@@ -16,11 +16,11 @@ public class CameraController : MonoBehaviour
     [FormerlySerializedAs("tempDisabled")] [Tooltip("Camera Disabled.")] [SerializeField]
     private GlobalBool cameraDisabled;
 
-    [Tooltip("Standing Camera Height")] [SerializeField]
-    private GlobalFloat standingCameraHeight;
+    [Tooltip("Standing Camera Transform")] [SerializeField]
+    private Transform standingCameraTransform;
 
-    [Tooltip("Crouching Camera Height")] [SerializeField]
-    private GlobalFloat crouchingCameraHeight;
+    [Tooltip("Crouching Camera Transform")] [SerializeField]
+    private Transform crouchingCameraTransform;
 
     [Tooltip("Time To Lerp Between Crouching and Standing")] [SerializeField]
     private GlobalFloat crouchLerpTime;
@@ -32,14 +32,23 @@ public class CameraController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        camera.transform.position = standingCameraTransform.position;
     }
 
+    /// <summary>
+    /// Sets up the variable for is crouching.
+    /// </summary>
+    /// <param name="c">The global bool for crouching.</param>
     public void SetUpIsCrouching(GlobalBool c)
     {
         _isCrouching = c;
         _isCrouching.OnChanged.AddListener(HandleCrouch);
     }
 
+    /// <summary>
+    /// Starts the coroutine for crouching or standing.
+    /// </summary>
+    /// <param name="isCrouching">Are we crouching or standing?</param>
     private void HandleCrouch(bool isCrouching)
     {
         if (_crouchCoroutine != null)
@@ -50,43 +59,45 @@ public class CameraController : MonoBehaviour
         _crouchCoroutine = StartCoroutine(isCrouching ? Crouch() : StandUp());
     }
 
+    /// <summary>
+    /// Moves the camera to the crouching position.
+    /// </summary>
+    /// <returns>Nothing.</returns>
     private IEnumerator Crouch()
     {
-        camera.transform.position =
-            new Vector3(transform.position.x, standingCameraHeight.CurrentValue, transform.position.z);
         float elapsedTime = 0;
         while (elapsedTime < crouchLerpTime.CurrentValue)
         {
-            camera.transform.position = Vector3.Lerp(transform.position,
-                new Vector3(transform.position.x, crouchingCameraHeight.CurrentValue, transform.position.z),
+            camera.transform.position = Vector3.Lerp(standingCameraTransform.position,
+                crouchingCameraTransform.position,
                 elapsedTime / crouchLerpTime.CurrentValue);
             elapsedTime += Time.deltaTime;
 
             yield return null;
         }
 
-        camera.transform.position =
-            new Vector3(transform.position.x, crouchingCameraHeight.CurrentValue, transform.position.z);
+        camera.transform.position = crouchingCameraTransform.position;
         yield return null;
     }
 
+    /// <summary>
+    /// Makes the Camera move to the standing position.
+    /// </summary>
+    /// <returns>Nothing.</returns>
     private IEnumerator StandUp()
     {
-        camera.transform.position =
-            new Vector3(transform.position.x, crouchingCameraHeight.CurrentValue, transform.position.z);
         float elapsedTime = 0;
         while (elapsedTime < crouchLerpTime.CurrentValue)
         {
-            camera.transform.position = Vector3.Lerp(transform.position,
-                new Vector3(transform.position.x, standingCameraHeight.CurrentValue, transform.position.z),
+            camera.transform.position = Vector3.Lerp(crouchingCameraTransform.position,
+                standingCameraTransform.position,
                 elapsedTime / crouchLerpTime.CurrentValue);
             elapsedTime += Time.deltaTime;
 
             yield return null;
         }
 
-        camera.transform.position =
-            new Vector3(transform.position.x, standingCameraHeight.CurrentValue, transform.position.z);
+        camera.transform.position = standingCameraTransform.position;
         yield return null;
     }
 
@@ -101,13 +112,13 @@ public class CameraController : MonoBehaviour
         _isCrouching.OnChanged.RemoveListener(HandleCrouch);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (cameraDisabled.CurrentValue) return;
 
         // Get Mouse Inputs
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity.CurrentValue * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity.CurrentValue * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity.CurrentValue;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity.CurrentValue;
 
         //Set Rotation on Camera Vertically
         _xRotation -= mouseY;
