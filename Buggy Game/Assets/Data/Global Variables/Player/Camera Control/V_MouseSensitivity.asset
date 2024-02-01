@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_MouseSensitivity
   m_EditorClassIdentifier: 
   Description: Mouse Sensitivity.
-  initialValue: 100
-  currentValue: 0
+  initialValue: 5
+  currentValue: 5
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:

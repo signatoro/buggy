@@ -157,7 +157,7 @@ public class PlayerMovement : MonoBehaviour
     private void WaterWalking(bool canWalk) => groundMask =
         canWalk ? LayerMask.GetMask("Default") & LayerMask.GetMask("Water") : LayerMask.GetMask("Default");
 
-    private void Update()
+    private void FixedUpdate()
     {
         MovementController();
     }
@@ -168,6 +168,9 @@ public class PlayerMovement : MonoBehaviour
         InfluenceVelocity();
     }
 
+    /// <summary>
+    /// Checks if we are crouching and sets values accordingly.
+    /// </summary>
     private void CrouchCheck()
     {
         if (crouchMovementInputs.PressingOneOfTheKeys() && !isCrouching.CurrentValue)
@@ -190,6 +193,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Sets the velocity of the player.
+    /// </summary>
     private void InfluenceVelocity()
     {
         // Ground Check
@@ -237,10 +243,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            _velocity.y += gravity.CurrentValue * Time.deltaTime;
+            _velocity.y = -1 * gravity.CurrentValue;
         }
 
+        _velocity *= Time.deltaTime;
 
-        _characterController.Move(_velocity * Time.deltaTime);
+        _characterController.Move(_velocity);
     }
 }

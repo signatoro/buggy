@@ -246,6 +246,8 @@ Transform:
   - {fileID: 1097031227623224459}
   - {fileID: 27308029036204518}
   - {fileID: 1097031226631847307}
+  - {fileID: 6597083085478560024}
+  - {fileID: 7153532004711725052}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -332,10 +334,8 @@ MonoBehaviour:
   camera: {fileID: 1097031226631847306}
   mouseSensitivity: {fileID: 11400000, guid: 44c97182c827843a39c28888182a509c, type: 2}
   cameraDisabled: {fileID: 11400000, guid: 19725624738614025bbb3df8e7e8da28, type: 2}
-  standingCameraHeight: {fileID: 11400000, guid: 85b77458ae5b44dba8bd61d1f453d36a,
-    type: 2}
-  crouchingCameraHeight: {fileID: 11400000, guid: a1f4dbe782b104b82a9604e9a376259d,
-    type: 2}
+  standingCameraTransform: {fileID: 6597083085478560024}
+  crouchingCameraTransform: {fileID: 7153532004711725052}
   crouchLerpTime: {fileID: 11400000, guid: a634e49081e9d4048a0cc4659cc4c648, type: 2}
 --- !u!114 &1097031227134608293
 MonoBehaviour:
@@ -453,6 +453,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1097031227134608347}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5673100211636165996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6597083085478560024}
+  m_Layer: 3
+  m_Name: Standing Camera Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6597083085478560024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5673100211636165996}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1097031227134608347}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6846421302525602023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7153532004711725052}
+  m_Layer: 3
+  m_Name: Crouching Camera Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7153532004711725052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6846421302525602023}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1097031227134608347}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7332665910704728875
 GameObject:
