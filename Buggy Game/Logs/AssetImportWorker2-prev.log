@@ -22,7 +22,7 @@ AssetImportWorker2
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-58222
+54641
 Successfully changed project path to: /Users/couchcomfy/Code/games/buggy/Buggy Game
 /Users/couchcomfy/Code/games/buggy/Buggy Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -54,11 +54,11 @@ Successfully changed project path to: /Users/couchcomfy/Code/games/buggy/Buggy G
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [140704337018496] Host "[IP] 10.110.16.246 [Port] 0 [Flags] 2 [Guid] 2498257856 [EditorId] 2498257856 [Version] 1048832 [Id] OSXEditor(0,scottpignataros-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [140704481721984] Host "[IP] 10.110.16.246 [Port] 0 [Flags] 2 [Guid] 253877755 [EditorId] 253877755 [Version] 1048832 [Id] OSXEditor(0,scottpignataros-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [140704337018496] Host "[IP] 10.110.16.246 [Port] 0 [Flags] 2 [Guid] 2498257856 [EditorId] 2498257856 [Version] 1048832 [Id] OSXEditor(0,scottpignataros-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [140704481721984] Host "[IP] 10.110.16.246 [Port] 0 [Flags] 2 [Guid] 253877755 [EditorId] 253877755 [Version] 1048832 [Id] OSXEditor(0,scottpignataros-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 191.31 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 237.76 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -74,73 +74,73 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56978
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56507
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.003995 seconds.
+Registered in 0.001229 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 192.38 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 199.56 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.356 seconds
+- Completed reload, in  1.162 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1356ms)
-		BeginReloadAssembly (159ms)
+	ReloadAssembly (1163ms)
+		BeginReloadAssembly (89ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1002ms)
-			LoadAssemblies (158ms)
+		EndReloadAssembly (885ms)
+			LoadAssemblies (87ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (199ms)
+			SetupTypeCache (207ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (671ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (527ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (192ms)
+				RefreshPlugins (200ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (393ms)
-				ProcessInitializeOnLoadMethodAttributes (74ms)
+				ProcessInitializeOnLoadAttributes (243ms)
+				ProcessInitializeOnLoadMethodAttributes (72ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003395 seconds.
+Registered in 0.003743 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 195.90 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 210.23 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.637 seconds
+- Completed reload, in  2.458 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2638ms)
-		BeginReloadAssembly (157ms)
+	ReloadAssembly (2459ms)
+		BeginReloadAssembly (159ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (2280ms)
-			LoadAssemblies (152ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (2097ms)
+			LoadAssemblies (101ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (477ms)
+			SetupTypeCache (516ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (154ms)
-			SetupLoadedEditorAssemblies (1409ms)
+			RebuildScriptCaches (168ms)
+			SetupLoadedEditorAssemblies (1215ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (196ms)
-				BeforeProcessingInitializeOnLoad (183ms)
-				ProcessInitializeOnLoadAttributes (561ms)
-				ProcessInitializeOnLoadMethodAttributes (462ms)
+				RefreshPlugins (210ms)
+				BeforeProcessingInitializeOnLoad (188ms)
+				ProcessInitializeOnLoadAttributes (515ms)
+				ProcessInitializeOnLoadMethodAttributes (294ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -148,94 +148,3 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launching external process: /Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.11 seconds
-Refreshing native plugins compatible for Editor in 2.05 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6144 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 69 unused Assets / (3.3 MB). Loaded Objects now: 6598.
-Memory consumption went from 289.3 MB to 286.0 MB.
-Total: 6.903044 ms (FindLiveObjects: 0.674465 ms CreateObjectMapping: 0.660195 ms MarkObjects: 4.635926 ms  DeleteObjects: 0.931141 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 340384.067571 seconds.
-  path: Assets/Models/plant.fbx
-  artifactKey: Guid(e23b1960d040213458430291eb16111f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/plant.fbx using Guid(e23b1960d040213458430291eb16111f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcdf1bbdfe59492d6cf0d010716e1b45') in 41.190530 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001209 seconds.
-  path: Assets/Prefabs/SceneTrigger.prefab
-  artifactKey: Guid(485d3fa2b58cf1440b7d8b82f7d9cd52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SceneTrigger.prefab using Guid(485d3fa2b58cf1440b7d8b82f7d9cd52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db50d67d2ab5807f47c47b36a259260') in 0.150173 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000105 seconds.
-  path: Assets/Prefabs/SpecialJar.prefab
-  artifactKey: Guid(d4436ee0ae2304aeeb48df1adc712d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialJar.prefab using Guid(d4436ee0ae2304aeeb48df1adc712d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e618414c70ce1513a47bfbccd290b1f') in 14.389917 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.257267 seconds.
-  path: Assets/Art/ant-body.png
-  artifactKey: Guid(9ec6355f8daf146d39af553d994e9830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ant-body.png using Guid(9ec6355f8daf146d39af553d994e9830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2b63b4980a12b2b4cfb1f8499dd048') in 0.175193 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.391102 seconds.
-  path: Assets/Art/ant-body.png
-  artifactKey: Guid(9ec6355f8daf146d39af553d994e9830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ant-body.png using Guid(9ec6355f8daf146d39af553d994e9830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0fa0a29432ffe686e1cca047a6834f6') in 0.120592 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.994550 seconds.
-  path: Assets/Art/Ant-back-leg.png
-  artifactKey: Guid(64a42af3fdfb446f5ae7e709d49d3e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Ant-back-leg.png using Guid(64a42af3fdfb446f5ae7e709d49d3e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da552cbd8782aa5dbfd0768a951079e') in 0.046856 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.182537 seconds.
-  path: Assets/Art/Ant-front-leg.png
-  artifactKey: Guid(42e7d43c0f2914047a39b40830a1ea6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Ant-front-leg.png using Guid(42e7d43c0f2914047a39b40830a1ea6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6de3e066edd272ed81382eec3bec541') in 0.037479 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.896947 seconds.
-  path: Assets/Art/Ant-mandable.png
-  artifactKey: Guid(2506f83a7852e44708d65876569a667a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Ant-mandable.png using Guid(2506f83a7852e44708d65876569a667a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba8f5baca946a72f5df1c4a928b0371b') in 0.052789 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 179.902175 seconds.
-  path: Assets/Art/Ant-second-leg.png
-  artifactKey: Guid(e13503617683c4ebbb4a947b8cede9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Ant-second-leg.png using Guid(e13503617683c4ebbb4a947b8cede9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cde800af0c9244d324e50cf4bb1d42a') in 0.045159 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.702357 seconds.
-  path: Assets/Art/Ant-third-leg.png
-  artifactKey: Guid(b51b1ee01bd9743ac8c5d6553bab6049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Ant-third-leg.png using Guid(b51b1ee01bd9743ac8c5d6553bab6049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3ad3ec68502038a83c51f687466ea7') in 0.046594 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1989.246203 seconds.
-  path: Assets/Art/Ant-third-leg.png
-  artifactKey: Guid(b51b1ee01bd9743ac8c5d6553bab6049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Ant-third-leg.png using Guid(b51b1ee01bd9743ac8c5d6553bab6049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '873fa810726a2d6ffa514cbb23000c41') in 0.049766 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 33217.951311 seconds.
-  path: Assets/Prefabs/Ant.prefab
-  artifactKey: Guid(ad8fd7ccddc584234a0b3c8031a6b2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Ant.prefab using Guid(ad8fd7ccddc584234a0b3c8031a6b2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41658cab20a5c99c902ebd2dda05421d') in 0.972254 seconds 
