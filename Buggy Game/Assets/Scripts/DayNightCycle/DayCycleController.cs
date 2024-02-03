@@ -127,4 +127,10 @@ public class DayCycleController : MonoBehaviour
         moon.shadows = LightShadows.Soft;
         sun.shadows = LightShadows.None;
     }
+
+    /// <summary>
+    /// Is it nighttime?
+    /// </summary>
+    /// <returns>Yes if night, else false.</returns>
+    public bool IsNight() => isNight.CurrentValue;
 }

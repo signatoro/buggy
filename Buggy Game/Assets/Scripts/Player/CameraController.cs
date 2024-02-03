@@ -36,6 +36,11 @@ public class CameraController : MonoBehaviour
     }
 
     /// <summary>
+    /// Gets the Camera.
+    /// </summary>
+    public Camera Camera => camera;
+
+    /// <summary>
     /// Sets up the variable for is crouching.
     /// </summary>
     /// <param name="c">The global bool for crouching.</param>

@@ -22,7 +22,14 @@ public static class BugInventory
     public static void AddBug(Species caughtBug) => _bugsCaught.Add(caughtBug);
 
     /// <summary>
-    /// Clears the _bugsCaught list
+    /// Clears the _bugsCaught list.
     /// </summary>
     public static void ClearBugsCaught() => _bugsCaught.Clear();
+
+    /// <summary>
+    /// Have we caught the given Species?
+    /// </summary>
+    /// <param name="species">The Species we are checking.</param>
+    /// <returns>True if we have caught it, else false.</returns>
+    public static bool HasCaught(Species species) => _bugsCaught.Contains(species);
 }
