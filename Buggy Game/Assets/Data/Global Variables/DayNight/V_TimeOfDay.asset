@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description: What is the time of day?
   initialValue: 10
-  currentValue: 19.690937
+  currentValue: 10
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
     m_PersistentCalls:
       m_Calls: []
-  stackTrace: []

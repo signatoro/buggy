@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ceeef333b4141e49e75a20bac682fd, type: 3}
   m_Name: Species_NightAntTest
   m_EditorClassIdentifier: 
-  speciesName: Ant
+  speciesName: Night Ant
   preCaughtDescription: 
   postCaughtDescription: 
   silhouette: {fileID: 0}
   fullSprite: {fileID: 0}
-  prey: []
+  prey:
+  - {fileID: 11400000, guid: 33f5955bd402942c0b5ef452adb48ff5, type: 2}
   predators: []
   neutral: []

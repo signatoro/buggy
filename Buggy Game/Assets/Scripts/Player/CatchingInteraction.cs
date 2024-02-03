@@ -58,7 +58,7 @@ public class CatchingInteraction : MonoBehaviour
         if (lifeForm.CanBeCaught() && catchKeycodes.PressingOneOfTheKeys())
         {
             BugInventory.AddBug(lifeForm.Species);
-            StartCoroutine(lifeForm.BugCaught());
+            lifeForm.BugCaught();
         }
     }
 
