@@ -25,6 +25,7 @@ using UnityEngine;
 /// </summary>
 [RequireComponent(typeof(CameraController))]
 [RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(BugInventory))]
 public class PlayerMovement : MonoBehaviour
 {
     /// <summary>
@@ -121,8 +122,14 @@ public class PlayerMovement : MonoBehaviour
     private GlobalBool isGrounded;
 
 
-    [Header("Required Components")] private CharacterController _characterController;
+    /// <summary>
+    /// Required Components
+    /// </summary>
+    private CharacterController _characterController;
+
     private CameraController _cameraController;
+    private BugInventoryData _bugInventoryData;
+
 
     private void Awake()
     {
@@ -131,6 +138,7 @@ public class PlayerMovement : MonoBehaviour
         _characterController.height = standingHeight.CurrentValue;
         _cameraController = GetComponent<CameraController>();
         _cameraController.SetUpIsCrouching(isCrouching);
+        _bugInventoryData = GetComponent<BugInventory>().GetBugInventoryData();
     }
 
     private void OnDestroy()
@@ -142,13 +150,13 @@ public class PlayerMovement : MonoBehaviour
     /// Returns the max speed of the player based on the number of bugs they've caught.
     /// </summary>
     /// <returns>The max speed.</returns>
-    private float GetMaxSpeed() => speedGraph.Evaluate(BugInventory.NumberOfBugsCaught());
+    private float GetMaxSpeed() => speedGraph.Evaluate(_bugInventoryData.NumberOfBugsCaught());
 
     /// <summary>
     /// Returns the max crouching speed of the player based on the number of bugs they've caught.
     /// </summary>
     /// <returns>The max crouching speed.</returns>
-    private float GetMaxCrouchingSpeed() => speedGraphCrouch.Evaluate(BugInventory.NumberOfBugsCaught());
+    private float GetMaxCrouchingSpeed() => speedGraphCrouch.Evaluate(_bugInventoryData.NumberOfBugsCaught());
 
     /// <summary>
     /// Sets our ability to walk on water.

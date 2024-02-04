@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 1097031227134608294}
   - component: {fileID: 1097031227134608293}
   - component: {fileID: 6360494037877432385}
+  - component: {fileID: 4067259608903155859}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -544,6 +545,19 @@ MonoBehaviour:
   cannotCatchColor: {fileID: 11400000, guid: 376f8ceddbc064e9a9ee3accc151a9e7, type: 2}
   reticuleInactive: {fileID: 11400000, guid: e80d390380fa84ac79e6450451ddf426, type: 2}
   catchKeycodes: {fileID: 11400000, guid: a57332feafcc7485bad853e17a76f246, type: 2}
+--- !u!114 &4067259608903155859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097031227134608292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1bcc27ef7f645f8a5ec0d4639f3b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: b06fc24c2297c42cc96018d324bededd, type: 2}
 --- !u!1 &1097031227623224458
 GameObject:
   m_ObjectHideFlags: 0

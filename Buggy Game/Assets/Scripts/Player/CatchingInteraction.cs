@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(CameraController))]
+[RequireComponent(typeof(BugInventoryData))]
 public class CatchingInteraction : MonoBehaviour
 {
     [Tooltip("The distance away that we can catch things.")] [SerializeField]
@@ -24,11 +25,13 @@ public class CatchingInteraction : MonoBehaviour
 
     private CatchableLifeForm _currentLifeForm = null;
     private Camera _camera;
+    private BugInventory _bugInventory;
 
     private void Start()
     {
         reticule.color = reticuleInactive.CurrentValue;
         _camera = GetComponent<CameraController>().Camera;
+        _bugInventory = GetComponent<BugInventory>();
         SetReticuleVisibility(true);
     }
 
@@ -53,11 +56,13 @@ public class CatchingInteraction : MonoBehaviour
         }
 
         // Can catch a life form
-        reticule.color = lifeForm.CanBeCaught() ? canCatchColor.CurrentValue : cannotCatchColor.CurrentValue;
+        reticule.color = lifeForm.CanBeCaught(_bugInventory.GetBugInventoryData())
+            ? canCatchColor.CurrentValue
+            : cannotCatchColor.CurrentValue;
 
-        if (lifeForm.CanBeCaught() && catchKeycodes.PressingOneOfTheKeys())
+        if (lifeForm.CanBeCaught(_bugInventory.GetBugInventoryData()) && catchKeycodes.PressingOneOfTheKeys())
         {
-            BugInventory.AddBug(lifeForm.Species);
+            _bugInventory.GetBugInventoryData().CatchBug(lifeForm.Species);
             lifeForm.BugCaught();
         }
     }
