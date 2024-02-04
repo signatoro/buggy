@@ -9,7 +9,7 @@ public sealed class CatchableLifeForm : MonoBehaviour
     private Species species;
 
     [Tooltip("Called when a bug is caught.")]
-    public UnityEvent OnCaught;
+    public UnityEvent<CatchableLifeForm> OnCaught;
 
     private readonly List<CatchableModule> _catchableModules = new();
 
@@ -36,7 +36,7 @@ public sealed class CatchableLifeForm : MonoBehaviour
     /// <summary>
     /// What to do when a Life Form is caught.
     /// </summary>
-    public void BugCaught() => OnCaught?.Invoke();
+    public void BugCaught() => OnCaught?.Invoke(this);
 
     /// <summary>
     /// Adds a CatchableModule to the list of Catchable Modules.
