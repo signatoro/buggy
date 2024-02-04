@@ -18,15 +18,8 @@ public sealed class CatchableLifeForm : MonoBehaviour
     /// </summary>
     /// <param name="data">The current Bug Inventory Data.</param>
     /// <returns>True if can be caught, else false.</returns>
-    public bool CanBeCaught(BugInventoryData data)
-    {
-        if (_catchableModules.Any(cMod => !cMod.CatchCheck()))
-        {
-            return false;
-        }
-
-        return data.CanCatchBug(species);
-    }
+    public bool CanBeCaught(BugInventoryData data) =>
+        _catchableModules.All(cMod => cMod.CatchCheck()) && data.CanCatchBug(species);
 
     /// <summary>
     /// Gets the Species.
