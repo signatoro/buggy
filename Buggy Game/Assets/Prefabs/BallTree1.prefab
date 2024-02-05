@@ -134,11 +134,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: 834d6c63baa2aea49a1a5146f9fd7e03,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 68f48a01171c54466a333fc11d2e2317, type: 2}
+    - target: {fileID: -4587302668392987624, guid: 834d6c63baa2aea49a1a5146f9fd7e03,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 804a6663dd531432ca160156a259d72e, type: 2}
+    - target: {fileID: -3955229406428289752, guid: 834d6c63baa2aea49a1a5146f9fd7e03,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 85eec1577909a489d81d9ac6b1eac6e7, type: 2}
+    - target: {fileID: -2571118854743697038, guid: 834d6c63baa2aea49a1a5146f9fd7e03,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b3db6be9c26c4042a11073bd371bdde, type: 2}
     - target: {fileID: 919132149155446097, guid: 834d6c63baa2aea49a1a5146f9fd7e03,
         type: 3}
       propertyPath: m_Name
       value: SmallBallTree
       objectReference: {fileID: 0}
+    - target: {fileID: 5509654439515443377, guid: 834d6c63baa2aea49a1a5146f9fd7e03,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 874032f1f38964ed0b1934b18032cfd4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 834d6c63baa2aea49a1a5146f9fd7e03, type: 3}
 --- !u!23 &51185266450791908 stripped
