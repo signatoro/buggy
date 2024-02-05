@@ -1,35 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public static class BugInventory
+/// <summary>
+/// Required to be on player.
+/// </summary>
+[RequireComponent(typeof(PlayerMovement))]
+public class BugInventory : MonoBehaviour
 {
-    /// <summary>
-    /// A list of all the unique species you have caught.
-    /// </summary>
-    private static readonly HashSet<Species> _bugsCaught = new();
+    [Tooltip("Bug Inventory Data.")] [SerializeField]
+    private BugInventoryData data;
 
     /// <summary>
-    /// Gets the number of bugs caught.
+    /// Gets the Bug Inventory Data.
     /// </summary>
-    /// <returns>Number of bugs caught.</returns>
-    public static int NumberOfBugsCaught() => _bugsCaught.Count;
-
-    /// <summary>
-    /// Adds a bug to the list of bugs caught.
-    /// </summary>
-    /// <param name="caughtBug">The bug you caught.</param>
-    public static void AddBug(Species caughtBug) => _bugsCaught.Add(caughtBug);
-
-    /// <summary>
-    /// Clears the _bugsCaught list.
-    /// </summary>
-    public static void ClearBugsCaught() => _bugsCaught.Clear();
-
-    /// <summary>
-    /// Have we caught the given Species?
-    /// </summary>
-    /// <param name="species">The Species we are checking.</param>
-    /// <returns>True if we have caught it, else false.</returns>
-    public static bool HasCaught(Species species) => _bugsCaught.Contains(species);
+    /// <returns>The Bug Inventory Data</returns>
+    public BugInventoryData GetBugInventoryData() => data;
 }

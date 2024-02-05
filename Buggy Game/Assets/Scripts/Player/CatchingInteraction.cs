@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(CameraController))]
+[RequireComponent(typeof(BugInventoryData))]
 public class CatchingInteraction : MonoBehaviour
 {
     [Tooltip("The distance away that we can catch things.")] [SerializeField]
@@ -12,6 +13,10 @@ public class CatchingInteraction : MonoBehaviour
 
     [Tooltip("The color of the reticule when you can catch something.")] [SerializeField]
     private GlobalColor canCatchColor;
+
+    [Tooltip("The color of the reticule when you can attempt to catch something that you've already caught.")]
+    [SerializeField]
+    private GlobalColor canAttemptToCatchColor;
 
     [Tooltip("The color of the reticule when you can't catch something.")] [SerializeField]
     private GlobalColor cannotCatchColor;
@@ -24,11 +29,13 @@ public class CatchingInteraction : MonoBehaviour
 
     private CatchableLifeForm _currentLifeForm = null;
     private Camera _camera;
+    private BugInventory _bugInventory;
 
     private void Start()
     {
         reticule.color = reticuleInactive.CurrentValue;
         _camera = GetComponent<CameraController>().Camera;
+        _bugInventory = GetComponent<BugInventory>();
         SetReticuleVisibility(true);
     }
 
@@ -50,15 +57,31 @@ public class CatchingInteraction : MonoBehaviour
         if (lifeForm != _currentLifeForm) // First frame we're looking at this interactable
         {
             _currentLifeForm = lifeForm;
+            return;
         }
+        
+        
 
-        // Can catch a life form
-        reticule.color = lifeForm.CanBeCaught() ? canCatchColor.CurrentValue : cannotCatchColor.CurrentValue;
-
-        if (lifeForm.CanBeCaught() && catchKeycodes.PressingOneOfTheKeys())
+        if (lifeForm.CanBeCaught(_bugInventory.GetBugInventoryData()))
         {
-            BugInventory.AddBug(lifeForm.Species);
-            lifeForm.BugCaught();
+            reticule.color = canCatchColor.CurrentValue;
+            if (catchKeycodes.PressingOneOfTheKeys())
+            {
+                _bugInventory.GetBugInventoryData().CatchBug(lifeForm.Species);
+                lifeForm.BugCaught();
+            }
+        }
+        else if (lifeForm.CatchButRelease())
+        {
+            reticule.color = canAttemptToCatchColor.CurrentValue;
+            if (catchKeycodes.PressingOneOfTheKeys())
+            {
+                lifeForm.BugReleased();
+            }
+        }
+        else
+        {
+            reticule.color = cannotCatchColor.CurrentValue;
         }
     }
 

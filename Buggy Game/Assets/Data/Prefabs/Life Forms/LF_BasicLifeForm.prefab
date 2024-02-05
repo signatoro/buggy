@@ -47,6 +47,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   species: {fileID: 11400000, guid: 138d4195f69ad48109de5ed79711945d, type: 2}
+  OnCaught:
+    m_PersistentCalls:
+      m_Calls: []
+  OnReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &1955545968754294593
 BoxCollider:
   m_ObjectHideFlags: 0
