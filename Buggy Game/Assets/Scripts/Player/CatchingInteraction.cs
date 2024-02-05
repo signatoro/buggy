@@ -31,6 +31,9 @@ public class CatchingInteraction : MonoBehaviour
     private Camera _camera;
     private BugInventory _bugInventory;
 
+    [Header("Debug")] [Tooltip("Should we show the catching range gizmos?")] [SerializeField]
+    private GlobalBool showCatchingRangeGizmos;
+
     private void Start()
     {
         reticule.color = reticuleInactive.CurrentValue;
@@ -59,8 +62,7 @@ public class CatchingInteraction : MonoBehaviour
             _currentLifeForm = lifeForm;
             return;
         }
-        
-        
+
 
         if (lifeForm.CanBeCaught(_bugInventory.GetBugInventoryData()))
         {
@@ -109,5 +111,15 @@ public class CatchingInteraction : MonoBehaviour
     public void SetReticuleVisibility(bool visible)
     {
         reticule.enabled = visible;
+    }
+
+    private void OnDrawGizmos()
+    {
+        // Display the current catching range as a sphere
+        if (_camera && showCatchingRangeGizmos && showCatchingRangeGizmos.CurrentValue)
+        {
+            Gizmos.color = Color.black;
+            Gizmos.DrawWireSphere(_camera.transform.position, catchRange.CurrentValue);
+        }
     }
 }

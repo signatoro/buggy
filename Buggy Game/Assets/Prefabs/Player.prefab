@@ -547,6 +547,8 @@ MonoBehaviour:
   cannotCatchColor: {fileID: 11400000, guid: 376f8ceddbc064e9a9ee3accc151a9e7, type: 2}
   reticuleInactive: {fileID: 11400000, guid: e80d390380fa84ac79e6450451ddf426, type: 2}
   catchKeycodes: {fileID: 11400000, guid: a57332feafcc7485bad853e17a76f246, type: 2}
+  showCatchingRangeGizmos: {fileID: 11400000, guid: d52a82a91d8d84e0c999bb79733077dc,
+    type: 2}
 --- !u!114 &4067259608903155859
 MonoBehaviour:
   m_ObjectHideFlags: 0
