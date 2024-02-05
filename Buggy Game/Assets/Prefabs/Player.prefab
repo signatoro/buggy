@@ -542,6 +542,8 @@ MonoBehaviour:
   catchRange: {fileID: 11400000, guid: 01bcc51a5090646b6b2d325e742246a3, type: 2}
   reticule: {fileID: 3524817901693840748}
   canCatchColor: {fileID: 11400000, guid: 7bb09059b669d423ea62fbccfb0c6143, type: 2}
+  canAttemptToCatchColor: {fileID: 11400000, guid: a38732064f8864310ac5bf0073d009a8,
+    type: 2}
   cannotCatchColor: {fileID: 11400000, guid: 376f8ceddbc064e9a9ee3accc151a9e7, type: 2}
   reticuleInactive: {fileID: 11400000, guid: e80d390380fa84ac79e6450451ddf426, type: 2}
   catchKeycodes: {fileID: 11400000, guid: a57332feafcc7485bad853e17a76f246, type: 2}

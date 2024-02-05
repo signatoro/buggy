@@ -14,6 +14,10 @@ public class CatchingInteraction : MonoBehaviour
     [Tooltip("The color of the reticule when you can catch something.")] [SerializeField]
     private GlobalColor canCatchColor;
 
+    [Tooltip("The color of the reticule when you can attempt to catch something that you've already caught.")]
+    [SerializeField]
+    private GlobalColor canAttemptToCatchColor;
+
     [Tooltip("The color of the reticule when you can't catch something.")] [SerializeField]
     private GlobalColor cannotCatchColor;
 
@@ -53,17 +57,31 @@ public class CatchingInteraction : MonoBehaviour
         if (lifeForm != _currentLifeForm) // First frame we're looking at this interactable
         {
             _currentLifeForm = lifeForm;
+            return;
         }
+        
+        
 
-        // Can catch a life form
-        reticule.color = lifeForm.CanBeCaught(_bugInventory.GetBugInventoryData())
-            ? canCatchColor.CurrentValue
-            : cannotCatchColor.CurrentValue;
-
-        if (lifeForm.CanBeCaught(_bugInventory.GetBugInventoryData()) && catchKeycodes.PressingOneOfTheKeys())
+        if (lifeForm.CanBeCaught(_bugInventory.GetBugInventoryData()))
         {
-            _bugInventory.GetBugInventoryData().CatchBug(lifeForm.Species);
-            lifeForm.BugCaught();
+            reticule.color = canCatchColor.CurrentValue;
+            if (catchKeycodes.PressingOneOfTheKeys())
+            {
+                _bugInventory.GetBugInventoryData().CatchBug(lifeForm.Species);
+                lifeForm.BugCaught();
+            }
+        }
+        else if (lifeForm.CatchButRelease())
+        {
+            reticule.color = canAttemptToCatchColor.CurrentValue;
+            if (catchKeycodes.PressingOneOfTheKeys())
+            {
+                lifeForm.BugReleased();
+            }
+        }
+        else
+        {
+            reticule.color = cannotCatchColor.CurrentValue;
         }
     }
 
