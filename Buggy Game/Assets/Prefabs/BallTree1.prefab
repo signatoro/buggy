@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8936545005493412459}
   - component: {fileID: 2077323354375541629}
+  - component: {fileID: 6865363147190190778}
   m_Layer: 0
   m_Name: BallTree1
   m_TagString: Untagged
@@ -72,6 +73,20 @@ LODGroup:
     - renderer: {fileID: 906703162470869325}
     - renderer: {fileID: 720377968645233876}
   m_Enabled: 1
+--- !u!136 &6865363147190190778
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443111459755031112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 4.2126846
+  m_Height: 23.937943
+  m_Direction: 1
+  m_Center: {x: 0.47, y: 8.38, z: 0.7}
 --- !u!1001 &4675713044174895612
 PrefabInstance:
   m_ObjectHideFlags: 0
