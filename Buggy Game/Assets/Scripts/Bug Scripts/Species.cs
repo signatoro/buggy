@@ -204,7 +204,7 @@ public class Species : ScriptableObject
         prey.Add(s);
         _preyOnLastValidate = new List<Species>(prey);
     }
-    
+
     /// <summary>
     /// Adds the Species to the Predators List and updates the _predatorsOnLastValidate.
     /// </summary>
@@ -214,7 +214,7 @@ public class Species : ScriptableObject
         predators.Add(s);
         _predatorsOnLastValidate = new List<Species>(predators);
     }
-    
+
     /// <summary>
     /// Adds the Species to the Neutral List and updates the _neutralOnLastValidate.
     /// </summary>
@@ -224,7 +224,7 @@ public class Species : ScriptableObject
         neutral.Add(s);
         _neutralOnLastValidate = new List<Species>(neutral);
     }
-    
+
     /// <summary>
     /// Removes the Species from the Prey List and updates the _preyOnLastValidate.
     /// </summary>
@@ -234,7 +234,7 @@ public class Species : ScriptableObject
         prey.Remove(s);
         _preyOnLastValidate = new List<Species>(prey);
     }
-    
+
     /// <summary>
     /// Removes the Species from the Predators List and updates the _predatorsOnLastValidate.
     /// </summary>
@@ -244,7 +244,7 @@ public class Species : ScriptableObject
         predators.Remove(s);
         _predatorsOnLastValidate = new List<Species>(predators);
     }
-    
+
     /// <summary>
     /// Removes the Species from the Neutral List and updates the _neutralOnLastValidate.
     /// </summary>
@@ -268,4 +268,7 @@ public class Species : ScriptableObject
         _predatorsOnLastValidate.Clear();
         _neutralOnLastValidate.Clear();
     }
+
+    public bool HasConnectionToSpecies(Species species) =>
+        prey.Contains(species) || predators.Contains(species) || neutral.Contains(species);
 }

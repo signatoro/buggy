@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8997365163155274866}
   - component: {fileID: 2235977554043265147}
   - component: {fileID: 1955545968754294593}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LF_BasicLifeForm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2690018111977626726}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
