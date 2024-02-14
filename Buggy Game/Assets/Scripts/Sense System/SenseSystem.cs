@@ -4,6 +4,24 @@ using UnityEngine;
 [RequireComponent(typeof(CatchableLifeForm))]
 public abstract class SenseSystem : MonoBehaviour
 {
+    /// <summary>
+    /// Data that contains all the important information from a Sense.
+    /// </summary>
+    public class SenseData
+    {
+        [Tooltip("The Life Form that was sensed")]
+        public CatchableLifeForm CatchableLifeForm;
+
+        [Tooltip("The Position of what was Sensed")]
+        public Vector3 SensePosition;
+
+        protected SenseData(CatchableLifeForm catchableLifeForm, Vector3 sensePosition)
+        {
+            CatchableLifeForm = catchableLifeForm;
+            SensePosition = sensePosition;
+        }
+    }
+
     [Tooltip("Root of the Sense")] [SerializeField]
     protected Transform root;
 
@@ -12,23 +30,16 @@ public abstract class SenseSystem : MonoBehaviour
 
     [Tooltip("Turn on Debug Gizmos")] [SerializeField]
     protected bool enableGizmos;
-    
-    /// <summary>
-    /// Utils that the Sense System can use.
-    /// </summary>
-    protected Utils Utils;
 
     protected CatchableLifeForm _catchableLifeForm;
 
     internal virtual void Awake()
     {
-        Utils = Utils.UtilsInstance;
         _catchableLifeForm = GetComponent<CatchableLifeForm>();
     }
 
     internal virtual void Update()
     {
-        
     }
 
     internal virtual void OnDrawGizmos()

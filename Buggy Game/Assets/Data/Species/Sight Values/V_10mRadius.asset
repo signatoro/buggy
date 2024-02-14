@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424371a7241434cf4bc0a2cfde71d138, type: 3}
   m_Name: V_10mRadius
   m_EditorClassIdentifier: 
-  Description: 5m Radius.
-  initialValue: 5
-  currentValue: 5
+  Description: 10m Radius.
+  initialValue: 10
+  currentValue: 10
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
