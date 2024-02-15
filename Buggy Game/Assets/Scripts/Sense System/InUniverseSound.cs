@@ -12,8 +12,7 @@ public class InUniverseSound : MonoBehaviour
     private CatchableLifeForm catchableLifeForm;
 
     public AudioSource audioSource { get; private set; }
-
-    [Tooltip("The Catchable Life Form that made this sound.")] [SerializeField]
+    
     private SphereCollider _sphereCollider;
 
     private void Awake()

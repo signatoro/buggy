@@ -27,7 +27,7 @@ public class Sense_Sight : SenseSystem
         //CheckFOV();
         base.Update();
     }
-    
+
     /// <summary>
     /// Checks the Life Form's FOV.
     /// </summary>
@@ -56,7 +56,9 @@ public class Sense_Sight : SenseSystem
                     Vector3 position = lifeForm.transform.position;
                     sightDatas.Add(new SightData(lifeForm, position,
                         GetLightIntensityAtPoint(position)));
-                    Debug.Log($"{name} saw: {lifeForm.name} with a light intensity of {GetLightIntensityAtPoint(position)}", this);
+                    Debug.Log(
+                        $"{name} saw: {lifeForm.name} with a light intensity of {GetLightIntensityAtPoint(position)}",
+                        this);
                 }
             }
         }
@@ -75,6 +77,7 @@ public class Sense_Sight : SenseSystem
 
         List<float> lightIntensities = new();
         int layerMask = LayerMask.NameToLayer("Player") & LayerMask.NameToLayer("LifeForm");
+        layerMask = ~layerMask;
         float addToIntensity = 0;
 
         foreach (Light light in allEnabledLight)

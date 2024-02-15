@@ -19,9 +19,6 @@ public class Sense_Sound : SenseSystem
     [Tooltip("Minimum Volume Threshold for this Life Form to Hear a sound")] [SerializeField]
     private GlobalFloat volumeThresholdData;
 
-    [Tooltip("Number of Samples we take of an audio clip")] [SerializeField]
-    private GlobalInt clipVolumeSamples;
-
     // The current volume threshold that can be modified.
     private float _currentVolumeThreshold;
 
