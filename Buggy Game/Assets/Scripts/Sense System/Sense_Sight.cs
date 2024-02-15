@@ -56,7 +56,7 @@ public class Sense_Sight : SenseSystem
                     Vector3 position = lifeForm.transform.position;
                     sightDatas.Add(new SightData(lifeForm, position,
                         GetLightIntensityAtPoint(position)));
-                    Debug.Log($"{name} saw: {lifeForm.name}", this);
+                    Debug.Log($"{name} saw: {lifeForm.name} with a light intensity of {GetLightIntensityAtPoint(position)}", this);
                 }
             }
         }

@@ -75,7 +75,7 @@ public class Sense_Sound : SenseSystem
                     if (volumeLevel >= _currentVolumeThreshold)
                     {
                         soundDatas.Add(new SoundData(lifeForm, position, volumeLevel));
-                        Debug.Log($"{name} heard: {inUniverseSound.name}", this);
+                        Debug.Log($"{name} heard: {inUniverseSound.name} with a volume value of {volumeLevel}", this);
                     }
                 }
             }
@@ -91,17 +91,11 @@ public class Sense_Sound : SenseSystem
     /// <returns>The volume level of the sound at the root.</returns>
     private float GetVolumeLevelOfSoundAtPoint(AudioSource audioSource)
     {
-        // Loudness of the Clip
-        float[] clipSampleData = new float[clipVolumeSamples.CurrentValue];
-        audioSource.clip.GetData(clipSampleData, audioSource.timeSamples);
-        float clipLoudness = clipSampleData.Sum(Mathf.Abs);
-        clipLoudness /= clipVolumeSamples.CurrentValue;
-
         // Get Audio Rolloff
         AnimationCurve volumeRolloff = audioSource.GetCustomCurve(AudioSourceCurveType.CustomRolloff);
         float distance = Vector3.Distance(audioSource.transform.position, root.position);
         float volumeRolloffVal = volumeRolloff.Evaluate(distance / audioSource.maxDistance);
 
-        return clipLoudness * audioSource.volume * volumeRolloffVal;
+        return audioSource.volume * volumeRolloffVal * 100f;
     }
 }
