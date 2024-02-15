@@ -99,8 +99,9 @@ public class Sense_Sound : SenseSystem
 
         // Get Audio Rolloff
         AnimationCurve volumeRolloff = audioSource.GetCustomCurve(AudioSourceCurveType.CustomRolloff);
+        float distance = Vector3.Distance(audioSource.transform.position, root.position);
+        float volumeRolloffVal = volumeRolloff.Evaluate(distance / audioSource.maxDistance);
 
-        return clipLoudness * audioSource.volume *
-               volumeRolloff.Evaluate(Vector3.Distance(audioSource.transform.position, root.position));
+        return clipLoudness * audioSource.volume * volumeRolloffVal;
     }
 }
