@@ -27,11 +27,15 @@ public class Sense_Sight : SenseSystem
         //CheckFOV();
         base.Update();
     }
-
+    
+    /// <summary>
+    /// Checks the Life Form's FOV.
+    /// </summary>
+    /// <returns>Returns the sight data for everything seen.</returns>
     [ContextMenu("Check FOV")]
     private List<SightData> CheckFOV()
     {
-        List<SightData> seenValidLifeForms = new();
+        List<SightData> sightDatas = new();
         int layerMask = LayerMask.NameToLayer("Player") & LayerMask.NameToLayer("LifeForm");
         layerMask = ~layerMask;
         List<Collider> hitColliders = Physics.OverlapSphere(root.position, radius.CurrentValue, layerMask).ToList();
@@ -50,14 +54,14 @@ public class Sense_Sight : SenseSystem
                     Vector3.Angle(directionToLifeForm, root.forward) <= fieldOfViewAngle.CurrentValue)
                 {
                     Vector3 position = lifeForm.transform.position;
-                    seenValidLifeForms.Add(new SightData(lifeForm, position,
+                    sightDatas.Add(new SightData(lifeForm, position,
                         GetLightIntensityAtPoint(position)));
                     Debug.Log($"{name} saw: {lifeForm.name}", this);
                 }
             }
         }
 
-        return seenValidLifeForms;
+        return sightDatas;
     }
 
     /// <summary>
