@@ -22,8 +22,11 @@ public class Power_GlowBall : Power
     private bool _isActive;
 
     /// <inheritdoc />
-    public override void ResetPower()
+    public override IEnumerator ResetPower()
     {
+        StopAllCoroutines();
+        yield return StartCoroutine(StopPower());
+        
         // Reset Glow Light
         if (glowLight)
         {
@@ -40,6 +43,7 @@ public class Power_GlowBall : Power
 
         // Reset Active State
         _isActive = false;
+        yield return null;
     }
 
     /// <summary>

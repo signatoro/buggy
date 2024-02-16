@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -10,28 +9,28 @@ public abstract class Power : MonoBehaviour
 
     private void Awake()
     {
-        ResetPower();
+        StartCoroutine(ResetPower());
     }
 
     private void OnEnable()
     {
-        ResetPower();
+        StartCoroutine(ResetPower());
     }
 
     private void OnDisable()
     {
-        ResetPower();
+        StartCoroutine(ResetPower());
     }
 
     private void OnDestroy()
     {
-        ResetPower();
+        StartCoroutine(ResetPower());
     }
 
     /// <summary>
     /// Resets the Power's Values.
     /// </summary>
-    public abstract void ResetPower();
+    public abstract IEnumerator ResetPower();
 
     /// <summary>
     /// Attempts to Execute the Power.
