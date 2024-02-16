@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description: Keys associated with moving backward.
   initialValue: 7300000012010000
-  currentValue: 
+  currentValue: 7300000012010000
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
