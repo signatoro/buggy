@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -7,24 +8,19 @@ public abstract class Power : MonoBehaviour
     [Tooltip("UI Icon for the Power")] [SerializeField]
     protected Sprite icon;
 
-    private void Awake()
+    internal virtual void Awake()
     {
         StartCoroutine(ResetPower());
     }
 
-    private void OnEnable()
+    internal virtual void OnEnable()
     {
         StartCoroutine(ResetPower());
     }
 
-    private void OnDisable()
+    internal virtual void OnDisable()
     {
-        StartCoroutine(ResetPower());
-    }
-
-    private void OnDestroy()
-    {
-        StartCoroutine(ResetPower());
+        if (gameObject) StartCoroutine(ResetPower());
     }
 
     /// <summary>

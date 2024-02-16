@@ -57,7 +57,7 @@ public class Sense_Sound : SenseSystem
             if (collider.GetComponent<InUniverseSound>())
             {
                 InUniverseSound inUniverseSound = collider.GetComponent<InUniverseSound>();
-                CatchableLifeForm lifeForm = inUniverseSound.GetCatchableLifeForm();
+                CatchableLifeForm lifeForm = inUniverseSound.CatchableLifeForm;
                 AudioSource audioSource = inUniverseSound.audioSource;
                 Vector3 directionToLifeForm = root.position - inUniverseSound.transform.position;
 

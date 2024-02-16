@@ -27,9 +27,9 @@ public class PowersInventory : MonoBehaviour
         {
             _currentPower = unlockedPowers[^1];
 
-            foreach (Power power in unlockedPowers.Where(power => _currentPower != power))
+            foreach (Power power in unlockedPowers)
             {
-                power.enabled = false;
+                power.enabled = _currentPower == power;
             }
         }
     }
@@ -40,9 +40,9 @@ public class PowersInventory : MonoBehaviour
         {
             _currentPower = unlockedPowers[0];
 
-            foreach (Power power in unlockedPowers.Where(power => _currentPower != power))
+            foreach (Power power in unlockedPowers)
             {
-                power.enabled = false;
+                power.enabled = _currentPower == power;
             }
         }
     }
@@ -58,6 +58,7 @@ public class PowersInventory : MonoBehaviour
                 _currentPower.AttemptToExecute();
                 _wasPressingAKeyLastFrame = true;
             }
+
             return;
         }
 
@@ -72,6 +73,7 @@ public class PowersInventory : MonoBehaviour
                 _currentPower.enabled = true;
                 _wasPressingAKeyLastFrame = true;
             }
+
             return;
         }
 

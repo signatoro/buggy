@@ -2,6 +2,9 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.VFX;
 
+/// <summary>
+/// Creates a source of light around you.
+/// </summary>
 public class Power_GlowBall : Power
 {
     [Tooltip("VFX Graph for the Glow Orb")] [SerializeField]

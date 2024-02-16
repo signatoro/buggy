@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -4452212144051888358}
   - component: {fileID: -1799726865543935406}
   m_Layer: 7
-  m_Name: P_InUniverseSound
+  m_Name: IUS_InUniverseSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

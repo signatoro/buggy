@@ -331,6 +331,8 @@ GameObject:
   - component: {fileID: 6456442238757029856}
   - component: {fileID: 8564982015560993706}
   - component: {fileID: 8463329232410119612}
+  - component: {fileID: 3784391980573298407}
+  - component: {fileID: 7173555795936899370}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -602,6 +604,7 @@ MonoBehaviour:
     type: 2}
   unlockedPowers:
   - {fileID: 8463329232410119612}
+  - {fileID: 7173555795936899370}
 --- !u!114 &8463329232410119612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,7 +612,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097031227134608292}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eaaa955dda3894141ace9bab2fbfd718, type: 3}
   m_Name: 
@@ -620,6 +623,35 @@ MonoBehaviour:
   glowLightIntensity: {fileID: 11400000, guid: 050aed13077ae4aeca3c0381b3e200f6, type: 2}
   glowLightRange: {fileID: 11400000, guid: 86add968dc35a46b3a0fcd41cf5da7f0, type: 2}
   glowLightLerpTime: {fileID: 11400000, guid: 3dd325bc4de354c69a4c695ddf1cadcc, type: 2}
+--- !u!114 &3784391980573298407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097031227134608292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac2e9c74bb284933a42f2b3a2cba5cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 1097031227134608347}
+--- !u!114 &7173555795936899370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097031227134608292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31142cd9898b54b828e129f9039fc0ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  shriekSFX: {fileID: 5765517852674878054, guid: b26a6254747ea40fd886c70aac44018b,
+    type: 3}
+  cooldownTime: {fileID: 11400000, guid: 89506d13b4fbe431eb440cfbeb5f2672, type: 2}
 --- !u!1 &1097031227623224458
 GameObject:
   m_ObjectHideFlags: 0
