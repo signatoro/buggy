@@ -49,8 +49,8 @@ public class Sense_Sound : SenseSystem
     {
         List<SoundData> soundDatas = new();
 
-        int layerMask = LayerMask.NameToLayer("Audio");
-        List<Collider> hitColliders = Physics.OverlapSphere(root.position, radius.CurrentValue, ~layerMask).ToList();
+        int layerMask = LayerMask.GetMask("Audio");
+        List<Collider> hitColliders = Physics.OverlapSphere(root.position, radius.CurrentValue, layerMask).ToList();
 
         foreach (Collider collider in hitColliders)
         {

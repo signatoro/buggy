@@ -36,7 +36,7 @@ public class Sense_Sight : SenseSystem
     private List<SightData> CheckFOV()
     {
         List<SightData> sightDatas = new();
-        int layerMask = LayerMask.NameToLayer("Player") & LayerMask.NameToLayer("LifeForm");
+        int layerMask = LayerMask.GetMask("Player") & LayerMask.GetMask("LifeForm");
         layerMask = ~layerMask;
         List<Collider> hitColliders = Physics.OverlapSphere(root.position, radius.CurrentValue, layerMask).ToList();
 
@@ -76,7 +76,7 @@ public class Sense_Sight : SenseSystem
         List<Light> allEnabledLight = FindObjectsOfType<Light>().ToList();
 
         List<float> lightIntensities = new();
-        int layerMask = LayerMask.NameToLayer("Player") & LayerMask.NameToLayer("LifeForm");
+        int layerMask = LayerMask.GetMask("Player") & LayerMask.GetMask("LifeForm");
         layerMask = ~layerMask;
         float addToIntensity = 0;
 
