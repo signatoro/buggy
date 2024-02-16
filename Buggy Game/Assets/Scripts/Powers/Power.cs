@@ -20,7 +20,7 @@ public abstract class Power : MonoBehaviour
 
     internal virtual void OnDisable()
     {
-        if (gameObject) StartCoroutine(ResetPower());
+        if (gameObject.activeSelf) StartCoroutine(ResetPower());
     }
 
     /// <summary>

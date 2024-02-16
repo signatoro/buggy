@@ -27,9 +27,12 @@ public class Power_GlowBall : Power
     /// <inheritdoc />
     public override IEnumerator ResetPower()
     {
-        StopAllCoroutines();
-        yield return StartCoroutine(StopPower());
-        
+        if (gameObject)
+        {
+            StopAllCoroutines();
+            yield return StartCoroutine(StopPower());
+        }
+
         // Reset Glow Light
         if (glowLight)
         {

@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// - Walk
@@ -121,6 +123,17 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("Are we on the ground?")] [SerializeField]
     private GlobalBool isGrounded;
 
+    [Header("Respawn")] [Tooltip("Initial Respawn Point")] [SerializeField]
+    private Transform initialRespawnPoint;
+
+    [Tooltip("Respawn Fade Image")] [SerializeField]
+    private Image fadeImage;
+
+    [Tooltip("Respawn Fade In Time")] [SerializeField]
+    private GlobalFloat respawnFadeInTime;
+
+    private Transform _currentRespawnPoint;
+
 
     /// <summary>
     /// Required Components
@@ -139,6 +152,7 @@ public class PlayerMovement : MonoBehaviour
         _cameraController = GetComponent<CameraController>();
         _cameraController.SetUpIsCrouching(isCrouching);
         _bugInventoryData = GetComponent<BugInventory>().GetBugInventoryData();
+        _currentRespawnPoint = initialRespawnPoint;
     }
 
     private void OnDestroy()
@@ -165,7 +179,7 @@ public class PlayerMovement : MonoBehaviour
     private void WaterWalking(bool canWalk) => groundMask =
         canWalk ? LayerMask.GetMask("Default") & LayerMask.GetMask("Water") : LayerMask.GetMask("Default");
 
-    private void FixedUpdate()
+    private void Update()
     {
         MovementController();
     }
@@ -256,6 +270,55 @@ public class PlayerMovement : MonoBehaviour
 
         _velocity *= Time.deltaTime;
 
-        _characterController.Move(_velocity);
+        // Respawn if on Water when not allowed
+        if (!isGrounded.CurrentValue && !waterWalking.CurrentValue && Physics.CheckSphere(groundCheck.position,
+                groundDistance.CurrentValue, LayerMask.GetMask("Water")))
+        {
+            _velocity = Vector3.zero;
+            StartCoroutine(Respawn());
+        }
+        else
+        {
+            _characterController.Move(_velocity);            
+        }
+    }
+
+    /// <summary>
+    /// Sets a new Respawn Point.
+    /// </summary>
+    /// <param name="newRespawnPoint">The new Respawn Point.</param>
+    public void SetRespawnPoint(Transform newRespawnPoint)
+    {
+        _currentRespawnPoint = newRespawnPoint;
+    }
+
+    public IEnumerator Respawn()
+    {
+        // Sets fade to black
+        fadeImage.color = Color.black;
+
+        // Disable Movement
+        movementEnabled.CurrentValue = false;
+
+        // Move to Respawn Position
+        transform.position = _currentRespawnPoint.position;
+        transform.rotation = _currentRespawnPoint.rotation;
+
+        // Fade In
+        float timer = 0;
+
+        while (timer < respawnFadeInTime.CurrentValue)
+        {
+            Color color = fadeImage.color;
+            color.a = Mathf.Lerp(1, 0, timer / respawnFadeInTime.CurrentValue);
+            fadeImage.color = color;
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        // Enable Movement
+        movementEnabled.CurrentValue = true;
+
+        yield return null;
     }
 }
