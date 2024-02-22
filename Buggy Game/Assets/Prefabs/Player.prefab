@@ -335,6 +335,7 @@ GameObject:
   - component: {fileID: 3784391980573298407}
   - component: {fileID: 7173555795936899370}
   - component: {fileID: 8924071249744262265}
+  - component: {fileID: 1936972758510660196}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -609,6 +610,7 @@ MonoBehaviour:
     type: 2}
   unlockedPowers:
   - {fileID: 8463329232410119612}
+  - {fileID: 1936972758510660196}
   - {fileID: 7173555795936899370}
 --- !u!114 &8463329232410119612
 MonoBehaviour:
@@ -671,6 +673,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
   waterWalking: {fileID: 11400000, guid: 13c53afe7e7af46a0b029b2e2c4a7a0c, type: 2}
+--- !u!114 &1936972758510660196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097031227134608292}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8d2a672a6544d738bab914e6dc15cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  rootPosition: {fileID: 1097031227134608347}
+  silenceSphereRange: {fileID: 11400000, guid: 4f0a44dd883cc405985eec079bc0396a, type: 2}
+  silenceSphereGrowLerpTime: {fileID: 11400000, guid: 0c4c840de3f324aadb6a2e288c0fb4d7,
+    type: 2}
+  timeAdditionalCooldown: {fileID: 11400000, guid: e7400e9e213f742b099a8b83c67d2b64,
+    type: 2}
+  timeActive: {fileID: 11400000, guid: a1d5a76ca623943028ea9fbb1b5ee416, type: 2}
 --- !u!1 &1097031227623224458
 GameObject:
   m_ObjectHideFlags: 0

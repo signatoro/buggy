@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Sense_Sound : SenseSystem
 {
@@ -19,6 +21,9 @@ public class Sense_Sound : SenseSystem
     [Tooltip("Minimum Volume Threshold for this Life Form to Hear a sound")] [SerializeField]
     private GlobalFloat volumeThresholdData;
 
+    [Tooltip("What to do when disabled.")]
+    public UnityEvent OnDisabled = new();
+
     // The current volume threshold that can be modified.
     private float _currentVolumeThreshold;
 
@@ -27,6 +32,11 @@ public class Sense_Sound : SenseSystem
         base.Awake();
         _currentVolumeThreshold = volumeThresholdData.CurrentValue;
         volumeThresholdData.OnChanged.AddListener(SetCurrentVolumeThreshold);
+    }
+
+    private void OnDisable()
+    {
+        OnDisabled?.Invoke();
     }
 
     /// <summary>
