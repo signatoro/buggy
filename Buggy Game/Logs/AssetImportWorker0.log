@@ -1,30 +1,23 @@
-Unity Editor version:    2021.3.16f1 (4016570cf34f)
-Branch:                  2021.3/evg/staging/82bb020e-b03b1330/draft-0
-Build type:              Release
-Batch mode:              YES
-macOS version:           Version 12.6.2 (Build 21G320)
-Darwin version:          21.6.0
-Architecture:            arm64
-Running under Rosetta:   NO
-Available memory:        32768 MB
 Using pre-set license
-Pro License: YES
+Built from '2021.3/evg/staging/82bb020e-b03b1330/draft-0' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16122 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-/Users/samik/Documents/Stuff from Drive/2021.3.16f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity 2021.3.16f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/samik/Documents/buggy/Buggy Game
+C:/Users/letha/OneDrive/Documents/buggy/Buggy Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53734
-Successfully changed project path to: /Users/samik/Documents/buggy/Buggy Game
-/Users/samik/Documents/buggy/Buggy Game
+63751
+Successfully changed project path to: C:/Users/letha/OneDrive/Documents/buggy/Buggy Game
+C:/Users/letha/OneDrive/Documents/buggy/Buggy Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -54,1571 +47,215 @@ Successfully changed project path to: /Users/samik/Documents/buggy/Buggy Game
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4463347072] Host "[IP] 10.110.214.116 [Port] 0 [Flags] 2 [Guid] 2652050595 [EditorId] 2652050595 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-5.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [40284] Host "[IP] 172.29.192.1 [Port] 0 [Flags] 2 [Guid] 915424251 [EditorId] 915424251 [Version] 1048832 [Id] WindowsEditor(7,Snek) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [4463347072] Host "[IP] 10.110.214.116 [Port] 0 [Flags] 2 [Guid] 2652050595 [EditorId] 2652050595 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-5.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [40284] Host "[IP] 172.29.192.1 [Port] 0 [Flags] 2 [Guid] 915424251 [EditorId] 915424251 [Version] 1048832 [Id] WindowsEditor(7,Snek) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 132.12 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 671.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
-[Subsystems] Discovering subsystems at path /Users/samik/Documents/Stuff from Drive/2021.3.16f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/samik/Documents/buggy/Buggy Game/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/letha/OneDrive/Documents/buggy/Buggy Game/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
- preferred device: Apple M1 Max (high power)
-Metal devices available: 1
-0: Apple M1 Max (high power)
-Using device Apple M1 Max (high power)
-Initializing Metal device caps: Apple M1 Max
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti with Max-Q Design (ID=0x1f95)
+    Vendor:   NVIDIA
+    VRAM:     3949 MB
+    Driver:   31.0.15.3179
 Initialize mono
-Mono path[0] = '/Users/samik/Documents/Stuff from Drive/2021.3.16f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Users/samik/Documents/Stuff from Drive/2021.3.16f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Users/samik/Documents/Stuff from Drive/2021.3.16f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
+Mono path[0] = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56628
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Users/samik/Documents/Stuff from Drive/2021.3.16f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: /Users/samik/Documents/Stuff from Drive/2021.3.16f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: /Users/samik/Documents/Stuff from Drive/2021.3.16f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001661 seconds.
+Register platform support module: C:/Program Files/Unity 2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.044322 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 143.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 812.88 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.523 seconds
+- Completed reload, in  3.955 seconds
 Domain Reload Profiling:
-	ReloadAssembly (523ms)
-		BeginReloadAssembly (51ms)
+	ReloadAssembly (3957ms)
+		BeginReloadAssembly (249ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (398ms)
-			LoadAssemblies (52ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (2792ms)
+			LoadAssemblies (239ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (80ms)
+			SetupTypeCache (498ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (265ms)
+			RebuildScriptCaches (102ms)
+			SetupLoadedEditorAssemblies (1973ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (143ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (87ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (813ms)
+				BeforeProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (909ms)
+				ProcessInitializeOnLoadMethodAttributes (217ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006371 seconds.
+Registered in 0.037081 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 146.04 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 388.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.396 seconds
+- Completed reload, in  5.101 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1397ms)
-		BeginReloadAssembly (68ms)
+	ReloadAssembly (5104ms)
+		BeginReloadAssembly (324ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (20ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (1248ms)
-			LoadAssemblies (70ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (4473ms)
+			LoadAssemblies (265ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (251ms)
+			SetupTypeCache (971ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (76ms)
-			SetupLoadedEditorAssemblies (808ms)
+			RebuildScriptCaches (223ms)
+			SetupLoadedEditorAssemblies (2899ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (146ms)
-				BeforeProcessingInitializeOnLoad (106ms)
-				ProcessInitializeOnLoadAttributes (385ms)
-				ProcessInitializeOnLoadMethodAttributes (167ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launching external process: /Users/samik/Documents/Stuff from Drive/2021.3.16f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7344 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 82 unused Assets / (3.1 MB). Loaded Objects now: 7787.
-Memory consumption went from 351.4 MB to 348.3 MB.
-Total: 4.005209 ms (FindLiveObjects: 0.229167 ms CreateObjectMapping: 0.096917 ms MarkObjects: 2.899583 ms  DeleteObjects: 0.778959 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 188742.659590 seconds.
-  path: Assets/Art/GlowbugBackLeg.png
-  artifactKey: Guid(a051253b1b8629e4c9a98bad186b3d11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/GlowbugBackLeg.png using Guid(a051253b1b8629e4c9a98bad186b3d11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692e394b215c9ce4f0e31b1762087b40') in 0.261597 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.392111 seconds.
-  path: Assets/Art/GlowbugBackWing.png
-  artifactKey: Guid(7283abbeed810384ca8f394719d5daf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/GlowbugBackWing.png using Guid(7283abbeed810384ca8f394719d5daf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aafdb2b854f90afc00a93e6e85b8899f') in 0.110216 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.189277 seconds.
-  path: Assets/Art/GlowbugFrontLeg.png
-  artifactKey: Guid(4a309a099ce71ef44b5be6d907d896e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/GlowbugFrontLeg.png using Guid(4a309a099ce71ef44b5be6d907d896e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06b8fd0eab891ec6a57efa7199c9f5d4') in 0.110896 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.313800 seconds.
-  path: Assets/Art/GlowbugMidLeg.png
-  artifactKey: Guid(5b5f6df4fefaf4743be15244a463994b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/GlowbugMidLeg.png using Guid(5b5f6df4fefaf4743be15244a463994b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43cc97ab4718d2da91849f5c3eb36b75') in 0.109878 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.066891 seconds.
-  path: Assets/Art/GlowbugBody.png
-  artifactKey: Guid(4960261a4e410eb4bbed58e7fc0250e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/GlowbugBody.png using Guid(4960261a4e410eb4bbed58e7fc0250e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0e9a91b38cc4b19bac4ffbc9670d0a') in 0.113625 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.920551 seconds.
-  path: Assets/Art/GlowbugAntenna.png
-  artifactKey: Guid(c49c0734bfdfe274090932634f3f3649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/GlowbugAntenna.png using Guid(c49c0734bfdfe274090932634f3f3649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd52a8f1d45c677a4694f66db8a3dfcb') in 0.116304 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.136031 seconds.
-  path: Assets/Art/ButterflyAntenna.png
-  artifactKey: Guid(3349d6b67ad9e4943ace90cbe8c7f1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ButterflyAntenna.png using Guid(3349d6b67ad9e4943ace90cbe8c7f1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe9858cd206bd6af6f542d9ba057d659') in 0.114000 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.660323 seconds.
-  path: Assets/Art/ButterflyBody.png
-  artifactKey: Guid(2feda708c310d984eb043702a5f842aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ButterflyBody.png using Guid(2feda708c310d984eb043702a5f842aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8601ebdfb86b773d10fb3a7cbcb6ed7') in 0.108862 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.489159 seconds.
-  path: Assets/Art/ButterflyUpperWing.png
-  artifactKey: Guid(f11e4741298c71749bb72591a2679530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ButterflyUpperWing.png using Guid(f11e4741298c71749bb72591a2679530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd45015e14f4de8ba1289ff9966b21fd') in 0.113767 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.910179 seconds.
-  path: Assets/Art/ButterflyLowerWing.png
-  artifactKey: Guid(e76d87ad22bc9694d994da18af58d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ButterflyLowerWing.png using Guid(e76d87ad22bc9694d994da18af58d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5bb1401ac3af975ac3876fbd7752d9') in 0.112653 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.471320 seconds.
-  path: Assets/Art/ant-body.png
-  artifactKey: Guid(9ec6355f8daf146d39af553d994e9830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ant-body.png using Guid(9ec6355f8daf146d39af553d994e9830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de86efa117b27195850046a9182d4bf') in 0.034965 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.136236 seconds.
-  path: Assets/Art/Ant-back-leg.png
-  artifactKey: Guid(64a42af3fdfb446f5ae7e709d49d3e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Ant-back-leg.png using Guid(64a42af3fdfb446f5ae7e709d49d3e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87242d54a37ed4f19c9a9360c44ca36c') in 0.016464 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.513703 seconds.
-  path: Assets/Art/Ant-second-leg.png
-  artifactKey: Guid(e13503617683c4ebbb4a947b8cede9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Ant-second-leg.png using Guid(e13503617683c4ebbb4a947b8cede9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f88ee56862f11274aba315a54042543e') in 0.014236 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.392987 seconds.
-  path: Assets/Art/Ant-third-leg.png
-  artifactKey: Guid(b51b1ee01bd9743ac8c5d6553bab6049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Ant-third-leg.png using Guid(b51b1ee01bd9743ac8c5d6553bab6049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f1c1c439d405343a54b70b283c422c') in 0.012200 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.962349 seconds.
-  path: Assets/Art/Ant-mandable.png
-  artifactKey: Guid(2506f83a7852e44708d65876569a667a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Ant-mandable.png using Guid(2506f83a7852e44708d65876569a667a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02671158e7962b0b53fd033b3972c9ce') in 0.013015 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 287.560578 seconds.
-  path: Assets/Materials/Bug Test
-  artifactKey: Guid(2217a3ddc47d54b3087eaf281e0f6566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Bug Test using Guid(2217a3ddc47d54b3087eaf281e0f6566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20db5bd214c6ad35354c3a6037821b21') in 0.002113 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 158.225949 seconds.
-  path: Assets/Art/ButterflyUpperWing.png
-  artifactKey: Guid(f11e4741298c71749bb72591a2679530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ButterflyUpperWing.png using Guid(f11e4741298c71749bb72591a2679530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ab98a3a1818e11f20abbd382c620aa') in 0.122229 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 436.489577 seconds.
-  path: Assets/Art/ButterflyUpperWing.png
-  artifactKey: Guid(f11e4741298c71749bb72591a2679530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ButterflyUpperWing.png using Guid(f11e4741298c71749bb72591a2679530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6811d6dee7757c302ee1aadd76b2b033') in 0.014544 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 391.745711 seconds.
-  path: Assets/Scripts/Utility/DynamicSpriteSorting.cs
-  artifactKey: Guid(5cef2eba39b2c41d8992ee715007d209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Utility/DynamicSpriteSorting.cs using Guid(5cef2eba39b2c41d8992ee715007d209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d1db54fc9666af0a49fc2b75a0b6d01') in 0.120093 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001573 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x2c9ce7000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.077 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1080ms)
-		BeginReloadAssembly (205ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (99ms)
-		EndReloadAssembly (807ms)
-			LoadAssemblies (41ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (233ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (403ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (304ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6920 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7811.
-Memory consumption went from 333.0 MB to 329.9 MB.
-Total: 3.659166 ms (FindLiveObjects: 0.226583 ms CreateObjectMapping: 0.106250 ms MarkObjects: 2.764250 ms  DeleteObjects: 0.561542 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 150.219508 seconds.
-  path: Assets/Scripts/Utility/DynamicSpriteSorting.cs
-  artifactKey: Guid(5cef2eba39b2c41d8992ee715007d209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Utility/DynamicSpriteSorting.cs using Guid(5cef2eba39b2c41d8992ee715007d209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08c9077854b7f209f3d464db6740025f') in 0.311169 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001540 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16f887000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.065 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1066ms)
-		BeginReloadAssembly (127ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (66ms)
-		EndReloadAssembly (873ms)
-			LoadAssemblies (42ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (262ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (426ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (324ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.05 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6920 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7812.
-Memory consumption went from 333.0 MB to 329.9 MB.
-Total: 3.717792 ms (FindLiveObjects: 0.211625 ms CreateObjectMapping: 0.094166 ms MarkObjects: 2.939000 ms  DeleteObjects: 0.472375 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001740 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x2b8687000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.313 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1313ms)
-		BeginReloadAssembly (314ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (182ms)
-		EndReloadAssembly (929ms)
-			LoadAssemblies (101ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (266ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (457ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (350ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.77 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6920 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7813.
-Memory consumption went from 333.0 MB to 329.9 MB.
-Total: 4.022291 ms (FindLiveObjects: 0.236333 ms CreateObjectMapping: 0.096500 ms MarkObjects: 3.175792 ms  DeleteObjects: 0.512416 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002404 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16f52b000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.039 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1040ms)
-		BeginReloadAssembly (123ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (66ms)
-		EndReloadAssembly (851ms)
-			LoadAssemblies (55ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (249ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (413ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (317ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.79 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6920 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7814.
-Memory consumption went from 333.0 MB to 329.9 MB.
-Total: 3.910209 ms (FindLiveObjects: 0.229750 ms CreateObjectMapping: 0.094291 ms MarkObjects: 3.096542 ms  DeleteObjects: 0.488875 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1891.474592 seconds.
-  path: Assets/Data/Global Variables/Utils
-  artifactKey: Guid(f6e39a646456549ea8fad890c9bfdf76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Global Variables/Utils using Guid(f6e39a646456549ea8fad890c9bfdf76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c38070ab81d346e2ceec5ffa6df76e') in 0.008598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.218844 seconds.
-  path: Assets/Data/Global Variables/Utils/V_MaxSpriteSortingOrderValue.asset
-  artifactKey: Guid(2c222493d478b4fbb83197d2103b4ab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Global Variables/Utils/V_MaxSpriteSortingOrderValue.asset using Guid(2c222493d478b4fbb83197d2103b4ab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961ab993a419766538acf9fde0047c1a') in 0.133850 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 74.319177 seconds.
-  path: Assets/Data/Global Variables/Utils/V_ZeroSortingOrderDistance.asset
-  artifactKey: Guid(76b9674d177ca4a29b456c37b423239b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Global Variables/Utils/V_ZeroSortingOrderDistance.asset using Guid(76b9674d177ca4a29b456c37b423239b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6db9f736b0c19d02cfa534a9dccabb') in 0.002028 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 39.153820 seconds.
-  path: Assets/Data/Global Variables/Utils/V_ZeroSortingOrderDistance.asset
-  artifactKey: Guid(76b9674d177ca4a29b456c37b423239b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Global Variables/Utils/V_ZeroSortingOrderDistance.asset using Guid(76b9674d177ca4a29b456c37b423239b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8153a5e1d97a5c681a9554c3fd6a5738') in 0.001311 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.292772 seconds.
-  path: Assets/Data/Global Variables/Utils/V_MaxSpriteSortingOrderValue.asset
-  artifactKey: Guid(2c222493d478b4fbb83197d2103b4ab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Global Variables/Utils/V_MaxSpriteSortingOrderValue.asset using Guid(2c222493d478b4fbb83197d2103b4ab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a7ead9f04dac99795e082130136a50') in 0.002331 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002438 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.009 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1010ms)
-		BeginReloadAssembly (135ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (71ms)
-		EndReloadAssembly (814ms)
-			LoadAssemblies (45ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (241ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (393ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (299ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6920 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7815.
-Memory consumption went from 337.2 MB to 334.1 MB.
-Total: 3.614292 ms (FindLiveObjects: 0.213083 ms CreateObjectMapping: 0.088584 ms MarkObjects: 2.830916 ms  DeleteObjects: 0.480833 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001535 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.212 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1213ms)
-		BeginReloadAssembly (121ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (67ms)
-		EndReloadAssembly (1003ms)
-			LoadAssemblies (83ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (315ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (69ms)
-			SetupLoadedEditorAssemblies (422ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (314ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (29ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7820.
-Memory consumption went from 337.3 MB to 334.2 MB.
-Total: 3.548125 ms (FindLiveObjects: 0.218291 ms CreateObjectMapping: 0.084959 ms MarkObjects: 2.773583 ms  DeleteObjects: 0.470750 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001400 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.023 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1023ms)
-		BeginReloadAssembly (131ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (69ms)
-		EndReloadAssembly (831ms)
-			LoadAssemblies (43ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (247ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (406ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (71ms)
-				ProcessInitializeOnLoadAttributes (304ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7821.
-Memory consumption went from 337.3 MB to 334.2 MB.
-Total: 3.616375 ms (FindLiveObjects: 0.229542 ms CreateObjectMapping: 0.089500 ms MarkObjects: 2.816666 ms  DeleteObjects: 0.480000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001450 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.989 seconds
-Domain Reload Profiling:
-	ReloadAssembly (989ms)
-		BeginReloadAssembly (131ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (73ms)
-		EndReloadAssembly (797ms)
-			LoadAssemblies (41ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (221ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (397ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (301ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7822.
-Memory consumption went from 337.3 MB to 334.2 MB.
-Total: 3.699959 ms (FindLiveObjects: 0.224625 ms CreateObjectMapping: 0.084708 ms MarkObjects: 2.880709 ms  DeleteObjects: 0.509292 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001513 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.040 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1041ms)
-		BeginReloadAssembly (162ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (78ms)
-		EndReloadAssembly (809ms)
-			LoadAssemblies (81ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (213ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (409ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (307ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7823.
-Memory consumption went from 337.3 MB to 334.2 MB.
-Total: 3.897333 ms (FindLiveObjects: 0.239625 ms CreateObjectMapping: 0.095708 ms MarkObjects: 3.036875 ms  DeleteObjects: 0.524375 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001475 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.193 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1194ms)
-		BeginReloadAssembly (173ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (94ms)
-		EndReloadAssembly (928ms)
-			LoadAssemblies (71ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (300ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (430ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (329ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7824.
-Memory consumption went from 337.4 MB to 334.2 MB.
-Total: 3.682917 ms (FindLiveObjects: 0.230083 ms CreateObjectMapping: 0.095667 ms MarkObjects: 2.821667 ms  DeleteObjects: 0.534708 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001418 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.023 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1023ms)
-		BeginReloadAssembly (113ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (849ms)
-			LoadAssemblies (39ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (225ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (443ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (336ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7825.
-Memory consumption went from 337.3 MB to 334.2 MB.
-Total: 3.875708 ms (FindLiveObjects: 0.245250 ms CreateObjectMapping: 0.099333 ms MarkObjects: 3.018042 ms  DeleteObjects: 0.512250 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001429 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.165 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1166ms)
-		BeginReloadAssembly (112ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (970ms)
-			LoadAssemblies (138ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (246ms)
-			ReleaseScriptCaches (6ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (434ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (323ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.74 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7826.
-Memory consumption went from 337.4 MB to 334.3 MB.
-Total: 3.717584 ms (FindLiveObjects: 0.228917 ms CreateObjectMapping: 0.098292 ms MarkObjects: 2.901791 ms  DeleteObjects: 0.487917 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001552 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.151 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1152ms)
-		BeginReloadAssembly (196ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (80ms)
-		EndReloadAssembly (895ms)
-			LoadAssemblies (109ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (254ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (423ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (318ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (28ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.77 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7827.
-Memory consumption went from 337.4 MB to 334.3 MB.
-Total: 3.950375 ms (FindLiveObjects: 0.235042 ms CreateObjectMapping: 0.093875 ms MarkObjects: 3.059375 ms  DeleteObjects: 0.561375 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001674 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.063 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1063ms)
-		BeginReloadAssembly (138ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (71ms)
-		EndReloadAssembly (858ms)
-			LoadAssemblies (48ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (246ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (419ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (316ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7828.
-Memory consumption went from 337.2 MB to 334.1 MB.
-Total: 3.818292 ms (FindLiveObjects: 0.242500 ms CreateObjectMapping: 0.098167 ms MarkObjects: 2.939291 ms  DeleteObjects: 0.537875 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001470 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.023 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1024ms)
-		BeginReloadAssembly (124ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (66ms)
-		EndReloadAssembly (836ms)
-			LoadAssemblies (39ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (238ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (413ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (311ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (23ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7829.
-Memory consumption went from 337.2 MB to 334.1 MB.
-Total: 3.688792 ms (FindLiveObjects: 0.220833 ms CreateObjectMapping: 0.093291 ms MarkObjects: 2.884292 ms  DeleteObjects: 0.489625 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001738 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.980 seconds
-Domain Reload Profiling:
-	ReloadAssembly (981ms)
-		BeginReloadAssembly (131ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (67ms)
-		EndReloadAssembly (784ms)
-			LoadAssemblies (43ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (227ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (389ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (294ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.76 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7830.
-Memory consumption went from 337.2 MB to 334.1 MB.
-Total: 3.798875 ms (FindLiveObjects: 0.231667 ms CreateObjectMapping: 0.097333 ms MarkObjects: 2.973375 ms  DeleteObjects: 0.495791 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003042 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.017 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1018ms)
-		BeginReloadAssembly (139ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (75ms)
-		EndReloadAssembly (814ms)
-			LoadAssemblies (46ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (223ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (408ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (71ms)
-				ProcessInitializeOnLoadAttributes (309ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7831.
-Memory consumption went from 337.2 MB to 334.1 MB.
-Total: 3.725292 ms (FindLiveObjects: 0.216416 ms CreateObjectMapping: 0.089042 ms MarkObjects: 2.942792 ms  DeleteObjects: 0.476500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001518 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.017 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1018ms)
-		BeginReloadAssembly (120ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (63ms)
-		EndReloadAssembly (833ms)
-			LoadAssemblies (42ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (231ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (412ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (305ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (23ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6920 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7832.
-Memory consumption went from 337.2 MB to 334.1 MB.
-Total: 3.804292 ms (FindLiveObjects: 0.211209 ms CreateObjectMapping: 0.090416 ms MarkObjects: 2.980084 ms  DeleteObjects: 0.522083 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001757 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.064 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1065ms)
-		BeginReloadAssembly (136ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (73ms)
-		EndReloadAssembly (866ms)
-			LoadAssemblies (45ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (244ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (427ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (325ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				RefreshPlugins (389ms)
+				BeforeProcessingInitializeOnLoad (344ms)
+				ProcessInitializeOnLoadAttributes (1317ms)
+				ProcessInitializeOnLoadMethodAttributes (805ms)
+				AfterProcessingInitializeOnLoad (35ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (26ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
+Refreshing native plugins compatible for Editor in 6.90 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6920 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7833.
-Memory consumption went from 337.2 MB to 334.1 MB.
-Total: 3.571584 ms (FindLiveObjects: 0.217417 ms CreateObjectMapping: 0.084333 ms MarkObjects: 2.790709 ms  DeleteObjects: 0.478625 ms)
+Unloading 7345 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 78 unused Assets / (5.3 MB). Loaded Objects now: 7790.
+Memory consumption went from 351.9 MB to 346.5 MB.
+Total: 19.434300 ms (FindLiveObjects: 1.244800 ms CreateObjectMapping: 1.255300 ms MarkObjects: 12.569700 ms  DeleteObjects: 4.359000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 3558.136348 seconds.
-  path: Assets/Data/Prefabs/Life Forms/LF_BasicLifeForm.prefab
-  artifactKey: Guid(b5feee2d80cc44451a442009b58d98f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Prefabs/Life Forms/LF_BasicLifeForm.prefab using Guid(b5feee2d80cc44451a442009b58d98f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+  Time since last request: 615722.805128 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_NightAntTest.prefab
+  artifactKey: Guid(568cce44b20ff400bb61b5c25528e354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_NightAntTest.prefab using Guid(568cce44b20ff400bb61b5c25528e354) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Night Ant
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:Log (object)
 Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
 Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Adding Night Ant to Ant as a Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:151)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 151)
+
+Updating Ecosystem for Ant
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+UnityEditor.PrefabUtility:IsAnyPrefabInstanceRoot (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector:CalculatePrefabStatus ()
+UnityEditor.GameObjectInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
 
 (Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
 
 Updating Ecosystem for Has Predator
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:Log (object)
 Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
 Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+UnityEditor.PrefabUtility:IsAnyPrefabInstanceRoot (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector:CalculatePrefabStatus ()
+UnityEditor.GameObjectInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
 
 (Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
 
 Updating Ecosystem for Has Predator 2
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:Log (object)
 Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
 Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+UnityEditor.PrefabUtility:IsAnyPrefabInstanceRoot (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector:CalculatePrefabStatus ()
+UnityEditor.GameObjectInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
 
 (Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
 
- -> (artifact id: '4ac24053ec2992c34a7c718c46f2e063') in 0.061326 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001449 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.026 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1027ms)
-		BeginReloadAssembly (131ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (73ms)
-		EndReloadAssembly (832ms)
-			LoadAssemblies (51ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (238ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (409ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (71ms)
-				ProcessInitializeOnLoadAttributes (311ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6920 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7834.
-Memory consumption went from 341.4 MB to 338.3 MB.
-Total: 3.855125 ms (FindLiveObjects: 0.230958 ms CreateObjectMapping: 0.089709 ms MarkObjects: 3.040167 ms  DeleteObjects: 0.493625 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002277 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.021 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1021ms)
-		BeginReloadAssembly (141ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (80ms)
-		EndReloadAssembly (817ms)
-			LoadAssemblies (49ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (243ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (395ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (298ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.73 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6920 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7835.
-Memory consumption went from 341.4 MB to 338.3 MB.
-Total: 4.051792 ms (FindLiveObjects: 0.207042 ms CreateObjectMapping: 0.084583 ms MarkObjects: 3.168917 ms  DeleteObjects: 0.590500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001446 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16bedf000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.992 seconds
-Domain Reload Profiling:
-	ReloadAssembly (992ms)
-		BeginReloadAssembly (100ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (834ms)
-			LoadAssemblies (32ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (213ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (439ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (337ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6920 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 65 unused Assets / (3.1 MB). Loaded Objects now: 7836.
-Memory consumption went from 341.5 MB to 338.4 MB.
-Total: 3.554250 ms (FindLiveObjects: 0.226292 ms CreateObjectMapping: 0.096167 ms MarkObjects: 2.690666 ms  DeleteObjects: 0.540667 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+ -> (artifact id: '72f10c9256e19507b6c3f1979fc70a76') in 5.636148 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 573.205607 seconds.
+  Time since last request: 0.000141 seconds.
   path: Assets/Data/Prefabs/Life Forms/LF_Butterfly.prefab
   artifactKey: Guid(e1d785e3d54e18d408092ea9104aeb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Data/Prefabs/Life Forms/LF_Butterfly.prefab using Guid(e1d785e3d54e18d408092ea9104aeb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:Log (object)
@@ -1628,7 +265,7 @@ Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
 (Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
 
 Updating Ecosystem for Has Predator
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:Log (object)
@@ -1638,7 +275,7 @@ Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
 (Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
 
 Updating Ecosystem for Has Predator 2
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:Log (object)
@@ -1647,4 +284,1564 @@ Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
 
 (Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
 
- -> (artifact id: '53a17cc6e205e244beddc63d82a31d4e') in 0.744452 seconds 
+ -> (artifact id: 'a630c96a79c7e4b6e6af27c0072aacfa') in 0.421702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_AntTestSound.prefab
+  artifactKey: Guid(cfa663d1974c348cea2084db27b1c357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_AntTestSound.prefab using Guid(cfa663d1974c348cea2084db27b1c357) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Night Ant
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Adding Night Ant to Ant as a Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:151)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 151)
+
+Updating Ecosystem for Ant
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Sound Ant
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Adding Sound Ant to Player as a Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:158)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 158)
+
+Updating Ecosystem for Player
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+UnityEditor.PrefabUtility:IsAnyPrefabInstanceRoot (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector:CalculatePrefabStatus ()
+UnityEditor.GameObjectInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+UnityEditor.PrefabUtility:IsAnyPrefabInstanceRoot (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector:CalculatePrefabStatus ()
+UnityEditor.GameObjectInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+UnityEditor.PrefabUtility:IsAnyPrefabInstanceRoot (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector:CalculatePrefabStatus ()
+UnityEditor.GameObjectInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'd2dda5ac7201d86af84bfb18680f44cc') in 0.183124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_BasicLifeForm.prefab
+  artifactKey: Guid(b5feee2d80cc44451a442009b58d98f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_BasicLifeForm.prefab using Guid(b5feee2d80cc44451a442009b58d98f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '8d316cf103f55f5f2632d97aa95f1f7b') in 0.079734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '4d0617d61a36fc365d31ddad167993dc') in 0.374777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 359.649028 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '0e43d6c29b078790ffc078c55db11552') in 0.213815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.932170 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '956fe64b5b41f7f82afcfe3456a2c551') in 0.137602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.785133 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '20c033a88552be70bfb3de9139d7638c') in 0.144200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.727440 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'bed930dc0cad27f2ebb3ed71d55d24ea') in 0.140577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.841465 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '7a77172e8b16740035e354594a564b3e') in 0.613528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.188185 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'd6f00dd65e6b3777d63adc26b514f9fa') in 0.560157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.946731 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '75d18605e2b771c74d0562c66c2b9ef2') in 0.168776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.521415 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '4c29cedca7af3780c25c70d47ad93621') in 0.153881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.081817 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'dfc5597c6dedbdcaaf25c6050eb3d45c') in 0.131979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.505167 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'c69fc61f35feaa677c53feb99486d763') in 0.174574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.310408 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '5c29f5c1ed584f27b7c8316d04c1cc6f') in 0.170984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.017892 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '40b94b4f4b9e2388004c20ce3e0a72fc') in 0.162982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.949477 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab
+  artifactKey: Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Beetle.prefab using Guid(fc5d1ff7e7448a84fa60047aa39f53d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '7cc041cd847f5d5caea96cd99dc0953c') in 0.132707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.525290 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Butterfly.prefab
+  artifactKey: Guid(e1d785e3d54e18d408092ea9104aeb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Butterfly.prefab using Guid(e1d785e3d54e18d408092ea9104aeb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '2a9818e36cafad5a112c6d183d93605a') in 0.300542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.992294 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Butterfly.prefab
+  artifactKey: Guid(e1d785e3d54e18d408092ea9104aeb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Butterfly.prefab using Guid(e1d785e3d54e18d408092ea9104aeb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'fc356319eb95eba5f1a7dd84319180b5') in 0.288853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.104235 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Butterfly.prefab
+  artifactKey: Guid(e1d785e3d54e18d408092ea9104aeb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Butterfly.prefab using Guid(e1d785e3d54e18d408092ea9104aeb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'b2c868b845c7d1b79b4678affb467025') in 0.139136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.421864 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Butterfly.prefab
+  artifactKey: Guid(e1d785e3d54e18d408092ea9104aeb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Butterfly.prefab using Guid(e1d785e3d54e18d408092ea9104aeb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'e623eb32218d102542c63e9d7b5f9681') in 0.128216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.194432 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_HIder.prefab
+  artifactKey: Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_HIder.prefab using Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '1a3dd6166c0d53d888664fe4e06faf6f') in 0.110161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.262472 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_HIder.prefab
+  artifactKey: Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_HIder.prefab using Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '3decd8d194c886ddf17e7700680576d6') in 0.108366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.533817 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_HIder.prefab
+  artifactKey: Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_HIder.prefab using Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'e17c3d10d5eed9e54d7c56199e5d46f2') in 0.164014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.247908 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_HIder.prefab
+  artifactKey: Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_HIder.prefab using Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'f4e87d887d87f89f14526f0b45affec1') in 0.135341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.436400 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_HIder.prefab
+  artifactKey: Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_HIder.prefab using Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '67450ec8f42eda0484a23ace257bfe8e') in 0.120271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.064445 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_HIder.prefab
+  artifactKey: Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_HIder.prefab using Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '0d9306b969b34c207aa351a6d587a5ce') in 0.077200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.384403 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_HIder.prefab
+  artifactKey: Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_HIder.prefab using Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '1a482ed3b1dab680db6f8b2e9c29c33c') in 0.103462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.678771 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_HIder.prefab
+  artifactKey: Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_HIder.prefab using Guid(a0a881c06f68fee4f9a591ab96544ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '7361e9052a8531fdc735ca903683f5df') in 0.080706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.145667 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '8f7ea4bc4eecefe9655f9e6f2dd5c346') in 0.178362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.922153 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '7ee46543d5c482b829703ef7050b1b57') in 0.169936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.430992 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '801b50733f0c75252de2614e1291cbd7') in 0.171293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.362176 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'ac3724c000224a707288ab8532ff6609') in 0.162809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.642893 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'abac6dfab3185714a25f808551af5aa2') in 0.167049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.959536 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'a27fc506afa702409b083a31aab1d771') in 0.213793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.548862 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '2ad1e938a6fde909e709ca2ddb9b2038') in 0.197387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.943010 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '2bcb356cd15bb8a239c04de68c1e74ef') in 0.233172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.504567 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '36915309f00e92a33805e931e31a10cb') in 0.188393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.098994 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'acaccc6d41124f2c951ea2d4669de939') in 0.204010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.425630 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '1e5f8854845c9a878fa56b08c65cb572') in 0.193151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.905664 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: '0a67501c28fde0e6cd554cfb56f6a41d') in 0.203802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 77.992739 seconds.
+  path: Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab
+  artifactKey: Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefabs/Life Forms/LF_Glowbug.prefab using Guid(885bdb423f0fbb04fb5712247d02e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Updating Ecosystem for Has Prey
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+Updating Ecosystem for Has Predator 2
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Species:UpdateConnectedEcosystem () (at Assets/Scripts/Bug Scripts/Species.cs:52)
+Species:OnValidate () (at Assets/Scripts/Bug Scripts/Species.cs:43)
+
+(Filename: Assets/Scripts/Bug Scripts/Species.cs Line: 52)
+
+ -> (artifact id: 'c853451987fb7311e845e8f329e3bcfb') in 0.351276 seconds 
