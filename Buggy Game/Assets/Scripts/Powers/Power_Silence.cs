@@ -82,6 +82,7 @@ public class Power_Silence : Power
         if (!IsActive())
         {
             StartCoroutine(ExecutePower());
+            StartCoroutine(StopPower());
         }
     }
 
@@ -95,7 +96,6 @@ public class Power_Silence : Power
         yield return StartCoroutine(GrowSphere());
         yield return StartCoroutine(MaintainSphere());
         yield return StartCoroutine(ShrinkSphere());
-        yield return StartCoroutine(StopPower());
         yield return null;
     }
 
@@ -105,7 +105,8 @@ public class Power_Silence : Power
     /// <returns>Nothing.</returns>
     public override IEnumerator StopPower()
     {
-        yield return new WaitForSeconds(timeAdditionalCooldown.CurrentValue);
+        yield return new WaitForSeconds(timeAdditionalCooldown.CurrentValue + timeActive.CurrentValue +
+                                        2 * silenceSphereGrowLerpTime.CurrentValue);
         yield return StartCoroutine(ResetPower());
         yield return null;
     }
