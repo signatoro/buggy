@@ -43,15 +43,19 @@ public class Sense_Sight : SenseSystem
         foreach (Collider collider in hitColliders)
         {
             if (collider.GetComponent<CatchableLifeForm>() &&
-                collider.GetComponent<CatchableLifeForm>() != GetComponent<CatchableLifeForm>())
+                collider.GetComponent<CatchableLifeForm>() != GetComponent<CatchableLifeForm>() &&
+                collider.GetComponent<CatchableLifeForm>().CanBeSeen())
             {
                 CatchableLifeForm lifeForm = collider.GetComponent<CatchableLifeForm>();
                 Vector3 directionToLifeForm = lifeForm.transform.position - root.position;
-                if (_catchableLifeForm.Species.HasConnectionToSpecies(lifeForm.Species) &&
-                    Physics.Raycast(root.position, directionToLifeForm, out RaycastHit hit, radius.CurrentValue) &&
-                    hit.transform.GetComponent<CatchableLifeForm>() &&
-                    hit.transform.GetComponent<CatchableLifeForm>() == lifeForm &&
-                    Vector3.Angle(directionToLifeForm, root.forward) <= fieldOfViewAngle.CurrentValue)
+
+                bool connection = _catchableLifeForm.Species.HasConnectionToSpecies(lifeForm.Species);
+                bool hitSomething = Physics.Raycast(root.position, directionToLifeForm, out RaycastHit hit,
+                    radius.CurrentValue);
+                bool hasCatchableLifeForm = hit.transform.GetComponent<CatchableLifeForm>();
+                bool sameLifeForm = hit.transform.GetComponent<CatchableLifeForm>() == lifeForm;
+                bool inAngle = Vector3.Angle(directionToLifeForm, root.forward) <= fieldOfViewAngle.CurrentValue;
+                if (connection && hitSomething && hasCatchableLifeForm && sameLifeForm && inAngle)
                 {
                     Vector3 position = lifeForm.transform.position;
                     sightDatas.Add(new SightData(lifeForm, position,

@@ -16,6 +16,8 @@ public sealed class CatchableLifeForm : MonoBehaviour
 
     private readonly List<CatchableModule> _catchableModules = new();
 
+    private bool _canBeSeen = true;
+
     /// <summary>
     /// Can this life form be caught?
     /// </summary>
@@ -49,4 +51,16 @@ public sealed class CatchableLifeForm : MonoBehaviour
     /// </summary>
     /// <param name="catchableModule">A Catchable Module that you are adding for consideration.</param>
     public void AddModule(CatchableModule catchableModule) => _catchableModules.Add(catchableModule);
+
+    /// <summary>
+    /// Can this Life Form be seen?
+    /// </summary>
+    /// <returns>True if can be seen, else false.</returns>
+    public bool CanBeSeen() => _canBeSeen;
+
+    /// <summary>
+    /// Sets whether or not this Life Form is visible.
+    /// </summary>
+    /// <param name="visible">Should it be visible or invisible?</param>
+    public void SetVisibility(bool visible) => _canBeSeen = visible;
 }

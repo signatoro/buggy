@@ -336,6 +336,7 @@ GameObject:
   - component: {fileID: 7173555795936899370}
   - component: {fileID: 8924071249744262265}
   - component: {fileID: 1936972758510660196}
+  - component: {fileID: 8270775979415227083}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -392,7 +393,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: 0579e22fc66b84b76aba388371b671b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -611,6 +612,7 @@ MonoBehaviour:
   unlockedPowers:
   - {fileID: 8463329232410119612}
   - {fileID: 1936972758510660196}
+  - {fileID: 8270775979415227083}
   - {fileID: 7173555795936899370}
 --- !u!114 &8463329232410119612
 MonoBehaviour:
@@ -643,6 +645,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   root: {fileID: 1097031227134608347}
+  OnDisabled:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &7173555795936899370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,6 +698,24 @@ MonoBehaviour:
   timeAdditionalCooldown: {fileID: 11400000, guid: e7400e9e213f742b099a8b83c67d2b64,
     type: 2}
   timeActive: {fileID: 11400000, guid: a1d5a76ca623943028ea9fbb1b5ee416, type: 2}
+--- !u!114 &8270775979415227083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097031227134608292}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af26696c98d54f559886ed512533a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  renderers:
+  - {fileID: 1097031227134608345}
+  invisibilityAlpha: {fileID: 11400000, guid: a98feb5ff02f74faaa56cba218b6f713, type: 2}
+  invisibilityLerpTime: {fileID: 11400000, guid: cfc22e58d5bfa401bb6ec2f778ede0c2,
+    type: 2}
 --- !u!1 &1097031227623224458
 GameObject:
   m_ObjectHideFlags: 0
