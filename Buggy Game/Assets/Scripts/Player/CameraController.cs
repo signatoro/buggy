@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -34,6 +33,11 @@ public class CameraController : MonoBehaviour
         Cursor.visible = false;
         camera.transform.position = standingCameraTransform.position;
     }
+
+    /// <summary>
+    /// Gets the Camera.
+    /// </summary>
+    public Camera Camera => camera;
 
     /// <summary>
     /// Sets up the variable for is crouching.
