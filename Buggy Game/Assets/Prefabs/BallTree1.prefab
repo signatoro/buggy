@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8936545005493412459}
   - component: {fileID: 2077323354375541629}
-  - component: {fileID: 6865363147190190778}
   m_Layer: 0
   m_Name: BallTree1
   m_TagString: Untagged
@@ -73,20 +72,6 @@ LODGroup:
     - renderer: {fileID: 906703162470869325}
     - renderer: {fileID: 720377968645233876}
   m_Enabled: 1
---- !u!136 &6865363147190190778
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443111459755031112}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 4.2126846
-  m_Height: 23.937943
-  m_Direction: 1
-  m_Center: {x: 0.47, y: 8.38, z: 0.7}
 --- !u!1001 &4675713044174895612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,36 +134,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4683669308469848369, guid: 834d6c63baa2aea49a1a5146f9fd7e03,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 68f48a01171c54466a333fc11d2e2317, type: 2}
-    - target: {fileID: -4587302668392987624, guid: 834d6c63baa2aea49a1a5146f9fd7e03,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2b3db6be9c26c4042a11073bd371bdde, type: 2}
-    - target: {fileID: -3955229406428289752, guid: 834d6c63baa2aea49a1a5146f9fd7e03,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 36370935d41084ce485d51caa1549357, type: 2}
-    - target: {fileID: -2571118854743697038, guid: 834d6c63baa2aea49a1a5146f9fd7e03,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 85eec1577909a489d81d9ac6b1eac6e7, type: 2}
     - target: {fileID: 919132149155446097, guid: 834d6c63baa2aea49a1a5146f9fd7e03,
         type: 3}
       propertyPath: m_Name
       value: SmallBallTree
       objectReference: {fileID: 0}
-    - target: {fileID: 5509654439515443377, guid: 834d6c63baa2aea49a1a5146f9fd7e03,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 64e7afa386ca54c16890d1c9293448c7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 834d6c63baa2aea49a1a5146f9fd7e03, type: 3}
 --- !u!23 &51185266450791908 stripped

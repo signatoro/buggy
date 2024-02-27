@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_Gravity
   m_EditorClassIdentifier: 
   Description: Strength of gravity.
-  initialValue: 4.5
-  currentValue: 4.5
+  initialValue: 2
+  currentValue: 0
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
