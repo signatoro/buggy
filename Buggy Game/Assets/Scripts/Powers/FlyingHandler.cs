@@ -42,7 +42,7 @@ public class FlyingHandler : MonoBehaviour
     /// <returns>Nothing.</returns>
     private IEnumerator AttemptToFly(Power_Fly fly)
     {
-        if (!fly.IsActive())
+        if (!fly.IsActive() && fly.enabled)
         {
             fly.AttemptToExecute();
 

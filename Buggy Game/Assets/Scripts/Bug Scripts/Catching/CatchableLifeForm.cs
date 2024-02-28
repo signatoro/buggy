@@ -23,13 +23,14 @@ public sealed class CatchableLifeForm : MonoBehaviour
     /// </summary>
     /// <param name="data">The current Bug Inventory Data.</param>
     /// <returns>True if can be caught, else false.</returns>
-    public bool CanBeCaught(BugInventoryData data) => CatchButRelease() && data.CanCatchBug(species);
+    public bool CanBeCaught(BugInventoryData data) => CatchButRelease(data) && data.CanCatchBug(species);
 
     /// <summary>
     /// If this bug is able to be caught does it need to be released?
     /// </summary>
     /// <returns>True if it can at least be released, else false.</returns>
-    public bool CatchButRelease() => _catchableModules.All(cMod => cMod.CatchCheck());
+    public bool CatchButRelease(BugInventoryData data) =>
+        _catchableModules.All(cMod => cMod.CatchCheck()) && data.AnyJarsRemaining();
 
     /// <summary>
     /// Gets the Species.

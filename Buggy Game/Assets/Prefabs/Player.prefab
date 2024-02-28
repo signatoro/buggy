@@ -610,11 +610,21 @@ MonoBehaviour:
   usePowerKeys: {fileID: 11400000, guid: 83dca6e3189f44e8eaa77876ed56284b, type: 2}
   swapToNextPowerKeys: {fileID: 11400000, guid: 73c863a66362c40cb81656ebb22cb117,
     type: 2}
-  unlockedPowers:
-  - {fileID: 8463329232410119612}
-  - {fileID: 1936972758510660196}
-  - {fileID: 8270775979415227083}
-  - {fileID: 7173555795936899370}
+  unlockedPowers: []
+  useableUnlockablePowers:
+  - PowerUnlock: {fileID: 8463329232410119612}
+    SpeciesUnlock: {fileID: 11400000, guid: 33f5955bd402942c0b5ef452adb48ff5, type: 2}
+  - PowerUnlock: {fileID: 1936972758510660196}
+    SpeciesUnlock: {fileID: 11400000, guid: 5af459e0a650046f09674917c6f06a3a, type: 2}
+  - PowerUnlock: {fileID: 8270775979415227083}
+    SpeciesUnlock: {fileID: 11400000, guid: 5c232db63838c4d25a2e3d4741bef656, type: 2}
+  - PowerUnlock: {fileID: 7173555795936899370}
+    SpeciesUnlock: {fileID: 11400000, guid: 138d4195f69ad48109de5ed79711945d, type: 2}
+  passiveUnlockablePowers:
+  - PowerUnlock: {fileID: 6322367563600094630}
+    UnlockCount: {fileID: 11400000, guid: 99600c89e8f6543c4b97b00caae38718, type: 2}
+  - PowerUnlock: {fileID: 8924071249744262265}
+    UnlockCount: {fileID: 11400000, guid: 5b92b8d09763846b083f937f9e4fe71a, type: 2}
 --- !u!114 &8463329232410119612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,7 +666,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097031227134608292}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31142cd9898b54b828e129f9039fc0ce, type: 3}
   m_Name: 
@@ -672,7 +682,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097031227134608292}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49bae2d3918f74bf58358af82c74ee7e, type: 3}
   m_Name: 
@@ -724,7 +734,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097031227134608292}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66fcd7428a76647c28f16d6137f20cde, type: 3}
   m_Name: 

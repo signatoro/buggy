@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53c9ee574e69f45d29b74d26b0a27d57, type: 3}
-  m_Name: V_WillReleaseColor
+  m_Script: {fileID: 11500000, guid: 95b05ddecbd854831a66608b5e7e2326, type: 3}
+  m_Name: V_UnlockWaterWalking
   m_EditorClassIdentifier: 
-  Description: Color of reticule when you can catch life form.
-  initialValue: {r: 0, g: 0.39658165, b: 1, a: 0.8784314}
-  currentValue: {r: 0.04830408, g: 1, b: 0, a: 0.8784314}
+  Description: Number of bugs to catch to unlock the Water Walking Power.
+  initialValue: 2
+  currentValue: 1
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:

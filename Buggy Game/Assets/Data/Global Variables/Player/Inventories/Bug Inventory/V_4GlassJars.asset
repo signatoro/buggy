@@ -15,7 +15,7 @@ MonoBehaviour:
   Description: The Glass Jars you have. This has a max of 3 jars.
   initialValue: 4
   currentValue: 4
-  ResetOnStart: 0
+  ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
     m_PersistentCalls:

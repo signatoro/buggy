@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 [Serializable]
@@ -12,6 +13,9 @@ public class BugInventoryData : ScriptableObject
 
     [Tooltip("Number of Glass Jars.")] [SerializeField]
     private GlobalInt glassJars;
+
+    [Tooltip("Invokes when a Bug was Caught.")] [SerializeField]
+    public UnityEvent OnBugCaught = new();
 
     /// <summary>
     /// Gets the number of bugs caught.
@@ -52,7 +56,7 @@ public class BugInventoryData : ScriptableObject
     /// Are there any Glass Jars remaining?
     /// </summary>
     /// <returns>True if there are Glass Jars remaining, else false.</returns>
-    private bool AnyJarsRemaining() => glassJars.CurrentValue > 0;
+    public bool AnyJarsRemaining() => glassJars.CurrentValue > 0;
 
     /// <summary>
     /// Sets the current value of the Glass Jars to the initial value.
@@ -73,5 +77,6 @@ public class BugInventoryData : ScriptableObject
     {
         UseGlassJar();
         AddBug(species);
+        OnBugCaught.Invoke();
     }
 }

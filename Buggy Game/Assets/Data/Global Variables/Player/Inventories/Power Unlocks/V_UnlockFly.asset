@@ -9,8 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77d81f7699fbf425aa2ae6fd0d8646f8, type: 3}
-  m_Name: BugInventoryData_BasicInventory
+  m_Script: {fileID: 11500000, guid: 95b05ddecbd854831a66608b5e7e2326, type: 3}
+  m_Name: V_UnlockFly
   m_EditorClassIdentifier: 
-  bugsCaught: []
-  glassJars: {fileID: 11400000, guid: 08698e49f7ca242f283aa114b5ad38b3, type: 2}
+  Description: Number of bugs to catch to unlock the Fly Power.
+  initialValue: 1
+  currentValue: 0
+  ResetOnStart: 1
+  BuildStackTrace: 0
+  OnChanged:
+    m_PersistentCalls:
+      m_Calls: []
