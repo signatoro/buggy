@@ -26,11 +26,17 @@ public class PowersInventory : MonoBehaviour
         public GlobalInt UnlockCount;
     }
 
-    [Tooltip("Keys to use the current Power")] [SerializeField]
-    private GlobalKeyCodeList usePowerKeys;
+    [Tooltip("Keys to use the first Power")] [SerializeField]
+    private GlobalKeyCodeList useFirstPowerKeys;
 
-    [Tooltip("Keys to go to the next Power")] [SerializeField]
-    private GlobalKeyCodeList swapToNextPowerKeys;
+    [Tooltip("Keys to use the second Power")] [SerializeField]
+    private GlobalKeyCodeList useSecondPowerKeys;
+
+    [Tooltip("Keys to use the third Power")] [SerializeField]
+    private GlobalKeyCodeList useThirdPowerKeys;
+
+    [Tooltip("Keys to use the fourth Power")] [SerializeField]
+    private GlobalKeyCodeList useFourthPowerKeys;
 
     [Tooltip("The Powers you have unlocked")] [SerializeField]
     private List<Power> unlockedPowers = new();
@@ -82,28 +88,45 @@ public class PowersInventory : MonoBehaviour
     {
         if (!_currentPower) return;
 
-        if (usePowerKeys.PressingOneOfTheKeys())
+        if (useFirstPowerKeys.PressingOneOfTheKeys() ||
+            useSecondPowerKeys.PressingOneOfTheKeys() ||
+            useThirdPowerKeys.PressingOneOfTheKeys() ||
+            useFourthPowerKeys.PressingOneOfTheKeys())
         {
             if (!_wasPressingAKeyLastFrame)
             {
-                _currentPower.AttemptToExecute();
-                _wasPressingAKeyLastFrame = true;
+                Power tempPower = null;
+                if (useFirstPowerKeys.PressingOneOfTheKeys())
+                {
+                    tempPower = unlockedPowers.Count >= 1 ? unlockedPowers[0] : null;
+                }
+                else if (useSecondPowerKeys.PressingOneOfTheKeys())
+                {
+                    tempPower = unlockedPowers.Count >= 2 ? unlockedPowers[1] : null;
+                }
+                else if (useThirdPowerKeys.PressingOneOfTheKeys())
+                {
+                    tempPower = unlockedPowers.Count >= 3 ? unlockedPowers[2] : null;
+                }
+                else if (useFourthPowerKeys.PressingOneOfTheKeys())
+                {
+                    tempPower = unlockedPowers.Count >= 4 ? unlockedPowers[3] : null;
+                }
+
+                if (tempPower && tempPower != _currentPower)
+                {
+                    _currentPower.enabled = false;
+                    _currentPower = tempPower;
+                    _currentPower.enabled = true;
+                }
+
+                if (tempPower)
+                {
+                    _currentPower.AttemptToExecute();
+                }
             }
 
-            return;
-        }
-
-        if (swapToNextPowerKeys.PressingOneOfTheKeys())
-        {
-            if (!_wasPressingAKeyLastFrame)
-            {
-                _currentPower.enabled = false;
-                int currentItem = unlockedPowers.IndexOf(_currentPower);
-                currentItem = currentItem + 1 == unlockedPowers.Count ? 0 : currentItem + 1;
-                _currentPower = unlockedPowers[currentItem];
-                _currentPower.enabled = true;
-                _wasPressingAKeyLastFrame = true;
-            }
+            _wasPressingAKeyLastFrame = true;
 
             return;
         }

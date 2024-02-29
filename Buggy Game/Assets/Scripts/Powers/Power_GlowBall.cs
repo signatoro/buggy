@@ -110,7 +110,6 @@ public class Power_GlowBall : Power
     /// <returns>Nothing.</returns>
     private IEnumerator TurnOnLight()
     {
-        glowLight.enabled = true;
         glowLight.range = glowLightRange.CurrentValue;
 
         float timer = 0;
@@ -148,7 +147,6 @@ public class Power_GlowBall : Power
         }
 
         glowLight.intensity = 0;
-        glowLight.enabled = false;
         yield return null;
     }
 

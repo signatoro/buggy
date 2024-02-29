@@ -609,9 +609,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53fe90da2d799499f98ccbec59c93e0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  usePowerKeys: {fileID: 11400000, guid: 83dca6e3189f44e8eaa77876ed56284b, type: 2}
-  swapToNextPowerKeys: {fileID: 11400000, guid: 73c863a66362c40cb81656ebb22cb117,
-    type: 2}
+  useFirstPowerKeys: {fileID: 11400000, guid: b8923b2ee76954628bbe67d079b52ca8, type: 2}
+  useSecondPowerKeys: {fileID: 11400000, guid: 14af677de29a94805a4df33533c1e9d9, type: 2}
+  useThirdPowerKeys: {fileID: 11400000, guid: e4152a79a795247d386ebadd15090f39, type: 2}
+  useFourthPowerKeys: {fileID: 11400000, guid: 2034113a08fe542d6a1c11824e499ba1, type: 2}
   unlockedPowers: []
   useableUnlockablePowers:
   - PowerUnlock: {fileID: 8463329232410119612}
