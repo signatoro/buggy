@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -32768
+  m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 7283abbeed810384ca8f394719d5daf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -240,7 +240,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 32767
+  m_SortingOrder: -32768
   m_Sprite: {fileID: 21300000, guid: 4960261a4e410eb4bbed58e7fc0250e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -639,12 +639,12 @@ PrefabInstance:
         type: 3}
       propertyPath: layers.Array.data[0].layers.Array.data[0]
       value: 
-      objectReference: {fileID: 3248297825608224388}
+      objectReference: {fileID: 5433702086622425857}
     - target: {fileID: 8300718088748001967, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: layers.Array.data[1].layers.Array.data[0]
       value: 
-      objectReference: {fileID: 5433702086622425857}
+      objectReference: {fileID: 3248297825608224388}
     - target: {fileID: 8300718088748001967, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: layers.Array.data[1].layers.Array.data[1]
