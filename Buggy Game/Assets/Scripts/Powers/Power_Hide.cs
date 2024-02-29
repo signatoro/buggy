@@ -42,6 +42,7 @@ public class Power_Hide : Power
     }
 
     /// <inheritdoc />
+    [ContextMenu("Reset Power")]
     public override IEnumerator ResetPower()
     {
         if (gameObject)
@@ -63,12 +64,14 @@ public class Power_Hide : Power
     /// <summary>
     /// Toggles between on and off every time we Attempt To Execute.
     /// </summary>
+    [ContextMenu("Attempt to Execute Power")]
     public override void AttemptToExecute() => StartCoroutine(!IsActive() ? ExecutePower() : StopPower());
 
     /// <summary>
     /// Starts Hiding the Life Form.
     /// </summary>
     /// <returns>Nothing.</returns>
+    [ContextMenu("Execute Power")]
     public override IEnumerator ExecutePower()
     {
         // Power is active
@@ -135,6 +138,7 @@ public class Power_Hide : Power
     /// Stops Hiding the Life Form.
     /// </summary>
     /// <returns>Nothing.</returns>
+    [ContextMenu("Stop Power")]
     public override IEnumerator StopPower()
     {
         // Stop Invisibility

@@ -25,6 +25,7 @@ public class Power_GlowBall : Power
     private bool _isActive;
 
     /// <inheritdoc />
+    [ContextMenu("Reset Power")]
     public override IEnumerator ResetPower()
     {
         if (gameObject)
@@ -55,12 +56,14 @@ public class Power_GlowBall : Power
     /// <summary>
     /// Toggles between on and off every time we Attempt To Execute.
     /// </summary>
+    [ContextMenu("Attempt to Execute Power")]
     public override void AttemptToExecute() => StartCoroutine(!IsActive() ? ExecutePower() : StopPower());
 
     /// <summary>
     /// Turns on the Glow Orb and Glow Light.
     /// </summary>
     /// <returns>Nothing.</returns>
+    [ContextMenu("Execute Power")]
     public override IEnumerator ExecutePower()
     {
         // Power is active
@@ -153,6 +156,7 @@ public class Power_GlowBall : Power
     /// Turns of the Glow Light and Glow Orb.
     /// </summary>
     /// <returns>Nothing.</returns>
+    [ContextMenu("Stop Power")]
     public override IEnumerator StopPower()
     {
         // Power is no longer active

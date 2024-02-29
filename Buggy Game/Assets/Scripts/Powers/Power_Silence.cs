@@ -52,6 +52,8 @@ public class Power_Silence : Power
     {
     }
 
+    /// <inheritdoc />
+    [ContextMenu("Reset Power")]
     public override IEnumerator ResetPower()
     {
         // Enable Speaking and Hearing for the Catchable Life Forms no longer hit
@@ -77,6 +79,7 @@ public class Power_Silence : Power
     /// <summary>
     /// Can only Execute if _canUse is true.
     /// </summary>
+    [ContextMenu("Attempt to Execute Power")]
     public override void AttemptToExecute()
     {
         if (!IsActive())
@@ -90,6 +93,7 @@ public class Power_Silence : Power
     /// Handles the logic for Silencing.
     /// </summary>
     /// <returns>Nothing.</returns>
+    [ContextMenu("Execute Power")]
     public override IEnumerator ExecutePower()
     {
         _canUse = false;
@@ -103,6 +107,7 @@ public class Power_Silence : Power
     /// Un-silences all Life Forms affected.
     /// </summary>
     /// <returns>Nothing.</returns>
+    [ContextMenu("Stop Power")]
     public override IEnumerator StopPower()
     {
         yield return new WaitForSeconds(timeAdditionalCooldown.CurrentValue + timeActive.CurrentValue +

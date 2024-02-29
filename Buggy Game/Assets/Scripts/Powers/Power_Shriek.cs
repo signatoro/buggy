@@ -42,6 +42,7 @@ public class Power_Shriek : Power
 
 
     /// <inheritdoc />
+    [ContextMenu("Reset Power")]
     public override IEnumerator ResetPower()
     {
         StopAllCoroutines();
@@ -52,6 +53,7 @@ public class Power_Shriek : Power
     /// <summary>
     /// Can execute if the cooldown is 0.
     /// </summary>
+    [ContextMenu("Attempt to Execute Power")]
     public override void AttemptToExecute()
     {
         if (!IsActive())
@@ -64,6 +66,7 @@ public class Power_Shriek : Power
     /// Plays the Shriek SFX then starts the cooldown.
     /// </summary>
     /// <returns>Nothing.</returns>
+    [ContextMenu("Execute Power")]
     public override IEnumerator ExecutePower()
     {
         _soundGenerator.PlaySound(shriekSFX);
@@ -82,6 +85,7 @@ public class Power_Shriek : Power
     /// Sets the cooldown to 0.
     /// </summary>
     /// <returns>Nothing.</returns>
+    [ContextMenu("Stop Power")]
     public override IEnumerator StopPower()
     {
         _currentCooldown = 0;

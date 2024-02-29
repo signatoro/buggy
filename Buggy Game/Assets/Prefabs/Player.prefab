@@ -338,6 +338,8 @@ GameObject:
   - component: {fileID: 1936972758510660196}
   - component: {fileID: 8270775979415227083}
   - component: {fileID: 6322367563600094630}
+  - component: {fileID: 7464712334663182496}
+  - component: {fileID: 2328414496206958088}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -741,6 +743,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
   playerMovement: {fileID: 11400000, guid: f43821c6f460e4eadb2fcf8b9e7206a4, type: 2}
+--- !u!114 &7464712334663182496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097031227134608292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92303328006e44abba362c9c0e0bf0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 1097031226631847307}
+  radius: {fileID: 11400000, guid: c1cd16ce516f94caba7590c0040f03ff, type: 2}
+  enableGizmos: 0
+  fieldOfViewAngle: {fileID: 11400000, guid: 90ea134e2301341f283fb6ee28be3448, type: 2}
+  directionalLightCheckDistance: {fileID: 11400000, guid: c8a08e5f1d722461f9f878957ec9d0dc,
+    type: 2}
+--- !u!114 &2328414496206958088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097031227134608292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac6e23371551346a5a2fe53b96725b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 1097031226631847307}
+  radius: {fileID: 11400000, guid: c1cd16ce516f94caba7590c0040f03ff, type: 2}
+  enableGizmos: 0
+  volumeThresholdData: {fileID: 11400000, guid: 44833a2188f4444a793fb92d673c6156,
+    type: 2}
+  OnDisabled:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1097031227623224458
 GameObject:
   m_ObjectHideFlags: 0
