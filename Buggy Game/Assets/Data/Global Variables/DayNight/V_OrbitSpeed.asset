@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_OrbitSpeed
   m_EditorClassIdentifier: 
   Description: Speed that time.deltatime is multiplied by.
-  initialValue: 0.1
-  currentValue: 0.1
+  initialValue: 0.01
+  currentValue: 0.06
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
