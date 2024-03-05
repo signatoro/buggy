@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_RightInputs
   m_EditorClassIdentifier: 
   Description: Keys associated with moving right.
-  initialValue: 6400000013010000
-  currentValue: 
+  initialValue: 1301000064000000
+  currentValue: 1301000064000000
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:

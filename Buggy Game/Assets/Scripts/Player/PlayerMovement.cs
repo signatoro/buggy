@@ -1,27 +1,29 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
-/// - Walk
+///     - Walk
 ///     - Modular Speed
-///         - Increases based on # of new bugs caught
-///         - Analog
+///     - Increases based on # of new bugs caught
+///     - Analog
 ///     - Walk on Water
-///         - Enables water colliders
-/// - Crouch
+///     - Enables water colliders
+///     - Crouch
 ///     - Becomes smaller
-///         - Shrink Hitbox
-///         - Lower camera
-///         - Needs smooth transition
+///     - Shrink Hitbox
+///     - Lower camera
+///     - Needs smooth transition
 ///     - Moves slower
 ///     - Needs to be able to detect if there is something above before transitioning to walk
-/// - Look Around (First Person)
+///     - Look Around (First Person)
 ///     - Standard FP Camera Control
-/// - Butterfly Jump
+///     - Butterfly Jump
 ///     - When Butterfly Jumping your movement is locked
 ///     - Lerps you from point a to point b
-/// - Audio Hooks
+///     - Audio Hooks
 ///     - Different terrain types have different sound effects & different volume
-///         - Crouching decreases the sound you make
+///     - Crouching decreases the sound you make
 /// </summary>
 [RequireComponent(typeof(CameraController))]
 [RequireComponent(typeof(CharacterController))]
@@ -29,12 +31,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     /// <summary>
-    /// - Walk
+    ///     - Walk
     ///     - Modular Speed
-    ///         - Increases based on # of new bugs caught
-    ///         - Analog
+    ///     - Increases based on # of new bugs caught
+    ///     - Analog
     ///     - Walk on Water
-    ///         - Enables water colliders
+    ///     - Enables water colliders
     /// </summary>
     [Header("Walk Movement Variables")]
     [Tooltip("The speed of the player based on the amount of unique bugs they have caught.")]
@@ -50,16 +52,11 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("Gravity.")] [SerializeField] private GlobalFloat gravity;
 
     /// <summary>
-    /// Private Movement Variables.
-    /// </summary>
-    private Vector3 _velocity;
-
-    /// <summary>
-    /// - Crouch
+    ///     - Crouch
     ///     - Becomes smaller
-    ///         - Shrink Hitbox
-    ///         - Lower camera
-    ///         - Needs smooth transition
+    ///     - Shrink Hitbox
+    ///     - Lower camera
+    ///     - Needs smooth transition
     ///     - Moves slower
     ///     - Needs to be able to detect if there is something above before transitioning to walk
     /// </summary>
@@ -102,13 +99,6 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("Crouch Movement Key")] [SerializeField]
     private GlobalKeyCodeList crouchMovementInputs;
 
-    /// <summary>
-    /// Inputs.
-    /// </summary>
-    private float _xInput;
-
-    private float _zInput;
-
     [Header("Ground Variables")] [Tooltip("Transform that checks for the ground.")] [SerializeField]
     private Transform groundCheck;
 
@@ -121,14 +111,38 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("Are we on the ground?")] [SerializeField]
     private GlobalBool isGrounded;
 
+    [Header("Respawn")] [Tooltip("Initial Respawn Point")] [SerializeField]
+    private Transform initialRespawnPoint;
+
+    [Tooltip("Respawn Fade Image")] [SerializeField]
+    private Image fadeImage;
+
+    [Tooltip("Respawn Fade In Time")] [SerializeField]
+    private GlobalFloat respawnFadeInTime;
+
+    private BugInventoryData _bugInventoryData;
+
+    private CameraController _cameraController;
+
 
     /// <summary>
-    /// Required Components
+    ///     Required Components
     /// </summary>
     private CharacterController _characterController;
 
-    private CameraController _cameraController;
-    private BugInventoryData _bugInventoryData;
+    private Transform _currentRespawnPoint;
+
+    /// <summary>
+    ///     Private Movement Variables.
+    /// </summary>
+    private Vector3 _velocity;
+
+    /// <summary>
+    ///     Inputs.
+    /// </summary>
+    private float _xInput;
+
+    private float _zInput;
 
 
     private void Awake()
@@ -139,6 +153,12 @@ public class PlayerMovement : MonoBehaviour
         _cameraController = GetComponent<CameraController>();
         _cameraController.SetUpIsCrouching(isCrouching);
         _bugInventoryData = GetComponent<BugInventory>().GetBugInventoryData();
+        _currentRespawnPoint = initialRespawnPoint;
+    }
+
+    private void Update()
+    {
+        MovementController();
     }
 
     private void OnDestroy()
@@ -147,27 +167,31 @@ public class PlayerMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Returns the max speed of the player based on the number of bugs they've caught.
+    ///     Returns the max speed of the player based on the number of bugs they've caught.
     /// </summary>
     /// <returns>The max speed.</returns>
-    private float GetMaxSpeed() => speedGraph.Evaluate(_bugInventoryData.NumberOfBugsCaught());
+    private float GetMaxSpeed()
+    {
+        return speedGraph.Evaluate(_bugInventoryData.NumberOfBugsCaught());
+    }
 
     /// <summary>
-    /// Returns the max crouching speed of the player based on the number of bugs they've caught.
+    ///     Returns the max crouching speed of the player based on the number of bugs they've caught.
     /// </summary>
     /// <returns>The max crouching speed.</returns>
-    private float GetMaxCrouchingSpeed() => speedGraphCrouch.Evaluate(_bugInventoryData.NumberOfBugsCaught());
+    private float GetMaxCrouchingSpeed()
+    {
+        return speedGraphCrouch.Evaluate(_bugInventoryData.NumberOfBugsCaught());
+    }
 
     /// <summary>
-    /// Sets our ability to walk on water.
+    ///     Sets our ability to walk on water.
     /// </summary>
     /// <param name="canWalk">Can we walk on water?</param>
-    private void WaterWalking(bool canWalk) => groundMask =
-        canWalk ? LayerMask.GetMask("Default") & LayerMask.GetMask("Water") : LayerMask.GetMask("Default");
-
-    private void FixedUpdate()
+    private void WaterWalking(bool canWalk)
     {
-        MovementController();
+        groundMask =
+            canWalk ? LayerMask.GetMask("Default") & LayerMask.GetMask("Water") : LayerMask.GetMask("Default");
     }
 
     private void MovementController()
@@ -177,7 +201,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Checks if we are crouching and sets values accordingly.
+    ///     Checks if we are crouching and sets values accordingly.
     /// </summary>
     private void CrouchCheck()
     {
@@ -185,8 +209,8 @@ public class PlayerMovement : MonoBehaviour
         {
             isCrouching.CurrentValue = true;
             _characterController.height = crouchingHeight.CurrentValue;
-            float distanceBetweenCenters = standingHeight.CurrentValue / 2f - crouchingHeight.CurrentValue / 2f;
-            float centerY = standingHeight.CurrentValue >= crouchingHeight.CurrentValue
+            var distanceBetweenCenters = standingHeight.CurrentValue / 2f - crouchingHeight.CurrentValue / 2f;
+            var centerY = standingHeight.CurrentValue >= crouchingHeight.CurrentValue
                 ? _characterController.center.y - distanceBetweenCenters
                 : _characterController.center.y + distanceBetweenCenters;
             _characterController.center =
@@ -202,7 +226,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Sets the velocity of the player.
+    ///     Sets the velocity of the player.
     /// </summary>
     private void InfluenceVelocity()
     {
@@ -216,29 +240,17 @@ public class PlayerMovement : MonoBehaviour
         if (movementEnabled.CurrentValue)
         {
             // Movement Inputs Controls
-            if (leftMovementInputs.PressingOneOfTheKeys())
-            {
-                _xInput += -1f;
-            }
+            if (leftMovementInputs.PressingOneOfTheKeys()) _xInput += -1f;
 
-            if (rightMovementInputs.PressingOneOfTheKeys())
-            {
-                _xInput += 1f;
-            }
+            if (rightMovementInputs.PressingOneOfTheKeys()) _xInput += 1f;
 
-            if (forwardMovementInputs.PressingOneOfTheKeys())
-            {
-                _zInput += 1f;
-            }
+            if (forwardMovementInputs.PressingOneOfTheKeys()) _zInput += 1f;
 
-            if (backwardMovementInputs.PressingOneOfTheKeys())
-            {
-                _zInput += -1f;
-            }
+            if (backwardMovementInputs.PressingOneOfTheKeys()) _zInput += -1f;
         }
 
         // Movement Vector Controls
-        Vector3 moveVector = transform.right * _xInput + transform.forward * _zInput;
+        var moveVector = transform.right * _xInput + transform.forward * _zInput;
 
         _velocity = isCrouching.CurrentValue
             ? moveVector.normalized * GetMaxCrouchingSpeed()
@@ -246,16 +258,61 @@ public class PlayerMovement : MonoBehaviour
 
         // Gravity
         if (isGrounded.CurrentValue)
-        {
             _velocity.y = 0;
-        }
         else
-        {
             _velocity.y = -1 * gravity.CurrentValue;
-        }
 
         _velocity *= Time.deltaTime;
 
-        _characterController.Move(_velocity);
+        // Respawn if on Water when not allowed
+        if (!isGrounded.CurrentValue && !waterWalking.CurrentValue && Physics.CheckSphere(groundCheck.position,
+                groundDistance.CurrentValue, LayerMask.GetMask("Water")))
+        {
+            _velocity = Vector3.zero;
+            StartCoroutine(Respawn());
+        }
+        else
+        {
+            _characterController.Move(_velocity);
+        }
+    }
+
+    /// <summary>
+    ///     Sets a new Respawn Point.
+    /// </summary>
+    /// <param name="newRespawnPoint">The new Respawn Point.</param>
+    public void SetRespawnPoint(Transform newRespawnPoint)
+    {
+        _currentRespawnPoint = newRespawnPoint;
+    }
+
+    public IEnumerator Respawn()
+    {
+        // Sets fade to black
+        fadeImage.color = Color.black;
+
+        // Disable Movement
+        movementEnabled.CurrentValue = false;
+
+        // Move to Respawn Position
+        transform.position = _currentRespawnPoint.position;
+        transform.rotation = _currentRespawnPoint.rotation;
+
+        // Fade In
+        float timer = 0;
+
+        while (timer < respawnFadeInTime.CurrentValue)
+        {
+            var color = fadeImage.color;
+            color.a = Mathf.Lerp(1, 0, timer / respawnFadeInTime.CurrentValue);
+            fadeImage.color = color;
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        // Enable Movement
+        movementEnabled.CurrentValue = true;
+
+        yield return null;
     }
 }

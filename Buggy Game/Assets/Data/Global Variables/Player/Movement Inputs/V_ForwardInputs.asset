@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_ForwardInputs
   m_EditorClassIdentifier: 
   Description: Keys associated with moving forward.
-  initialValue: 1101000077000000
-  currentValue: 
+  initialValue: 7700000011010000
+  currentValue: 7700000011010000
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:

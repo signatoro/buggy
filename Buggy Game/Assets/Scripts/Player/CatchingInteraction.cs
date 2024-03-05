@@ -73,7 +73,7 @@ public class CatchingInteraction : MonoBehaviour
                 lifeForm.BugCaught();
             }
         }
-        else if (lifeForm.CatchButRelease())
+        else if (lifeForm.CatchButRelease(_bugInventory.GetBugInventoryData()))
         {
             reticule.color = canAttemptToCatchColor.CurrentValue;
             if (catchKeycodes.PressingOneOfTheKeys())

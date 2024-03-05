@@ -16,18 +16,21 @@ public sealed class CatchableLifeForm : MonoBehaviour
 
     private readonly List<CatchableModule> _catchableModules = new();
 
+    private bool _canBeSeen = true;
+
     /// <summary>
     /// Can this life form be caught?
     /// </summary>
     /// <param name="data">The current Bug Inventory Data.</param>
     /// <returns>True if can be caught, else false.</returns>
-    public bool CanBeCaught(BugInventoryData data) => CatchButRelease() && data.CanCatchBug(species);
+    public bool CanBeCaught(BugInventoryData data) => CatchButRelease(data) && data.CanCatchBug(species);
 
     /// <summary>
     /// If this bug is able to be caught does it need to be released?
     /// </summary>
     /// <returns>True if it can at least be released, else false.</returns>
-    public bool CatchButRelease() => _catchableModules.All(cMod => cMod.CatchCheck());
+    public bool CatchButRelease(BugInventoryData data) =>
+        _catchableModules.All(cMod => cMod.CatchCheck()) && data.AnyJarsRemaining();
 
     /// <summary>
     /// Gets the Species.
@@ -49,4 +52,16 @@ public sealed class CatchableLifeForm : MonoBehaviour
     /// </summary>
     /// <param name="catchableModule">A Catchable Module that you are adding for consideration.</param>
     public void AddModule(CatchableModule catchableModule) => _catchableModules.Add(catchableModule);
+
+    /// <summary>
+    /// Can this Life Form be seen?
+    /// </summary>
+    /// <returns>True if can be seen, else false.</returns>
+    public bool CanBeSeen() => _canBeSeen;
+
+    /// <summary>
+    /// Sets whether or not this Life Form is visible.
+    /// </summary>
+    /// <param name="visible">Should it be visible or invisible?</param>
+    public void SetVisibility(bool visible) => _canBeSeen = visible;
 }
