@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 /// <summary>
 /// This should be used instead of Playing Clip at Point.
