@@ -224,4 +224,3 @@ MonoBehaviour:
   enableGizmos: 0
   volumeThresholdData: {fileID: 11400000, guid: 44833a2188f4444a793fb92d673c6156,
     type: 2}
-  clipVolumeSamples: {fileID: 11400000, guid: a1ff52e830b04480586807345460cbfd, type: 2}
