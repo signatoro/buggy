@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6522470845372001949}
   - component: {fileID: 4405638472989245543}
   - component: {fileID: 1022258427022233233}
+  - component: {fileID: 9080677678244565940}
   m_Layer: 6
   m_Name: LF_BasicLifeForm
   m_TagString: Untagged
@@ -67,7 +68,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf4dd357b2fab4a728a6904f55ab3b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  root: {fileID: 8997365163155274866}
   reachedDistance: {fileID: 11400000, guid: c37d350002476417b9474f6b3275c7bf, type: 2}
   gravity: {fileID: 11400000, guid: 6252a54f2157b44caad53edb76f2f802, type: 2}
   canFly: {fileID: 11400000, guid: bdb3b7a0a59f442c789a402b467885e4, type: 2}
@@ -111,6 +111,22 @@ MonoBehaviour:
   OnDisabled:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &9080677678244565940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862165605202001890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 492a3a69407714eff9e76a0b63e11b13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  senseSight: {fileID: 0}
+  senseSound: {fileID: 0}
+  defaultActions: []
+  lifeFormStates: []
 --- !u!1 &7103778193922560499
 GameObject:
   m_ObjectHideFlags: 0
