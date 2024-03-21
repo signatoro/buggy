@@ -5,18 +5,6 @@ using UnityEngine.Events;
 
 public class Sense_Sound : SenseSystem
 {
-    public class SoundData : SenseData
-    {
-        [Tooltip("The Volume Level at the Point Seen")]
-        public float VolumeLevel;
-
-        public SoundData(CatchableLifeForm catchableLifeForm, Vector3 sensePosition, float volumeLevel) : base(
-            catchableLifeForm, sensePosition)
-        {
-            VolumeLevel = volumeLevel;
-        }
-    }
-
     [Tooltip("Minimum Volume Threshold for this Life Form to Hear a sound")] [SerializeField]
     private GlobalFloat volumeThresholdData;
 
@@ -54,9 +42,9 @@ public class Sense_Sound : SenseSystem
     /// </summary>
     /// <returns>Returns the sound data for everything heard.</returns>
     [ContextMenu("Check Sound Radius")]
-    private List<SoundData> CheckSoundRadius()
+    public List<SenseData> CheckSoundRadius()
     {
-        List<SoundData> soundDatas = new();
+        List<SenseData> soundDatas = new();
 
         int layerMask = LayerMask.GetMask("Audio");
         List<Collider> hitColliders = Physics.OverlapSphere(root.position, radius.CurrentValue, layerMask).ToList();
@@ -80,7 +68,7 @@ public class Sense_Sound : SenseSystem
                     float volumeLevel = GetVolumeLevelOfSoundAtPoint(audioSource);
                     if (volumeLevel >= _currentVolumeThreshold)
                     {
-                        soundDatas.Add(new SoundData(lifeForm, position, volumeLevel));
+                        soundDatas.Add(new SenseData(lifeForm, position, volumeLevel));
                         Debug.Log($"{name} heard: {inUniverseSound.name} with a volume value of {volumeLevel}", this);
                     }
                 }

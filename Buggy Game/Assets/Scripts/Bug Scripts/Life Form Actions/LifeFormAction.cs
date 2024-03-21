@@ -1,18 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class LifeFormAction : MonoBehaviour
+[RequireComponent(typeof(LifeFormBrain))]
+public abstract class LifeFormAction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    /// <summary>
+    /// Performs the Action.
+    /// </summary>
+    /// <param name="position">Optional Position for the Action.</param>
+    /// <returns>Nothing.</returns>
+    public abstract IEnumerator PerformAction(Vector3 position = new());
 }
