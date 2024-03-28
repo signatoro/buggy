@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 424371a7241434cf4bc0a2cfde71d138, type: 3}
+  m_Name: V_PlayerWalkingFrequency
+  m_EditorClassIdentifier: 
+  Description: The amount of time between walking sounds for the player
+  initialValue: 0.2
+  currentValue: 0
+  ResetOnStart: 1
+  BuildStackTrace: 0
+  OnChanged:
+    m_PersistentCalls:
+      m_Calls: []

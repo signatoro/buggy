@@ -540,9 +540,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   isGrounded: {fileID: 11400000, guid: 971b270b855b6496489e531a26386c19, type: 2}
+  onWater: {fileID: 11400000, guid: 40ed7a3c962684a578331b8b43f96527, type: 2}
   initialRespawnPoint: {fileID: 0}
   fadeImage: {fileID: 1834700315606349147}
   respawnFadeInTime: {fileID: 11400000, guid: 5655c7e5a88034f228a647a9ff266432, type: 2}
+  walkingSound: {fileID: 8865013584318240938, guid: 17a9e844d633b483495b17b589f0aba3,
+    type: 3}
+  crouchingSound: {fileID: 2898128473723274098, guid: 8909292920e2448c48fdf9af56e7a61d,
+    type: 3}
+  walkingSoundWater: {fileID: 8865013584318240938, guid: 17a9e844d633b483495b17b589f0aba3,
+    type: 3}
+  crouchingSoundWater: {fileID: 2898128473723274098, guid: 8909292920e2448c48fdf9af56e7a61d,
+    type: 3}
+  walkingSoundFrequency: {fileID: 11400000, guid: dd5c67655255a4235a03731d05b3a557,
+    type: 2}
 --- !u!114 &6360494037877432385
 MonoBehaviour:
   m_ObjectHideFlags: 0
