@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(SoundGenerator))]
@@ -27,8 +28,14 @@ public class LifeFormMovement : MonoBehaviour
     [Tooltip("Fast Movement Speed")] [SerializeField]
     private GlobalFloat fastSpeed;
 
-    [Tooltip("Debug Mode")] [SerializeField]
-    private bool useDebugMode;
+    [Header("Debug Mode")] [Tooltip("Make Life Form Move to the Debug Mode")] [SerializeField]
+    private bool useDebugPath;
+
+    [Tooltip("Location of the Debug Path")] [SerializeField]
+    private Vector3 debugPathLocation = new(0, 0, 0);
+
+    [Tooltip("Turn on Debug Gizmos")] [SerializeField]
+    private bool useDebugGizmos;
 
     private CharacterController _characterController;
     private SoundGenerator _soundGenerator;
@@ -42,9 +49,9 @@ public class LifeFormMovement : MonoBehaviour
     private void FixedUpdate()
     {
         ApplyGravity();
-        if (useDebugMode)
+        if (useDebugPath)
         {
-            Move(new List<Vector3> { Vector3.zero });
+            Move(new List<Vector3> { debugPathLocation });
         }
     }
 
@@ -96,6 +103,14 @@ public class LifeFormMovement : MonoBehaviour
             break;
         }
 
+        // If we are close enough to the final position, we don't move
+        float distanceToEnd = Vector3.Distance(transform.position, movementPosition);
+        if (distanceToEnd <= reachedDistance.CurrentValue)
+        {
+            Debug.Log($"{name} reached final position.", this);
+            return;
+        }
+
         // Rotate to face movement position
         transform.LookAt(movementPosition);
 
@@ -105,7 +120,7 @@ public class LifeFormMovement : MonoBehaviour
         // Create a movement Vector
         Vector3 movementVector = normalizedVector * (speed * Time.fixedDeltaTime);
 
-        if (useDebugMode)
+        if (useDebugGizmos)
         {
             Debug.DrawLine(transform.position, transform.position + movementVector, Color.green, Time.deltaTime);
         }
