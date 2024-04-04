@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6522470845372001949}
   - component: {fileID: 4405638472989245543}
   - component: {fileID: 1022258427022233233}
+  - component: {fileID: 1391182620161416719}
   m_Layer: 6
   m_Name: LF_BasicLifeForm
   m_TagString: Untagged
@@ -105,6 +106,21 @@ MonoBehaviour:
   OnDisabled:
     m_PersistentCalls:
       m_Calls: []
+--- !u!111 &1391182620161416719
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862165605202001890}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &7103778193922560499
 GameObject:
   m_ObjectHideFlags: 0
