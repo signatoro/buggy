@@ -119,6 +119,56 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5499527097176688974, guid: c8a0694072c6e41edaf65c7ad1c85cfb,
+        type: 3}
+      propertyPath: senseSight
+      value: 
+      objectReference: {fileID: 9001003149462242347}
+    - target: {fileID: 5499527097176688974, guid: c8a0694072c6e41edaf65c7ad1c85cfb,
+        type: 3}
+      propertyPath: defaultActions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499527097176688974, guid: c8a0694072c6e41edaf65c7ad1c85cfb,
+        type: 3}
+      propertyPath: lifeFormStates.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499527097176688974, guid: c8a0694072c6e41edaf65c7ad1c85cfb,
+        type: 3}
+      propertyPath: defaultActions.Array.data[0]
+      value: 
+      objectReference: {fileID: 4543662534966922693}
+    - target: {fileID: 5499527097176688974, guid: c8a0694072c6e41edaf65c7ad1c85cfb,
+        type: 3}
+      propertyPath: lifeFormStates.Array.data[0].priority
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499527097176688974, guid: c8a0694072c6e41edaf65c7ad1c85cfb,
+        type: 3}
+      propertyPath: lifeFormStates.Array.data[0].lifeFormRelations
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499527097176688974, guid: c8a0694072c6e41edaf65c7ad1c85cfb,
+        type: 3}
+      propertyPath: lifeFormStates.Array.data[0].actions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499527097176688974, guid: c8a0694072c6e41edaf65c7ad1c85cfb,
+        type: 3}
+      propertyPath: lifeFormStates.Array.data[0].actions.Array.data[0]
+      value: 
+      objectReference: {fileID: 8038937227556363946}
+    - target: {fileID: 5499527097176688974, guid: c8a0694072c6e41edaf65c7ad1c85cfb,
+        type: 3}
+      propertyPath: lifeFormStates.Array.data[0].lightIntensityRange.y
+      value: 9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499527097176688974, guid: c8a0694072c6e41edaf65c7ad1c85cfb,
+        type: 3}
+      propertyPath: lifeFormStates.Array.data[0].soundIntensityRange.y
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5659403017721751176, guid: c8a0694072c6e41edaf65c7ad1c85cfb,
         type: 3}
       propertyPath: m_RootOrder
@@ -250,6 +300,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796a4d897cc3f4c239e24db78091d14f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8038937227556363946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9001417038420628178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f83fd22c286b49da8742efff5d8d9fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &9001003149462242347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,3 +330,16 @@ MonoBehaviour:
   fieldOfViewAngle: {fileID: 11400000, guid: 90ea134e2301341f283fb6ee28be3448, type: 2}
   directionalLightCheckDistance: {fileID: 11400000, guid: 204cff21f1089420ab1bfb451a7e5d16,
     type: 2}
+--- !u!114 &4543662534966922693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9001417038420628178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffcbb3661e0343fc9287474444ac554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionToGoTo: {fileID: 0}

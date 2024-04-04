@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b05ddecbd854831a66608b5e7e2326, type: 3}
-  m_Name: V_4GlassJars
+  m_Script: {fileID: 11500000, guid: d7e1c551121e14bdda08bad95141f046, type: 3}
+  m_Name: V_UsePower1
   m_EditorClassIdentifier: 
-  Description: The Glass Jars you have. This has a max of 3 jars.
-  initialValue: 4
-  currentValue: 4
-  ResetOnStart: 0
+  Description: Attempt to Use Power 1.
+  initialValue: 31000000
+  currentValue: 31000000
+  ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
     m_PersistentCalls:

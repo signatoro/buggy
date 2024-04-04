@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -6,6 +7,16 @@ using UnityEngine.Serialization;
 [CreateAssetMenu(fileName = "Species<Name>", menuName = "Bug/Species")]
 public class Species : ScriptableObject
 {
+    [Flags]
+    public enum LifeFormRelation
+    {
+        NONE = 0,
+        PREDATOR = 1,
+        PREY = 2,
+        NEUTRAL = 4,
+        ENEMY = 8,
+    }
+
     [Tooltip("Name of the Species.")] [SerializeField]
     private string speciesName;
 
@@ -30,6 +41,9 @@ public class Species : ScriptableObject
     [FormerlySerializedAs("Neutral")] [Tooltip("List of Neutral.")] [SerializeField]
     private List<Species> neutral = new();
 
+    [Tooltip("List of Enemies.")] [SerializeField]
+    private List<Species> enemies = new();
+
     /// <summary>
     /// Used to determine how to update the ecosystem.
     /// </summary>
@@ -37,6 +51,7 @@ public class Species : ScriptableObject
 
     private List<Species> _predatorsOnLastValidate = new();
     private List<Species> _neutralOnLastValidate = new();
+    private List<Species> _enemiesOnLastValidate = new();
 
     private void OnValidate()
     {
@@ -106,11 +121,30 @@ public class Species : ScriptableObject
             }
         }
 
+        List<Species> attemptingToAddToEnemy = new();
+        foreach (Species s in enemies)
+        {
+            if (!_enemiesOnLastValidate.Contains(s))
+            {
+                attemptingToAddToEnemy.Add(s);
+            }
+        }
+
+        List<Species> attemptingToRemoveFromEnemy = new();
+        foreach (Species s in (_enemiesOnLastValidate))
+        {
+            if (!enemies.Contains(s))
+            {
+                attemptingToRemoveFromEnemy.Add(s);
+            }
+        }
+
         // Don't add something that already exists in a list
         for (int i = attemptingToAddToPrey.Count - 1; i >= 0; i--)
         {
             if (predators.Contains(attemptingToAddToPrey[i]) ||
-                neutral.Contains(attemptingToAddToPrey[i]))
+                neutral.Contains(attemptingToAddToPrey[i]) ||
+                enemies.Contains(attemptingToAddToPrey[i]))
             {
                 Debug.LogWarning(
                     $"Attempting to add {attemptingToAddToPrey[i].speciesName} even though it already exists in the ecosystem");
@@ -122,7 +156,8 @@ public class Species : ScriptableObject
         for (int i = attemptingToAddToPredators.Count - 1; i >= 0; i--)
         {
             if (prey.Contains(attemptingToAddToPredators[i]) ||
-                neutral.Contains(attemptingToAddToPredators[i]))
+                neutral.Contains(attemptingToAddToPredators[i]) ||
+                enemies.Contains(attemptingToAddToPredators[i]))
             {
                 Debug.LogWarning(
                     $"Attempting to add {attemptingToAddToPredators[i].speciesName} even though it already exists in the ecosystem");
@@ -134,12 +169,26 @@ public class Species : ScriptableObject
         for (int i = attemptingToAddToNeutral.Count - 1; i >= 0; i--)
         {
             if (prey.Contains(attemptingToAddToNeutral[i]) ||
-                predators.Contains(attemptingToAddToNeutral[i]))
+                predators.Contains(attemptingToAddToNeutral[i]) ||
+                enemies.Contains(attemptingToAddToNeutral[i]))
             {
                 Debug.LogWarning(
                     $"Attempting to add {attemptingToAddToNeutral[i].speciesName} even though it already exists in the ecosystem");
                 neutral.Remove(attemptingToAddToNeutral[i]);
                 attemptingToAddToNeutral.Remove(attemptingToAddToNeutral[i]);
+            }
+        }
+
+        for (int i = attemptingToAddToEnemy.Count - 1; i >= 0; i--)
+        {
+            if (prey.Contains(attemptingToAddToEnemy[i]) ||
+                predators.Contains(attemptingToAddToEnemy[i]) ||
+                neutral.Contains(attemptingToAddToEnemy[i]))
+            {
+                Debug.LogWarning(
+                    $"Attempting to add {attemptingToAddToEnemy[i].speciesName} even though it already exists in the ecosystem");
+                enemies.Remove(attemptingToAddToEnemy[i]);
+                attemptingToAddToEnemy.Remove(attemptingToAddToEnemy[i]);
             }
         }
 
@@ -166,6 +215,13 @@ public class Species : ScriptableObject
             s.AddNeutral(this);
         }
 
+        // If the given species is being added as an Enemy, then make this species an Enemy for the given Species
+        foreach (Species s in attemptingToAddToEnemy.Where(s => !s.enemies.Contains(this)))
+        {
+            Debug.Log($"Adding {speciesName} to {s.speciesName} as an Enemy");
+            s.AddEnemy(this);
+        }
+
         // If the given species is being removed as a Prey, then remove this species from the Predator list for the given Species
         foreach (Species s in attemptingToRemoveFromPrey)
         {
@@ -187,12 +243,20 @@ public class Species : ScriptableObject
             s.RemoveNeutral(this);
         }
 
+        // If the given species is being removed as Neutral, then remove this species from the Neutral list for the given Species
+        foreach (Species s in attemptingToRemoveFromEnemy)
+        {
+            Debug.Log($"Removing {speciesName} from {s.speciesName} as an Enemy");
+            s.RemoveEnemy(this);
+        }
+
         // Now Every Connected Species should be updated
 
         // Update the last validated lists
         _preyOnLastValidate = new List<Species>(prey);
         _predatorsOnLastValidate = new List<Species>(predators);
         _neutralOnLastValidate = new List<Species>(neutral);
+        _enemiesOnLastValidate = new List<Species>(enemies);
     }
 
     /// <summary>
@@ -226,9 +290,19 @@ public class Species : ScriptableObject
     }
 
     /// <summary>
-    /// Removes the Species from the Prey List and updates the _preyOnLastValidate.
+    /// Adds the Species to the Enemy List and updates the _enemyOnLastValidate.
     /// </summary>
     /// <param name="s">The Species to Add.</param>
+    public void AddEnemy(Species s)
+    {
+        enemies.Add(s);
+        _enemiesOnLastValidate = new List<Species>(enemies);
+    }
+
+    /// <summary>
+    /// Removes the Species from the Prey List and updates the _preyOnLastValidate.
+    /// </summary>
+    /// <param name="s">The Species to Remove.</param>
     public void RemovePrey(Species s)
     {
         prey.Remove(s);
@@ -238,7 +312,7 @@ public class Species : ScriptableObject
     /// <summary>
     /// Removes the Species from the Predators List and updates the _predatorsOnLastValidate.
     /// </summary>
-    /// <param name="s">The Species to Add.</param>
+    /// <param name="s">The Species to Remove.</param>
     public void RemovePredator(Species s)
     {
         predators.Remove(s);
@@ -248,7 +322,7 @@ public class Species : ScriptableObject
     /// <summary>
     /// Removes the Species from the Neutral List and updates the _neutralOnLastValidate.
     /// </summary>
-    /// <param name="s">The Species to Add.</param>
+    /// <param name="s">The Species to Remove.</param>
     public void RemoveNeutral(Species s)
     {
         neutral.Remove(s);
@@ -256,7 +330,17 @@ public class Species : ScriptableObject
     }
 
     /// <summary>
-    /// Clears all Species Lists
+    /// Removes the Species from the Enemy List and updates the _enemyOnLastValidate.
+    /// </summary>
+    /// <param name="s">The Species to Remove.</param>
+    public void RemoveEnemy(Species s)
+    {
+        enemies.Remove(s);
+        _enemiesOnLastValidate = new List<Species>(enemies);
+    }
+
+    /// <summary>
+    /// Clears all Species Lists.
     /// </summary>
     [ContextMenu("Clear Ecosystem")]
     public void ClearEcosystem()
@@ -264,11 +348,56 @@ public class Species : ScriptableObject
         prey.Clear();
         predators.Clear();
         neutral.Clear();
+        enemies.Clear();
         _preyOnLastValidate.Clear();
         _predatorsOnLastValidate.Clear();
         _neutralOnLastValidate.Clear();
+        _enemiesOnLastValidate.Clear();
     }
 
+    /// <summary>
+    /// Does the given Species have a relationship to this Species.
+    /// </summary>
+    /// <param name="species">The given Species.</param>
+    /// <returns>True if there is a relationship, else false.</returns>
     public bool HasConnectionToSpecies(Species species) =>
-        prey.Contains(species) || predators.Contains(species) || neutral.Contains(species);
+        prey.Contains(species) || predators.Contains(species) || neutral.Contains(species) || enemies.Contains(species);
+
+    /// <summary>
+    /// Does the given Species have a relationship to this Species and are they not a Predator.
+    /// </summary>
+    /// <param name="species">The given Species.</param>
+    /// <returns>True if there is a Non-Predator relationship, else false.</returns>
+    public bool NotAPredator(Species species) => HasConnectionToSpecies(species) && !predators.Contains(species);
+
+
+    /// <summary>
+    /// The relationship of the given Species to this Species.
+    /// </summary>
+    /// <param name="species">The given Species.</param>
+    /// <returns>The Relationship.</returns>
+    public LifeFormRelation GetLifeFormRelation(Species species)
+    {
+        if (predators.Contains(species))
+        {
+            return LifeFormRelation.PREDATOR;
+        }
+
+        if (prey.Contains(species))
+        {
+            return LifeFormRelation.PREY;
+        }
+
+        if (neutral.Contains(species))
+        {
+            return LifeFormRelation.NEUTRAL;
+        }
+
+        if (enemies.Contains(species))
+        {
+            return LifeFormRelation.ENEMY;
+        }
+
+        return LifeFormRelation.NONE;
+    }
 }

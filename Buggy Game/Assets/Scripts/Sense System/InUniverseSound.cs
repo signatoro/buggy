@@ -8,11 +8,11 @@ using UnityEngine;
 [RequireComponent(typeof(SphereCollider))]
 public class InUniverseSound : MonoBehaviour
 {
-    [Tooltip("The Catchable Life Form that made this sound.")] [SerializeField]
-    private CatchableLifeForm catchableLifeForm;
+    [Tooltip("The Catchable Life Form that made this sound.")]
+    public CatchableLifeForm CatchableLifeForm;
 
     public AudioSource audioSource { get; private set; }
-    
+
     private SphereCollider _sphereCollider;
 
     private void Awake()
@@ -28,11 +28,6 @@ public class InUniverseSound : MonoBehaviour
         _sphereCollider.isTrigger = true;
     }
 
-    public InUniverseSound(CatchableLifeForm catchableLifeForm)
-    {
-        this.catchableLifeForm = catchableLifeForm;
-    }
-
     /// <summary>
     /// The amount of time before this GameObject is destroyed.
     /// </summary>
@@ -43,10 +38,4 @@ public class InUniverseSound : MonoBehaviour
         yield return new WaitForSeconds(timeToDestroy);
         Destroy(gameObject);
     }
-
-    /// <summary>
-    /// Gets the Catchable Life Form.
-    /// </summary>
-    /// <returns>The Catchable Life Form.</returns>
-    public CatchableLifeForm GetCatchableLifeForm() => catchableLifeForm;
 }

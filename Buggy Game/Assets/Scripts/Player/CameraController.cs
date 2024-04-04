@@ -116,7 +116,7 @@ public class CameraController : MonoBehaviour
         _isCrouching.OnChanged.RemoveListener(HandleCrouch);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (cameraDisabled.CurrentValue) return;
 

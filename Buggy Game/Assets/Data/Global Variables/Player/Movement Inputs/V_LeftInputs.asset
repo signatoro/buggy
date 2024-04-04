@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_LeftInputs
   m_EditorClassIdentifier: 
   Description: Keys associated with moving left.
-  initialValue: 6100000014010000
-  currentValue: 
+  initialValue: 1401000061000000
+  currentValue: 1401000061000000
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:

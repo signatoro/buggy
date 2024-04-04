@@ -15,10 +15,14 @@ public abstract class SenseSystem : MonoBehaviour
         [Tooltip("The Position of what was Sensed")]
         public Vector3 SensePosition;
 
-        protected SenseData(CatchableLifeForm catchableLifeForm, Vector3 sensePosition)
+        [Tooltip("The Value of the Sense Data")]
+        public float Value;
+
+        public SenseData(CatchableLifeForm catchableLifeForm, Vector3 sensePosition, float senseValue)
         {
             CatchableLifeForm = catchableLifeForm;
             SensePosition = sensePosition;
+            Value = senseValue;
         }
     }
 

@@ -4,18 +4,6 @@ using UnityEngine;
 
 public class Sense_Sight : SenseSystem
 {
-    public class SightData : SenseData
-    {
-        [Tooltip("The Light Intensity at the Point Seen")]
-        public float LightIntensity;
-
-        public SightData(CatchableLifeForm catchableLifeForm, Vector3 sensePosition, float lightIntensity) : base(
-            catchableLifeForm, sensePosition)
-        {
-            LightIntensity = lightIntensity;
-        }
-    }
-
     [Tooltip("Field of View Angle")] [SerializeField]
     private GlobalFloat fieldOfViewAngle;
 
@@ -33,29 +21,32 @@ public class Sense_Sight : SenseSystem
     /// </summary>
     /// <returns>Returns the sight data for everything seen.</returns>
     [ContextMenu("Check FOV")]
-    private List<SightData> CheckFOV()
+    public List<SenseData> CheckFOV()
     {
-        List<SightData> sightDatas = new();
-        int layerMask = LayerMask.NameToLayer("Player") & LayerMask.NameToLayer("LifeForm");
+        List<SenseData> sightDatas = new();
+        int layerMask = LayerMask.GetMask("Player") & LayerMask.GetMask("LifeForm");
         layerMask = ~layerMask;
         List<Collider> hitColliders = Physics.OverlapSphere(root.position, radius.CurrentValue, layerMask).ToList();
 
         foreach (Collider collider in hitColliders)
         {
             if (collider.GetComponent<CatchableLifeForm>() &&
-                collider.GetComponent<CatchableLifeForm>() != GetComponent<CatchableLifeForm>())
+                collider.GetComponent<CatchableLifeForm>() != GetComponent<CatchableLifeForm>() &&
+                collider.GetComponent<CatchableLifeForm>().CanBeSeen())
             {
                 CatchableLifeForm lifeForm = collider.GetComponent<CatchableLifeForm>();
                 Vector3 directionToLifeForm = lifeForm.transform.position - root.position;
-                if (_catchableLifeForm.Species.HasConnectionToSpecies(lifeForm.Species) &&
-                    Physics.Raycast(root.position, directionToLifeForm, out RaycastHit hit, radius.CurrentValue) &&
-                    hit.transform.GetComponent<CatchableLifeForm>() &&
-                    hit.transform.GetComponent<CatchableLifeForm>() == lifeForm &&
-                    Vector3.Angle(directionToLifeForm, root.forward) <= fieldOfViewAngle.CurrentValue)
+
+                bool connection = _catchableLifeForm.Species.HasConnectionToSpecies(lifeForm.Species);
+                bool hitSomething = Physics.Raycast(root.position, directionToLifeForm, out RaycastHit hit,
+                    radius.CurrentValue);
+                bool hasCatchableLifeForm = hit.transform && hit.transform.GetComponent<CatchableLifeForm>();
+                bool sameLifeForm = hit.transform && hit.transform.GetComponent<CatchableLifeForm>() == lifeForm;
+                bool inAngle = Vector3.Angle(directionToLifeForm, root.forward) <= fieldOfViewAngle.CurrentValue;
+                if (connection && hitSomething && hasCatchableLifeForm && sameLifeForm && inAngle)
                 {
                     Vector3 position = lifeForm.transform.position;
-                    sightDatas.Add(new SightData(lifeForm, position,
-                        GetLightIntensityAtPoint(position)));
+                    sightDatas.Add(new SenseData(lifeForm, position, GetLightIntensityAtPoint(position)));
                     Debug.Log(
                         $"{name} saw: {lifeForm.name} with a light intensity of {GetLightIntensityAtPoint(position)}",
                         this);
@@ -76,7 +67,7 @@ public class Sense_Sight : SenseSystem
         List<Light> allEnabledLight = FindObjectsOfType<Light>().ToList();
 
         List<float> lightIntensities = new();
-        int layerMask = LayerMask.NameToLayer("Player") & LayerMask.NameToLayer("LifeForm");
+        int layerMask = LayerMask.GetMask("Player") & LayerMask.GetMask("LifeForm");
         layerMask = ~layerMask;
         float addToIntensity = 0;
 

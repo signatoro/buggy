@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: V_WillReleaseColor
   m_EditorClassIdentifier: 
   Description: Color of reticule when you can catch life form.
-  initialValue: {r: 0.04830408, g: 1, b: 0, a: 0.8784314}
+  initialValue: {r: 0, g: 0.39658165, b: 1, a: 0.8784314}
   currentValue: {r: 0.04830408, g: 1, b: 0, a: 0.8784314}
   ResetOnStart: 1
   BuildStackTrace: 0

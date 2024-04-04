@@ -10,7 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8997365163155274866}
   - component: {fileID: 2235977554043265147}
-  - component: {fileID: 1955545968754294593}
+  - component: {fileID: 6522470845372001949}
+  - component: {fileID: 4405638472989245543}
+  - component: {fileID: 1022258427022233233}
+  - component: {fileID: 9080677678244565940}
   m_Layer: 6
   m_Name: LF_BasicLifeForm
   m_TagString: Untagged
@@ -53,8 +56,29 @@ MonoBehaviour:
   OnReleased:
     m_PersistentCalls:
       m_Calls: []
---- !u!65 &1955545968754294593
-BoxCollider:
+--- !u!114 &6522470845372001949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862165605202001890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf4dd357b2fab4a728a6904f55ab3b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reachedDistance: {fileID: 11400000, guid: c37d350002476417b9474f6b3275c7bf, type: 2}
+  gravity: {fileID: 11400000, guid: 6252a54f2157b44caad53edb76f2f802, type: 2}
+  canFly: {fileID: 11400000, guid: bdb3b7a0a59f442c789a402b467885e4, type: 2}
+  movementSound: {fileID: 9085574075368509307, guid: 1d3aa37d29a32425089618917e921182,
+    type: 3}
+  slowSpeed: {fileID: 11400000, guid: b6acfe920bb224c1cbfeafbde0b25eb9, type: 2}
+  mediumSpeed: {fileID: 11400000, guid: e69e02e613b794450864b07954aa88a1, type: 2}
+  fastSpeed: {fileID: 11400000, guid: 054fa4c798aa94645bc7b366b9b8f5f0, type: 2}
+  useDebugMode: 0
+--- !u!143 &4405638472989245543
+CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -64,8 +88,45 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1022258427022233233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862165605202001890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac2e9c74bb284933a42f2b3a2cba5cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 2690018111977626726}
+  OnDisabled:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9080677678244565940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862165605202001890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 492a3a69407714eff9e76a0b63e11b13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  senseSight: {fileID: 0}
+  senseSound: {fileID: 0}
+  defaultActions: []
+  lifeFormStates: []
 --- !u!1 &7103778193922560499
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,4 +173,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistanceForSortingOrder: {fileID: 11400000, guid: 76b9674d177ca4a29b456c37b423239b,
     type: 2}
+  layers: []
   root: {fileID: 2690018111977626726}
