@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8668043918891819696}
   - component: {fileID: 4269039147486225388}
   m_Layer: 0
-  m_Name: AntBackLeg (1)
+  m_Name: AntBackLegLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,13 +25,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994648377934863539}
   m_LocalRotation: {x: 0.67039216, y: 0.112145446, z: 0.10681986, w: 0.7256634}
-  m_LocalPosition: {x: -0.2909853, y: -0.15866908, z: -0.50592047}
+  m_LocalPosition: {x: -0.296, y: -0.114, z: 0.02}
   m_LocalScale: {x: 0.19563, y: 0.19563003, z: 0.19562997}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4241187051053688890}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: -0.874, y: 17.819, z: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 72.15669, y: 93.93085, z: 92.62331}
 --- !u!212 &4269039147486225388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 3006958683517907108}
   - component: {fileID: 468350958415839193}
   m_Layer: 0
-  m_Name: AntBackLeg
+  m_Name: AntBackLegRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,14 +192,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537232883192162369}
-  m_LocalRotation: {x: 0.6602761, y: -0.16704354, z: -0.15911111, w: 0.71471363}
-  m_LocalPosition: {x: 0.46415558, y: -0.19482756, z: -0.5563418}
+  m_LocalRotation: {x: 0.65874773, y: -0.1729727, z: -0.1526794, w: 0.7161152}
+  m_LocalPosition: {x: 0.3829853, y: -0.11033092, z: -0.008079529}
   m_LocalScale: {x: 0.19563001, y: 0.19563004, z: 0.19563004}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4241187051053688890}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -0.874, y: -26.676, z: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 63.450733, y: -92.6496, z: -89.70179}
 --- !u!212 &468350958415839193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 8443254325198211032}
   - component: {fileID: 2448481612686228485}
   m_Layer: 0
-  m_Name: AntMidLeg (1)
+  m_Name: AntMidLegLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,8 +282,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4241187051053688890}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: -0.874, y: 8.117, z: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 84.93596, y: 22.878578, z: 22.921284}
 --- !u!212 &2448481612686228485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 1536600568968324154}
   - component: {fileID: 229513404465841221}
   m_Layer: 0
-  m_Name: AntMandable (1)
+  m_Name: AntMandableLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -366,7 +366,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4241187051053688890}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -9.882, y: 179.924, z: 0.013}
 --- !u!212 &229513404465841221
 SpriteRenderer:
@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 8206696505605971192}
   - component: {fileID: 6901072191978203636}
   m_Layer: 0
-  m_Name: AntMidLeg
+  m_Name: AntMidLegRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -451,7 +451,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4241187051053688890}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -0.874, y: -21.73, z: 0}
+  m_LocalEulerAnglesHint: {x: 73.739365, y: -74.03507, z: -73.74458}
 --- !u!212 &6901072191978203636
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 7597251579838650867}
   - component: {fileID: 7849041532952188143}
   m_Layer: 0
-  m_Name: AntMandable
+  m_Name: AntMandableRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -534,7 +534,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4241187051053688890}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 9.882, y: 0, z: 0}
 --- !u!212 &7849041532952188143
 SpriteRenderer:
@@ -599,7 +599,7 @@ GameObject:
   - component: {fileID: 790467953077728410}
   - component: {fileID: 8415813739831483952}
   m_Layer: 0
-  m_Name: AntFrontLeg (1)
+  m_Name: AntFrontLegLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -613,13 +613,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6804080422611015623}
   m_LocalRotation: {x: 0.6668755, y: 0.13390793, z: 0.1275489, w: 0.7218567}
-  m_LocalPosition: {x: -0.37275848, y: -0.16227761, z: 0.38448536}
+  m_LocalPosition: {x: -0.373, y: -0.157, z: 0.453}
   m_LocalScale: {x: 0.19562997, y: 0.19563003, z: 0.19563003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4241187051053688890}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: -0.874, y: 21.314, z: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 77.93482, y: 67.75027, z: 67.629616}
 --- !u!212 &8415813739831483952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 5072301142954817569}
   - component: {fileID: 3061953596360629325}
   m_Layer: 0
-  m_Name: AntFrontLeg
+  m_Name: AntFrontLegRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -703,7 +703,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4241187051053688890}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -0.874, y: -16.848, z: 0}
+  m_LocalEulerAnglesHint: {x: 79.28845, y: -64.81953, z: -64.690994}
 --- !u!212 &3061953596360629325
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -763,6 +763,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1391182620161416719, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: f289198683f37b547860aab4dbc7ac2f, type: 2}
+    - target: {fileID: 1391182620161416719, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391182620161416719, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: 5fa43153b45f3cc478fa550bf61b73ec, type: 2}
+    - target: {fileID: 6522470845372001949, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: gravity
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522470845372001949, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: reachedDistance
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6862165605202001890, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: m_Name
