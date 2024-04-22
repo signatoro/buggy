@@ -36,7 +36,7 @@ public class CatchingInteraction : MonoBehaviour
 
     private void Start()
     {
-        reticule.color = reticuleInactive.CurrentValue;
+         ResetReticuleColor();
         _camera = GetComponent<CameraController>().Camera;
         _bugInventory = GetComponent<BugInventory>();
         SetReticuleVisibility(true);
@@ -53,7 +53,7 @@ public class CatchingInteraction : MonoBehaviour
         if (lifeForm == null) // Not looking at an interactable
         {
             _currentLifeForm = null;
-            reticule.color = reticuleInactive.CurrentValue;
+            ResetReticuleColor();
             return;
         }
 
@@ -66,7 +66,7 @@ public class CatchingInteraction : MonoBehaviour
 
         if (lifeForm.CanBeCaught(_bugInventory.GetBugInventoryData()))
         {
-            reticule.color = canCatchColor.CurrentValue;
+            SetReticuleColor(canCatchColor.CurrentValue);
             if (catchKeycodes.PressingOneOfTheKeys())
             {
                 _bugInventory.GetBugInventoryData().CatchBug(lifeForm.Species);
@@ -75,7 +75,7 @@ public class CatchingInteraction : MonoBehaviour
         }
         else if (lifeForm.CatchButRelease(_bugInventory.GetBugInventoryData()))
         {
-            reticule.color = canAttemptToCatchColor.CurrentValue;
+            SetReticuleColor(canAttemptToCatchColor.CurrentValue);
             if (catchKeycodes.PressingOneOfTheKeys())
             {
                 lifeForm.BugReleased();
@@ -83,10 +83,14 @@ public class CatchingInteraction : MonoBehaviour
         }
         else
         {
-            reticule.color = cannotCatchColor.CurrentValue;
+            SetReticuleColor(cannotCatchColor.CurrentValue);
         }
     }
 
+    /// <summary>
+    /// Gets the Catchable Life Form that we are looking at.
+    /// </summary>
+    /// <returns>The Catchable Life Form that we are facing.</returns>
     private CatchableLifeForm GetCatchableLifeFormWereFacing()
     {
         Ray ray = new Ray(_camera.transform.position, _camera.transform.forward);
@@ -108,9 +112,26 @@ public class CatchingInteraction : MonoBehaviour
     /// Determines whether to enable or disable the reticule.
     /// </summary>
     /// <param name="visible">Whether or not it is visible.</param>
-    public void SetReticuleVisibility(bool visible)
+    private void SetReticuleVisibility(bool visible)
     {
         reticule.enabled = visible;
+    }
+
+    /// <summary>
+    /// Sets the reticule's color to the given color.
+    /// </summary>
+    /// <param name="color">The color to set the reticule to.</param>
+    private void SetReticuleColor(Color color)
+    {
+        reticule.color = color;
+    }
+
+    /// <summary>
+    /// Resets the reticule's color to it's inactive color.
+    /// </summary>
+    private void ResetReticuleColor()
+    {
+        SetReticuleColor(reticuleInactive.CurrentValue);
     }
 
     private void OnDrawGizmos()
