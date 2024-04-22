@@ -305,7 +305,14 @@ public class LifeFormBrain : MonoBehaviour
         {
             // Get the Data needed for the State
             SenseSystem.SenseData data =
-                _currentlySeenLifeForms.FirstOrDefault(senseData => _lifeFormFollowed == senseData.CatchableLifeForm);
+                ((_currentlySeenLifeForms.FirstOrDefault(senseData =>
+                      _lifeFormFollowed == senseData.CatchableLifeForm) ??
+                  _currentlyHeardLifeForms.FirstOrDefault(senseData =>
+                      _lifeFormFollowed == senseData.CatchableLifeForm)) ?? 
+                 _becameUnseenLastFrame.FirstOrDefault(senseData =>
+                        _lifeFormFollowed == senseData.CatchableLifeForm)) ?? 
+                _becameUnheardLastFrame.FirstOrDefault(senseData =>
+                        _lifeFormFollowed == senseData.CatchableLifeForm);
 
             // Wait Until all Life Form Actions are Complete
             if (data != null)

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 424371a7241434cf4bc0a2cfde71d138, type: 3}
-  m_Name: V_ReachedDistance
+  m_Name: V_PlayerWalkingFrequency
   m_EditorClassIdentifier: 
-  Description: Distance where we think we've reached our destination.
-  initialValue: 3
-  currentValue: 1
+  Description: The amount of time between walking sounds for the player
+  initialValue: 0.1
+  currentValue: 0.2
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
