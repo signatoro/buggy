@@ -357,7 +357,7 @@ public class PlayerMovement : MonoBehaviour
 
         while (timer < respawnFadeInTime.CurrentValue)
         {
-            var color = fadeImage.color;
+            Color color = fadeImage.color;
             color.a = Mathf.Lerp(1, 0, timer / respawnFadeInTime.CurrentValue);
             fadeImage.color = color;
             timer += Time.deltaTime;
