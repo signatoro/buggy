@@ -34,6 +34,8 @@ public class Bed : MonoBehaviour
     [Tooltip("Time of Day Global Variable")] [SerializeField]
     private GlobalFloat timeOfDay;
 
+    [Tooltip("Book UI.")] [SerializeField] private BookUI bookUI;
+
     private GameObject _player;
 
     private CameraController _cameraController;
@@ -154,7 +156,10 @@ public class Bed : MonoBehaviour
     /// </summary>
     private void UnlockNewBookHints()
     {
-        // TODO: Implement this once the book is created.
+        if (bookUI)
+        {
+            bookUI.UpdatePageLayouts();
+        }
     }
 
     /// <summary>
