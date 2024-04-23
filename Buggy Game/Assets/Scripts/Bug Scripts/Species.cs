@@ -20,10 +20,10 @@ public class Species : ScriptableObject
     [Tooltip("Name of the Species.")] [SerializeField]
     private string speciesName;
 
-    [Tooltip("Description of species before it is caught.")] [SerializeField]
+    [Tooltip("Description of species before it is caught.")] [SerializeField] [TextArea]
     private string preCaughtDescription;
 
-    [Tooltip("Description of species after it is caught.")] [SerializeField]
+    [Tooltip("Description of species after it is caught.")] [SerializeField] [TextArea]
     private string postCaughtDescription;
 
     [Tooltip("Silhouette.")] [SerializeField]
