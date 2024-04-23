@@ -400,4 +400,34 @@ public class Species : ScriptableObject
 
         return LifeFormRelation.NONE;
     }
+
+    /// <summary>
+    /// Gets the Species Name.
+    /// </summary>
+    /// <returns>The Species Name.</returns>
+    public string GetSpeciesName() => speciesName;
+    
+    /// <summary>
+    /// Gets the Pre-Caught Description.
+    /// </summary>
+    /// <returns>The Pre-Caught Description.</returns>
+    public string GetPreCaughtDescription() => preCaughtDescription;
+    
+    /// <summary>
+    /// Gets the Post-Caught Description.
+    /// </summary>
+    /// <returns>The Post-Caught Description.</returns>
+    public string GetPostCaughtDescription() => postCaughtDescription;
+    
+    /// <summary>
+    /// Gets the Silhouette.
+    /// </summary>
+    /// <returns>The Silhouette.</returns>
+    public Sprite GetSilhouette() => silhouette;
+    
+    /// <summary>
+    /// Gets the Full Sprite.
+    /// </summary>
+    /// <returns>The Full Sprite.</returns>
+    public Sprite GetFullSprite() => fullSprite;
 }

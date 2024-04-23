@@ -60,7 +60,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1347,7 +1347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6901961}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1374,7 +1374,12 @@ PrefabInstance:
     - target: {fileID: 1119823419309775145, guid: f9e2fade15bd84d37b44963e322c7ad5,
         type: 3}
       propertyPath: m_Name
-      value: Book
+      value: Book UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1119823419309775145, guid: f9e2fade15bd84d37b44963e322c7ad5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7577295177371469753, guid: f9e2fade15bd84d37b44963e322c7ad5,
         type: 3}
@@ -1481,6 +1486,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8019923412794766962, guid: f9e2fade15bd84d37b44963e322c7ad5,
+        type: 3}
+      propertyPath: fader
+      value: 
+      objectReference: {fileID: 1834700315606349147}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e2fade15bd84d37b44963e322c7ad5, type: 3}
 --- !u!224 &7783489989708614485 stripped
