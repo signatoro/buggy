@@ -21,7 +21,8 @@ MonoBehaviour:
     will see them everywhere. '
   silhouette: {fileID: 21300000, guid: 2feda708c310d984eb043702a5f842aa, type: 3}
   fullSprite: {fileID: 21300000, guid: e76d87ad22bc9694d994da18af58d7ed, type: 3}
-  prey: []
+  prey:
+  - {fileID: 11400000, guid: ce4cb30da34d245efbeb0efbb3de1786, type: 2}
   predators: []
   neutral: []
   enemies: []
