@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1391182620161416719}
   - component: {fileID: 2873108939476408844}
   - component: {fileID: 1633627840293099729}
+  - component: {fileID: 7993019728063017056}
   m_Layer: 6
   m_Name: LF_BasicLifeForm
   m_TagString: Untagged
@@ -53,7 +54,19 @@ MonoBehaviour:
   species: {fileID: 11400000, guid: 138d4195f69ad48109de5ed79711945d, type: 2}
   OnCaught:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7993019728063017056}
+        m_TargetAssemblyTypeName: LifeFormDestruction, Assembly-CSharp
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnReleased:
     m_PersistentCalls:
       m_Calls: []
@@ -143,6 +156,19 @@ MonoBehaviour:
   senseSound: {fileID: 0}
   defaultActions: []
   lifeFormStates: []
+--- !u!114 &7993019728063017056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862165605202001890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 714d9a8746dfd4cf0ae9fc014a0c9bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionVisuals: []
 --- !u!1 &7103778193922560499
 GameObject:
   m_ObjectHideFlags: 0
