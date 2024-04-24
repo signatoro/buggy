@@ -1,21 +1,12 @@
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(SoundGenerator))]
 [RequireComponent(typeof(NavMeshAgent))]
 public class LifeFormMovement : MonoBehaviour
 {
     [Tooltip("Distance from current position to desired position where we can say we reached")] [SerializeField]
     private GlobalFloat reachedDistance;
-
-    [Tooltip("Gravity Value")] [SerializeField]
-    private GlobalFloat gravity;
-
-    [Tooltip("Can this Life Form Fly?")] [SerializeField]
-    private GlobalBool canFly;
 
     [Tooltip("Movement Sound")] [SerializeField]
     private InUniverseSound movementSound;

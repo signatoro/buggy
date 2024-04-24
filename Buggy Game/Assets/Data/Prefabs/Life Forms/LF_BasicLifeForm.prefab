@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8997365163155274866}
   - component: {fileID: 2235977554043265147}
   - component: {fileID: 6522470845372001949}
-  - component: {fileID: 4405638472989245543}
   - component: {fileID: 1022258427022233233}
   - component: {fileID: 1391182620161416719}
   - component: {fileID: 2873108939476408844}
@@ -71,33 +70,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachedDistance: {fileID: 11400000, guid: c37d350002476417b9474f6b3275c7bf, type: 2}
-  gravity: {fileID: 0}
-  canFly: {fileID: 0}
   movementSound: {fileID: 0}
-  slowSpeed: {fileID: 0}
-  mediumSpeed: {fileID: 0}
-  fastSpeed: {fileID: 0}
   useDebugPath: 0
   debugPathLocation: {x: 0, y: 0, z: 0}
   useDebugGizmos: 0
---- !u!143 &4405638472989245543
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6862165605202001890}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1022258427022233233
 MonoBehaviour:
   m_ObjectHideFlags: 0
