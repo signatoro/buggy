@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_TimeOfDay
   m_EditorClassIdentifier: 
   Description: What is the time of day?
-  initialValue: 23
-  currentValue: 7.7170014
+  initialValue: 7
+  currentValue: 0.3507363
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
