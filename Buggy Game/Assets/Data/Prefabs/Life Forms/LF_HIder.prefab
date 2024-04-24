@@ -470,7 +470,7 @@ PrefabInstance:
     - target: {fileID: 6862165605202001890, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: m_Name
-      value: LF_HIder
+      value: LF_Hider
       objectReference: {fileID: 0}
     - target: {fileID: 8300718088748001967, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
