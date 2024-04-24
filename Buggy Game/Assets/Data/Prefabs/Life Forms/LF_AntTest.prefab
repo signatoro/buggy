@@ -391,6 +391,26 @@ PrefabInstance:
       propertyPath: OnReleased.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Material, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2873108939476408844, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_Height
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873108939476408844, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873108939476408844, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_BaseOffset
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873108939476408844, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_AgentTypeID
+      value: -1372625422
+      objectReference: {fileID: 0}
     - target: {fileID: 4405638472989245543, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: m_Height
@@ -400,6 +420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Radius
       value: 1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405638472989245543, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4405638472989245543, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
