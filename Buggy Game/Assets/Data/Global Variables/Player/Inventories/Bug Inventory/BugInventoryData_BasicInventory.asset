@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d81f7699fbf425aa2ae6fd0d8646f8, type: 3}
   m_Name: BugInventoryData_BasicInventory
   m_EditorClassIdentifier: 
-  bugsCaught: []
+  bugsCaught:
+  - {fileID: 11400000, guid: 5af459e0a650046f09674917c6f06a3a, type: 2}
   glassJars: {fileID: 11400000, guid: 08698e49f7ca242f283aa114b5ad38b3, type: 2}
   OnBugCaught:
     m_PersistentCalls:

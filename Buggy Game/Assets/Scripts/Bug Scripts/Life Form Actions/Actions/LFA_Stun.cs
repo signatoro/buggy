@@ -18,6 +18,14 @@ public class LFA_Stun : LifeFormAction
     private UnityEvent onNotStunned = new();
 
     /// <summary>
+    /// Stuns the Life Form.
+    /// </summary>
+    public void Stun()
+    {
+        StartCoroutine(PerformAction());
+    }
+    
+    /// <summary>
     /// Stun the Life Form for some time.
     /// </summary>
     public override IEnumerator PerformAction(Vector3 position = new Vector3())
@@ -27,7 +35,7 @@ public class LFA_Stun : LifeFormAction
         {
             visual.SetActive(true);
         }
-
+        
         yield return new WaitForSeconds(stunTime.CurrentValue);
         
         onNotStunned.Invoke();

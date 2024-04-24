@@ -18,7 +18,8 @@ MonoBehaviour:
   silhouette: {fileID: 21300000, guid: adcc58033d9dd0a4a8491814b987040a, type: 3}
   fullSprite: {fileID: 21300000, guid: 758007a5476164649aed4538e4f3dc9b, type: 3}
   prey: []
-  predators: []
+  predators:
+  - {fileID: 11400000, guid: 81c380cf6d7f6427daceb2787461326f, type: 2}
   neutral: []
   enemies:
   - {fileID: 11400000, guid: bf60e0531256142feb4f729224413aaa, type: 2}

@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 29149
+  m_SortingOrder: -19224
   m_Sprite: {fileID: 21300000, guid: f11e4741298c71749bb72591a2679530, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -173,7 +173,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 29149
+  m_SortingOrder: -19224
   m_Sprite: {fileID: 21300000, guid: 3349d6b67ad9e4943ace90cbe8c7f1a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -289,7 +289,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 29149
+  m_SortingOrder: -19224
   m_Sprite: {fileID: 21300000, guid: f11e4741298c71749bb72591a2679530, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -389,7 +389,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 29148
+  m_SortingOrder: -19225
   m_Sprite: {fileID: 21300000, guid: e76d87ad22bc9694d994da18af58d7ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -473,7 +473,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 29148
+  m_SortingOrder: -19225
   m_Sprite: {fileID: 21300000, guid: e76d87ad22bc9694d994da18af58d7ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -557,7 +557,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 29150
+  m_SortingOrder: -19223
   m_Sprite: {fileID: 21300000, guid: 2feda708c310d984eb043702a5f842aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -641,7 +641,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 29149
+  m_SortingOrder: -19224
   m_Sprite: {fileID: 21300000, guid: 3349d6b67ad9e4943ace90cbe8c7f1a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -801,6 +801,12 @@ PrefabInstance:
       propertyPath: m_BaseOffset
       value: 3.27
       objectReference: {fileID: 0}
+    - target: {fileID: 6522470845372001949, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: movementSound
+      value: 
+      objectReference: {fileID: 9085574075368509307, guid: 1d3aa37d29a32425089618917e921182,
+        type: 3}
     - target: {fileID: 6522470845372001949, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: reachedDistance
