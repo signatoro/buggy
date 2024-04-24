@@ -387,7 +387,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2443645458053175959}
         m_TargetAssemblyTypeName: LFA_Stun, Assembly-CSharp
-        m_MethodName: Stun
+        m_MethodName: ForceStun
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
