@@ -41,11 +41,11 @@ Material:
     MotionVector: User
     RenderType: Transparent
   disabledShaderPasses:
-  - TransparentDepthPrepass
+  - MOTIONVECTORS
   - TransparentDepthPostpass
   - TransparentBackface
   - RayTracingPrepass
-  - MOTIONVECTORS
+  - TransparentDepthPrepass
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -74,7 +74,7 @@ Material:
     - _AlphaToMask: 1
     - _AlphaToMaskInspectorValue: 1
     - _BlendMode: 0
-    - _Clip: 0
+    - _Clip: 0.071
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
@@ -117,11 +117,12 @@ Material:
     - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
     - _ZWrite: 0
+    - _flip: -1
     m_Colors:
-    - _BaseColor: {r: 0.1289307, g: 0.4812292, b: 1, a: 1}
+    - _BaseColor: {r: 0.13789006, g: 0.40026313, b: 0.7830189, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MainTexSpeed: {r: 0, g: 0.1, b: 0, a: 0}
-    - _MainTexTiling: {r: -0.02, g: -0.02, b: 0, a: 0}
-    - _MainTextColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainTexSpeed: {r: 0, g: 0.07, b: 0, a: 0}
+    - _MainTexTiling: {r: 0.002, g: 0.002, b: 0, a: 0}
+    - _MainTextColor: {r: 0.47668204, g: 0.52038294, b: 0.735849, a: 1}
   m_BuildTextureStacks: []
