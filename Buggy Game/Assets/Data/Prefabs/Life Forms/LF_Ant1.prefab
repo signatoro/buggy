@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8668043918891819696}
   - component: {fileID: 4269039147486225388}
   m_Layer: 0
-  m_Name: AntBackLeg (1)
+  m_Name: AntBackLegLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 3006958683517907108}
   - component: {fileID: 468350958415839193}
   m_Layer: 0
-  m_Name: AntBackLeg
+  m_Name: AntBackLegRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 8443254325198211032}
   - component: {fileID: 2448481612686228485}
   m_Layer: 0
-  m_Name: AntMidLeg (1)
+  m_Name: AntMidLegLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 1536600568968324154}
   - component: {fileID: 229513404465841221}
   m_Layer: 0
-  m_Name: AntMandable (1)
+  m_Name: AntMandableLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 8206696505605971192}
   - component: {fileID: 6901072191978203636}
   m_Layer: 0
-  m_Name: AntMidLeg
+  m_Name: AntMidLegRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 7597251579838650867}
   - component: {fileID: 7849041532952188143}
   m_Layer: 0
-  m_Name: AntMandable
+  m_Name: AntMandableRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 790467953077728410}
   - component: {fileID: 8415813739831483952}
   m_Layer: 0
-  m_Name: AntFrontLeg (1)
+  m_Name: AntFrontLegLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -745,7 +745,7 @@ GameObject:
   - component: {fileID: 5072301142954817569}
   - component: {fileID: 3061953596360629325}
   m_Layer: 0
-  m_Name: AntFrontLeg
+  m_Name: AntFrontLegRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -825,6 +825,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1391182620161416719, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: f289198683f37b547860aab4dbc7ac2f, type: 2}
     - target: {fileID: 1633627840293099729, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: senseSight
@@ -1110,6 +1115,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8346968, y: 0.21927524, z: 2.7836127}
   m_Center: {x: 0.09981084, y: -0.035426527, z: 0.1495707}
+--- !u!95 &2185562275392721865
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662399189181156286}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba712bbb0a03e2c4e860f8d827c08056, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &912350552235862531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,24 +1196,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destructionVisuals: []
---- !u!114 &8978184171051617864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4662399189181156286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92303328006e44abba362c9c0e0bf0e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  root: {fileID: 5641113551012240892}
-  radius: {fileID: 11400000, guid: 6c7cdcca6c8a648caa0e0ff2bc008d97, type: 2}
-  enableGizmos: 0
-  fieldOfViewAngle: {fileID: 11400000, guid: 90ea134e2301341f283fb6ee28be3448, type: 2}
-  directionalLightCheckDistance: {fileID: 11400000, guid: 204cff21f1089420ab1bfb451a7e5d16,
-    type: 2}
 --- !u!114 &5432973429991508337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1207,6 +1214,24 @@ MonoBehaviour:
   activeTime: {fileID: 11400000, guid: 079ec13ca0d2c4b61aa8319446b4190f, type: 2}
   cooldownTime: {fileID: 11400000, guid: c4e4eba0fd574416bac71cbdcfced65c, type: 2}
   visuals: []
+--- !u!114 &8978184171051617864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662399189181156286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92303328006e44abba362c9c0e0bf0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 5641113551012240892}
+  radius: {fileID: 11400000, guid: 6c7cdcca6c8a648caa0e0ff2bc008d97, type: 2}
+  enableGizmos: 0
+  fieldOfViewAngle: {fileID: 11400000, guid: 90ea134e2301341f283fb6ee28be3448, type: 2}
+  directionalLightCheckDistance: {fileID: 11400000, guid: 204cff21f1089420ab1bfb451a7e5d16,
+    type: 2}
 --- !u!4 &7156901422013450286 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8997365163155274866, guid: b5feee2d80cc44451a442009b58d98f9,
