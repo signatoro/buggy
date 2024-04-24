@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7971590579637731413}
   - component: {fileID: 5660522215036960450}
   m_Layer: 0
-  m_Name: HiderWings
+  m_Name: HiderWingsLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 7243979882389351454}
   - component: {fileID: 2673611795268513408}
   m_Layer: 0
-  m_Name: HiderAntenna
+  m_Name: HiderAntennaRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 2488347374509226135}
   - component: {fileID: 8159671232391103013}
   m_Layer: 0
-  m_Name: HiderWings (1)
+  m_Name: HiderWingsRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 425381530935987404}
   - component: {fileID: 1975140245095099327}
   m_Layer: 0
-  m_Name: HiderAntenna (1)
+  m_Name: HiderAntennaLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,6 +427,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1391182620161416719, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: a418552d2d4c6ce41ae86d7597087269, type: 2}
+    - target: {fileID: 1391182620161416719, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391182620161416719, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: df6c60ac91e49cb43b46963d407c3f41, type: 2}
     - target: {fileID: 2690018111977626726, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -441,6 +456,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.19563
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991346102666015469, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: faa9c00d682d1c4438eb6ebb962d6552, type: 2}
+    - target: {fileID: 2991346102666015469, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6862165605202001890, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
