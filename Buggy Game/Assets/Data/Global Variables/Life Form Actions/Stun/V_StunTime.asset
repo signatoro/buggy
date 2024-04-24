@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 424371a7241434cf4bc0a2cfde71d138, type: 3}
-  m_Name: V_DefaultSlowSpeed
+  m_Name: V_StunTime
   m_EditorClassIdentifier: 
-  Description: Default Slow Movement Speed.
-  initialValue: 1.7
-  currentValue: 1.7
+  Description: The standard amount of time to stun.
+  initialValue: 5
+  currentValue: 0
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:

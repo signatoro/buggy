@@ -23,6 +23,7 @@ MonoBehaviour:
   fullSprite: {fileID: 21300000, guid: e76d87ad22bc9694d994da18af58d7ed, type: 3}
   prey:
   - {fileID: 11400000, guid: ce4cb30da34d245efbeb0efbb3de1786, type: 2}
-  predators: []
+  predators:
+  - {fileID: 11400000, guid: 81c380cf6d7f6427daceb2787461326f, type: 2}
   neutral: []
   enemies: []
