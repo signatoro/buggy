@@ -30,9 +30,9 @@ public class LFA_RunAwayFromTarget : LifeFormAction
             position.y = transform.position.y;
             Vector3 targetToLifeFormVector = (transform.position - position).normalized;
             
-            Debug.DrawRay(transform.position, targetToLifeFormVector * 10, Color.red, Time.deltaTime);
+            Debug.DrawRay(transform.position, targetToLifeFormVector * 1000, Color.red, Time.deltaTime);
 
-            _lifeFormMovement.Move(targetToLifeFormVector * 10, speed.CurrentValue);
+            _lifeFormMovement.Move(targetToLifeFormVector * 1000, speed.CurrentValue);
 
             timer += Time.deltaTime;
             yield return null;
