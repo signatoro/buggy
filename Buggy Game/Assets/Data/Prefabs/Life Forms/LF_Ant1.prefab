@@ -535,6 +535,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &5484336813384853478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4273178969567341430}
+  m_Layer: 6
+  m_Name: Attack Root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4273178969567341430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5484336813384853478}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.07, y: 0, z: 1.29}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7156901422013450286}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5566058394553128038
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,13 +858,18 @@ PrefabInstance:
     - target: {fileID: 1633627840293099729, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: lifeFormStates.Array.data[0].actions.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1633627840293099729, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: lifeFormStates.Array.data[0].actions.Array.data[0]
       value: 
       objectReference: {fileID: 3235893030311003147}
+    - target: {fileID: 1633627840293099729, guid: b5feee2d80cc44451a442009b58d98f9,
+        type: 3}
+      propertyPath: lifeFormStates.Array.data[0].actions.Array.data[1]
+      value: 
+      objectReference: {fileID: 5432973429991508337}
     - target: {fileID: 1633627840293099729, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: lifeFormStates.Array.data[0].lightIntensityRange.x
@@ -1153,6 +1189,24 @@ MonoBehaviour:
   fieldOfViewAngle: {fileID: 11400000, guid: 90ea134e2301341f283fb6ee28be3448, type: 2}
   directionalLightCheckDistance: {fileID: 11400000, guid: 204cff21f1089420ab1bfb451a7e5d16,
     type: 2}
+--- !u!114 &5432973429991508337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662399189181156286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e652512dfa24a12883226bad68ef9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 4273178969567341430}
+  attackRadius: {fileID: 11400000, guid: 113a1ce9b509b49a9b912c2cfe364178, type: 2}
+  windUpTime: {fileID: 11400000, guid: 5cce336822c0e431ea4bab99269421f1, type: 2}
+  activeTime: {fileID: 11400000, guid: 079ec13ca0d2c4b61aa8319446b4190f, type: 2}
+  cooldownTime: {fileID: 11400000, guid: c4e4eba0fd574416bac71cbdcfced65c, type: 2}
+  visuals: []
 --- !u!4 &7156901422013450286 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8997365163155274866, guid: b5feee2d80cc44451a442009b58d98f9,

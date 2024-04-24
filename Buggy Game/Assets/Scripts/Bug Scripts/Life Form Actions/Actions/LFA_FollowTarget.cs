@@ -25,11 +25,9 @@ public class LFA_FollowTarget : LifeFormAction
     /// <returns>Nothing.</returns>
     public override IEnumerator PerformAction(Vector3 position = new Vector3())
     {
-        Debug.Log($"Going for Ant 2!", this);
         bool reached = _lifeFormMovement.Move(position, speed.CurrentValue);
         if (reached)
         {
-            Debug.Log($"Reached Ant 2!", this);
             onPathComplete.Invoke();
         }
 
