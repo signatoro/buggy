@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Species_AntTestGlow
   m_EditorClassIdentifier: 
   speciesName: Glow Ant
-  preCaughtDescription: 
-  postCaughtDescription: 
-  silhouette: {fileID: 0}
-  fullSprite: {fileID: 0}
+  preCaughtDescription: Glow?
+  postCaughtDescription: Woah!
+  silhouette: {fileID: 21300000, guid: 17035c204825f6340a252046ab6476fd, type: 3}
+  fullSprite: {fileID: 21300000, guid: 0336fdc1f5c3b43b7b4cb4716c5dd9df, type: 3}
   prey: []
   predators: []
   neutral: []

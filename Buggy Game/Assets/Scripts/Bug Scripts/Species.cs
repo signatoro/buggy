@@ -20,10 +20,10 @@ public class Species : ScriptableObject
     [Tooltip("Name of the Species.")] [SerializeField]
     private string speciesName;
 
-    [Tooltip("Description of species before it is caught.")] [SerializeField]
+    [Tooltip("Description of species before it is caught.")] [SerializeField] [TextArea]
     private string preCaughtDescription;
 
-    [Tooltip("Description of species after it is caught.")] [SerializeField]
+    [Tooltip("Description of species after it is caught.")] [SerializeField] [TextArea]
     private string postCaughtDescription;
 
     [Tooltip("Silhouette.")] [SerializeField]
@@ -400,4 +400,34 @@ public class Species : ScriptableObject
 
         return LifeFormRelation.NONE;
     }
+
+    /// <summary>
+    /// Gets the Species Name.
+    /// </summary>
+    /// <returns>The Species Name.</returns>
+    public string GetSpeciesName() => speciesName;
+    
+    /// <summary>
+    /// Gets the Pre-Caught Description.
+    /// </summary>
+    /// <returns>The Pre-Caught Description.</returns>
+    public string GetPreCaughtDescription() => preCaughtDescription;
+    
+    /// <summary>
+    /// Gets the Post-Caught Description.
+    /// </summary>
+    /// <returns>The Post-Caught Description.</returns>
+    public string GetPostCaughtDescription() => postCaughtDescription;
+    
+    /// <summary>
+    /// Gets the Silhouette.
+    /// </summary>
+    /// <returns>The Silhouette.</returns>
+    public Sprite GetSilhouette() => silhouette;
+    
+    /// <summary>
+    /// Gets the Full Sprite.
+    /// </summary>
+    /// <returns>The Full Sprite.</returns>
+    public Sprite GetFullSprite() => fullSprite;
 }
