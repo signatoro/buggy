@@ -28,6 +28,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(CameraController))]
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(BugInventory))]
+[RequireComponent(typeof(SoundGenerator))]
 public class PlayerMovement : MonoBehaviour
 {
     /// <summary>
@@ -111,6 +112,9 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("Are we on the ground?")] [SerializeField]
     private GlobalBool isGrounded;
 
+    [Tooltip("Are we on water?")] [SerializeField]
+    private GlobalBool onWater;
+
     [Header("Respawn")] [Tooltip("Initial Respawn Point")] [SerializeField]
     private Transform initialRespawnPoint;
 
@@ -120,14 +124,32 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("Respawn Fade In Time")] [SerializeField]
     private GlobalFloat respawnFadeInTime;
 
-    private BugInventoryData _bugInventoryData;
+    [Header("SFX")] [Tooltip("Sound for Walking")] [SerializeField]
+    private InUniverseSound walkingSound;
 
-    private CameraController _cameraController;
+    [Tooltip("Sound for Crouching")] [SerializeField]
+    private InUniverseSound crouchingSound;
 
+    [Tooltip("Sound for Walking on Water")] [SerializeField]
+    private InUniverseSound walkingSoundWater;
+
+    [Tooltip("Sound for Crouching on Water")] [SerializeField]
+    private InUniverseSound crouchingSoundWater;
+
+    [Tooltip("Walking Sound Frequency")] [SerializeField]
+    private GlobalFloat walkingSoundFrequency;
+
+    // Local Variables
 
     /// <summary>
     ///     Required Components
     /// </summary>
+    private BugInventoryData _bugInventoryData;
+
+    private CameraController _cameraController;
+
+    private SoundGenerator _soundGenerator;
+
     private CharacterController _characterController;
 
     private Transform _currentRespawnPoint;
@@ -144,16 +166,20 @@ public class PlayerMovement : MonoBehaviour
 
     private float _zInput;
 
+    private float _timerSound;
+
 
     private void Awake()
     {
         waterWalking.OnChanged.AddListener(WaterWalking);
         _characterController = GetComponent<CharacterController>();
+        _soundGenerator = GetComponent<SoundGenerator>();
         _characterController.height = standingHeight.CurrentValue;
         _cameraController = GetComponent<CameraController>();
         _cameraController.SetUpIsCrouching(isCrouching);
         _bugInventoryData = GetComponent<BugInventory>().GetBugInventoryData();
         _currentRespawnPoint = initialRespawnPoint;
+        _timerSound = walkingSoundFrequency.CurrentValue;
     }
 
     private void Update()
@@ -198,6 +224,11 @@ public class PlayerMovement : MonoBehaviour
     {
         CrouchCheck();
         InfluenceVelocity();
+        _timerSound -= Time.deltaTime;
+        if (_timerSound <= 0)
+        {
+            AttemptToPlayMovementSound();
+        }
     }
 
     /// <summary>
@@ -209,8 +240,8 @@ public class PlayerMovement : MonoBehaviour
         {
             isCrouching.CurrentValue = true;
             _characterController.height = crouchingHeight.CurrentValue;
-            var distanceBetweenCenters = standingHeight.CurrentValue / 2f - crouchingHeight.CurrentValue / 2f;
-            var centerY = standingHeight.CurrentValue >= crouchingHeight.CurrentValue
+            float distanceBetweenCenters = standingHeight.CurrentValue / 2f - crouchingHeight.CurrentValue / 2f;
+            float centerY = standingHeight.CurrentValue >= crouchingHeight.CurrentValue
                 ? _characterController.center.y - distanceBetweenCenters
                 : _characterController.center.y + distanceBetweenCenters;
             _characterController.center =
@@ -250,23 +281,22 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Movement Vector Controls
-        var moveVector = transform.right * _xInput + transform.forward * _zInput;
+        Vector3 moveVector = transform.right * _xInput + transform.forward * _zInput;
 
         _velocity = isCrouching.CurrentValue
             ? moveVector.normalized * GetMaxCrouchingSpeed()
             : moveVector.normalized * GetMaxSpeed();
 
         // Gravity
-        if (isGrounded.CurrentValue)
-            _velocity.y = 0;
-        else
-            _velocity.y = -1 * gravity.CurrentValue;
+        _velocity.y = -1 * gravity.CurrentValue;
 
         _velocity *= Time.deltaTime;
 
         // Respawn if on Water when not allowed
-        if (!isGrounded.CurrentValue && !waterWalking.CurrentValue && Physics.CheckSphere(groundCheck.position,
-                groundDistance.CurrentValue, LayerMask.GetMask("Water")))
+        onWater.CurrentValue = Physics.CheckSphere(groundCheck.position,
+            groundDistance.CurrentValue, LayerMask.GetMask("Water"));
+
+        if (!isGrounded.CurrentValue && !waterWalking.CurrentValue && onWater.CurrentValue)
         {
             _velocity = Vector3.zero;
             StartCoroutine(Respawn());
@@ -274,6 +304,30 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             _characterController.Move(_velocity);
+        }
+    }
+
+    /// <summary>
+    /// Attempts to play the sound associated with your current state.
+    /// </summary>
+    private void AttemptToPlayMovementSound()
+    {
+        if (Mathf.Abs(_velocity.x) > 0.0005f || Mathf.Abs(_velocity.z) > 0.0005f)
+        {
+            if (isCrouching.CurrentValue)
+            {
+                _soundGenerator.PlaySound(onWater.CurrentValue ? crouchingSoundWater : crouchingSound);
+            }
+            else
+            {
+                _soundGenerator.PlaySound(onWater.CurrentValue ? walkingSoundWater : walkingSound);
+            }
+
+            _timerSound = walkingSoundFrequency.CurrentValue;
+        }
+        else
+        {
+            _timerSound = 0;
         }
     }
 
@@ -303,7 +357,7 @@ public class PlayerMovement : MonoBehaviour
 
         while (timer < respawnFadeInTime.CurrentValue)
         {
-            var color = fadeImage.color;
+            Color color = fadeImage.color;
             color.a = Mathf.Lerp(1, 0, timer / respawnFadeInTime.CurrentValue);
             fadeImage.color = color;
             timer += Time.deltaTime;

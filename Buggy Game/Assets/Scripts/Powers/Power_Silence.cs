@@ -29,6 +29,8 @@ public class Power_Silence : Power
 
     private HashSet<CatchableLifeForm> _lifeFormsSilenced = new();
 
+    private HashSet<InUniverseSound> _soundsSilenced = new();
+
     /// <summary>
     /// Setup the Sound Generator.
     /// </summary>
@@ -70,8 +72,15 @@ public class Power_Silence : Power
             }
         }
 
+        // Unmute all sounds no longer hit
+        foreach (InUniverseSound sound in _soundsSilenced)
+        {
+            sound.audioSource.mute = false;
+        }
+
         // Reset Silenced Life Forms
         _lifeFormsSilenced = new HashSet<CatchableLifeForm>();
+        _soundsSilenced = new HashSet<InUniverseSound>();
         _canUse = true;
         yield return null;
     }
@@ -171,7 +180,6 @@ public class Power_Silence : Power
         yield return null;
     }
 
-
     /// <summary>
     /// Silences any Life Form hit that has a valid relationship.
     /// </summary>
@@ -182,6 +190,9 @@ public class Power_Silence : Power
         Collider[] hits = new Collider[50];
         Physics.OverlapSphereNonAlloc(rootPosition.position, range, hits);
 
+        // All in universe audio in range
+        HashSet<InUniverseSound> sounds = new();
+
         // Keep the Catchable Life Forms that have a prey, neutral, or enemy relationship to this Catchable Life Form
         HashSet<CatchableLifeForm> catchableLifeFormsWithValidRelationship = new();
         foreach (Collider hit in hits)
@@ -190,6 +201,12 @@ public class Power_Silence : Power
                 _catchableLifeForm.Species.NotAPredator(hit.GetComponent<CatchableLifeForm>().Species))
             {
                 catchableLifeFormsWithValidRelationship.Add(hit.GetComponent<CatchableLifeForm>());
+            }
+
+            if (hit && hit.GetComponent<InUniverseSound>() &&
+                _catchableLifeForm.Species.NotAPredator(hit.GetComponent<InUniverseSound>().CatchableLifeForm.Species))
+            {
+                sounds.Add(hit.GetComponent<InUniverseSound>());
             }
         }
 
@@ -207,6 +224,12 @@ public class Power_Silence : Power
             }
         }
 
+        // Disable all sounds hit
+        foreach (InUniverseSound sound in sounds)
+        {
+            sound.audioSource.mute = true;
+        }
+
         // Enable Speaking and Hearing for the Catchable Life Forms no longer hit
         foreach (CatchableLifeForm lifeForm in _lifeFormsSilenced.Where(lifeForm =>
                      !catchableLifeFormsWithValidRelationship.Contains(lifeForm)))
@@ -222,8 +245,17 @@ public class Power_Silence : Power
             }
         }
 
+        // Unmute all sounds that are no longer hit
+        foreach (InUniverseSound sound in _soundsSilenced.Where(sound => !sounds.Contains(sound)))
+        {
+            sound.audioSource.mute = false;
+        }
+
         // Reset Silenced Life Forms
         _lifeFormsSilenced = new HashSet<CatchableLifeForm>(catchableLifeFormsWithValidRelationship);
+
+        // Reset Silenced sounds
+        _soundsSilenced = new HashSet<InUniverseSound>(sounds);
     }
 
     /// <inheritdoc />

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -6,13 +7,23 @@ using UnityEngine.Serialization;
 [CreateAssetMenu(fileName = "Species<Name>", menuName = "Bug/Species")]
 public class Species : ScriptableObject
 {
+    [Flags]
+    public enum LifeFormRelation
+    {
+        NONE = 0,
+        PREDATOR = 1,
+        PREY = 2,
+        NEUTRAL = 4,
+        ENEMY = 8,
+    }
+
     [Tooltip("Name of the Species.")] [SerializeField]
     private string speciesName;
 
-    [Tooltip("Description of species before it is caught.")] [SerializeField]
+    [Tooltip("Description of species before it is caught.")] [SerializeField] [TextArea]
     private string preCaughtDescription;
 
-    [Tooltip("Description of species after it is caught.")] [SerializeField]
+    [Tooltip("Description of species after it is caught.")] [SerializeField] [TextArea]
     private string postCaughtDescription;
 
     [Tooltip("Silhouette.")] [SerializeField]
@@ -358,4 +369,65 @@ public class Species : ScriptableObject
     /// <param name="species">The given Species.</param>
     /// <returns>True if there is a Non-Predator relationship, else false.</returns>
     public bool NotAPredator(Species species) => HasConnectionToSpecies(species) && !predators.Contains(species);
+
+
+    /// <summary>
+    /// The relationship of the given Species to this Species.
+    /// </summary>
+    /// <param name="species">The given Species.</param>
+    /// <returns>The Relationship.</returns>
+    public LifeFormRelation GetLifeFormRelation(Species species)
+    {
+        if (predators.Contains(species))
+        {
+            return LifeFormRelation.PREDATOR;
+        }
+
+        if (prey.Contains(species))
+        {
+            return LifeFormRelation.PREY;
+        }
+
+        if (neutral.Contains(species))
+        {
+            return LifeFormRelation.NEUTRAL;
+        }
+
+        if (enemies.Contains(species))
+        {
+            return LifeFormRelation.ENEMY;
+        }
+
+        return LifeFormRelation.NONE;
+    }
+
+    /// <summary>
+    /// Gets the Species Name.
+    /// </summary>
+    /// <returns>The Species Name.</returns>
+    public string GetSpeciesName() => speciesName;
+    
+    /// <summary>
+    /// Gets the Pre-Caught Description.
+    /// </summary>
+    /// <returns>The Pre-Caught Description.</returns>
+    public string GetPreCaughtDescription() => preCaughtDescription;
+    
+    /// <summary>
+    /// Gets the Post-Caught Description.
+    /// </summary>
+    /// <returns>The Post-Caught Description.</returns>
+    public string GetPostCaughtDescription() => postCaughtDescription;
+    
+    /// <summary>
+    /// Gets the Silhouette.
+    /// </summary>
+    /// <returns>The Silhouette.</returns>
+    public Sprite GetSilhouette() => silhouette;
+    
+    /// <summary>
+    /// Gets the Full Sprite.
+    /// </summary>
+    /// <returns>The Full Sprite.</returns>
+    public Sprite GetFullSprite() => fullSprite;
 }

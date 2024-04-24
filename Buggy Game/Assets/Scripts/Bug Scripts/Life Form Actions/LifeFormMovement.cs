@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(SoundGenerator))]
@@ -15,8 +16,26 @@ public class LifeFormMovement : MonoBehaviour
     [Tooltip("Can this Life Form Fly?")] [SerializeField]
     private GlobalBool canFly;
 
-    [Tooltip("Debug Mode")] [SerializeField]
-    private bool useDebugMode;
+    [Tooltip("Movement Sound")] [SerializeField]
+    private InUniverseSound movementSound;
+
+    [Tooltip("Slow Movement Speed")] [SerializeField]
+    private GlobalFloat slowSpeed;
+
+    [Tooltip("Medium Movement Speed")] [SerializeField]
+    private GlobalFloat mediumSpeed;
+
+    [Tooltip("Fast Movement Speed")] [SerializeField]
+    private GlobalFloat fastSpeed;
+
+    [Header("Debug Mode")] [Tooltip("Make Life Form Move to the Debug Mode")] [SerializeField]
+    private bool useDebugPath;
+
+    [Tooltip("Location of the Debug Path")] [SerializeField]
+    private Vector3 debugPathLocation = new(0, 0, 0);
+
+    [Tooltip("Turn on Debug Gizmos")] [SerializeField]
+    private bool useDebugGizmos;
 
     private CharacterController _characterController;
     private SoundGenerator _soundGenerator;
@@ -30,11 +49,9 @@ public class LifeFormMovement : MonoBehaviour
     private void FixedUpdate()
     {
         ApplyGravity();
-        if (useDebugMode)
+        if (useDebugPath)
         {
-            Debug.DrawLine(transform.position,
-                transform.position + Move(new List<Vector3> { Vector3.zero }, Time.deltaTime * 10f), Color.green,
-                Time.deltaTime);
+            Move(new List<Vector3> { debugPathLocation });
         }
     }
 
@@ -53,12 +70,29 @@ public class LifeFormMovement : MonoBehaviour
     }
 
     /// <summary>
+    /// Uses the fast speed for movement.
+    /// </summary>
+    /// <param name="path">The path to follow</param>
+    public void MoveFast(List<Vector3> path) => Move(path, fastSpeed.CurrentValue);
+
+    /// <summary>
+    /// Uses the medium speed for movement.
+    /// </summary>
+    /// <param name="path">The path to follow</param>
+    public void Move(List<Vector3> path) => Move(path, mediumSpeed.CurrentValue);
+
+    /// <summary>
+    /// Uses the slow speed for movement.
+    /// </summary>
+    /// <param name="path">The path to follow</param>
+    public void MoveSlow(List<Vector3> path) => Move(path, slowSpeed.CurrentValue);
+
+    /// <summary>
     /// Try to follow the given path.
     /// </summary>
     /// <param name="path">The path to follow.</param>
     /// <param name="speed">The speed to go at.</param>
-    /// <returns>The vector that we are moving.</returns>
-    public Vector3 Move(List<Vector3> path, float speed)
+    private void Move(List<Vector3> path, float speed)
     {
         // Set the movement position
         Vector3 movementPosition = transform.position;
@@ -69,6 +103,14 @@ public class LifeFormMovement : MonoBehaviour
             break;
         }
 
+        // If we are close enough to the final position, we don't move
+        float distanceToEnd = Vector3.Distance(transform.position, movementPosition);
+        if (distanceToEnd <= reachedDistance.CurrentValue)
+        {
+            Debug.Log($"{name} reached final position.", this);
+            return;
+        }
+
         // Rotate to face movement position
         transform.LookAt(movementPosition);
 
@@ -76,15 +118,23 @@ public class LifeFormMovement : MonoBehaviour
         Vector3 normalizedVector = (movementPosition - transform.position).normalized;
 
         // Create a movement Vector
-        Vector3 movementVector = normalizedVector * speed;
+        Vector3 movementVector = normalizedVector * (speed * Time.fixedDeltaTime);
+
+        if (useDebugGizmos)
+        {
+            Debug.DrawLine(transform.position, transform.position + movementVector, Color.green, Time.deltaTime);
+        }
 
         // Add force to move
         _characterController.Move(movementVector);
-
-        return movementVector;
     }
 
-    private void ApplyMovementSound()
+    /// <summary>
+    /// Plays the movement sound.
+    /// </summary>
+    [ContextMenu("Play Movement Sound")]
+    public void PlayMovementSound()
     {
+        _soundGenerator.PlaySound(movementSound);
     }
 }
