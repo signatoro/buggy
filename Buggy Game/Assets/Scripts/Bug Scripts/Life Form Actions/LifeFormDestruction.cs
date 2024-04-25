@@ -24,9 +24,12 @@ public class LifeFormDestruction : MonoBehaviour
         {
             Instantiate(visual, transform.position, Quaternion.identity);
         }
-        
-        _catchableLifeForm.Spawner.RemoveLifeForm(_catchableLifeForm);
-        
+
+        if (_catchableLifeForm && _catchableLifeForm.Spawner)
+        {
+            _catchableLifeForm.Spawner.RemoveLifeForm(_catchableLifeForm);
+        }
+
         Destroy(gameObject);
     }
 }
