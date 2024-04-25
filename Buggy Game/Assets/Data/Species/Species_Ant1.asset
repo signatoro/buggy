@@ -19,8 +19,9 @@ MonoBehaviour:
     with neighboring colonies. Their distinctive _______ is the best way to discern
     them from other species.
   silhouette: {fileID: 21300000, guid: adcc58033d9dd0a4a8491814b987040a, type: 3}
-  fullSprite: {fileID: 21300000, guid: 758007a5476164649aed4538e4f3dc9b, type: 3}
+  fullSprite: {fileID: 21300000, guid: 79404dbeb5b0b5a408e14cf34e9af197, type: 3}
   prey: []
   predators: []
   neutral: []
-  enemies: []
+  enemies:
+  - {fileID: 11400000, guid: c1bad7e1296204b0591f998bcae7f604, type: 2}
