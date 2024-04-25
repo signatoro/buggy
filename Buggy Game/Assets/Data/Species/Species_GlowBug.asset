@@ -19,8 +19,9 @@ MonoBehaviour:
     \u201Cdance\u201D with each. Other bugs that cross their path are often seen
     in a trance, stunned by the Luma\u2019s light."
   silhouette: {fileID: 21300000, guid: d0ccfb67d26a75c4a8ea3b6fa2343ef3, type: 3}
-  fullSprite: {fileID: 21300000, guid: 4a309a099ce71ef44b5be6d907d896e2, type: 3}
-  prey: []
+  fullSprite: {fileID: 21300000, guid: 8619bcdaed99aae45bf692b2787b88f1, type: 3}
+  prey:
+  - {fileID: 11400000, guid: 17089f5ef521c4639bcfd470d4106e83, type: 2}
   predators:
   - {fileID: 11400000, guid: 81c380cf6d7f6427daceb2787461326f, type: 2}
   neutral: []
