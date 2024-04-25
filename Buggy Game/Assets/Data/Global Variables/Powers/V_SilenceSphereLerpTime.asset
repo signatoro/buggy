@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_SilenceSphereLerpTime
   m_EditorClassIdentifier: 
   Description: The amount of time it takes for the Silence Sphere to grow or shrink.
-  initialValue: 2.5
-  currentValue: 0
+  initialValue: 0.5
+  currentValue: 2.5
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
