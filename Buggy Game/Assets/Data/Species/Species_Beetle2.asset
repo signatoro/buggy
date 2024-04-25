@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speciesName: Beetle 2
   preCaughtDescription: 
-  postCaughtDescription: 
+  postCaughtDescription: The Sun Beetle is known for its vibrant colors on its shell.
+    These beetles stands out in their environment and are a common prey to the Riverblue
+    Butterfly and the population is not as abundant as their other beetle counterparts,
+    the The Woodstuck Beetle.
   silhouette: {fileID: 0}
   fullSprite: {fileID: 0}
   prey:

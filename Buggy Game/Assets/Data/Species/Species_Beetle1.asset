@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speciesName: Beetle 1
   preCaughtDescription: 
-  postCaughtDescription: 
+  postCaughtDescription: 'The Woodstuck Beetle is a common but careful bug. They
+    often congregate in large groups around fallen or rotting trees. While large
+    in number, they are small in heroics and will run away at the slightest sound.
+    They can be identified by their tendency to hang around fallen log. '
   silhouette: {fileID: 0}
   fullSprite: {fileID: 0}
   prey: []

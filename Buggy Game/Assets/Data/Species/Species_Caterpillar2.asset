@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speciesName: Caterpillar 2
   preCaughtDescription: 
-  postCaughtDescription: 
+  postCaughtDescription: The Mossy Caterpillars are at the bottom of the food chain.
+    They are found crawling around the ledges of the caves, wandering aimlessly.
+    They are very catchable and can be very fun to watch.
   silhouette: {fileID: 0}
   fullSprite: {fileID: 0}
   prey: []

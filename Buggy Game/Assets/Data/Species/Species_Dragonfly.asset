@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speciesName: Dragonfly
   preCaughtDescription: 
-  postCaughtDescription: 
+  postCaughtDescription: "The Bloom Wing is a mystical and mysterious butterfly.
+    It\u2019s speed allows for it to always stay out of grasp. Its mysterious nature
+    has led to rumors of its miraculous powers."
   silhouette: {fileID: 0}
   fullSprite: {fileID: 0}
   prey: []

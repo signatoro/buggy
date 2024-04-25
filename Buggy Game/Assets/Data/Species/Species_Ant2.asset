@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speciesName: Ant2
   preCaughtDescription: 
-  postCaughtDescription: Ant2
+  postCaughtDescription: "The Aqua Ants are known for their vibrant blue. These ants
+    only comes out at night and the blue helps them blend into the night to hide
+    from predators. They tend to build very large ant hills and are very community-orientated
+    bugs.\r"
   silhouette: {fileID: 21300000, guid: adcc58033d9dd0a4a8491814b987040a, type: 3}
   fullSprite: {fileID: 21300000, guid: 758007a5476164649aed4538e4f3dc9b, type: 3}
   prey: []

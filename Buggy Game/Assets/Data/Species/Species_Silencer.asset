@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speciesName: Silencer
   preCaughtDescription: 
-  postCaughtDescription: 
+  postCaughtDescription: The Prickilers are known for the dangerous barbs around
+    their body. These pests are vicious to many creatures. As they are stalking their
+    prey, the air around the prey would seeming become still, not a sound can be
+    heard. The prey is unable to hear the Prickiler approaching.
   silhouette: {fileID: 0}
   fullSprite: {fileID: 0}
   prey:
