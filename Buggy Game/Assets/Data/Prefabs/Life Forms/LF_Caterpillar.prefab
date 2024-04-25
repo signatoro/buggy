@@ -606,7 +606,7 @@ PrefabInstance:
         type: 3}
       propertyPath: movementSound
       value: 
-      objectReference: {fileID: 9085574075368509307, guid: 1d3aa37d29a32425089618917e921182,
+      objectReference: {fileID: 2898128473723274098, guid: 8909292920e2448c48fdf9af56e7a61d,
         type: 3}
     - target: {fileID: 6862165605202001890, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
@@ -724,6 +724,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7025582854078644430}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &8845398985355222537
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4486901495720656684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.375027
+  m_Height: 2.750054
+  m_Direction: 1
+  m_Center: {x: -0.87502694, y: 0, z: 0}
 --- !u!95 &6885240325081135263
 Animator:
   serializedVersion: 5
@@ -874,20 +888,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!136 &8845398985355222537
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4486901495720656684}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.375027
-  m_Height: 2.750054
-  m_Direction: 1
-  m_Center: {x: -0.87502694, y: 0, z: 0}
 --- !u!4 &4912089472321313960 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2690018111977626726, guid: b5feee2d80cc44451a442009b58d98f9,
