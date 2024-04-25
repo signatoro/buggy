@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 424371a7241434cf4bc0a2cfde71d138, type: 3}
-  m_Name: V_StunTime
+  m_Name: V_DragonflyFlightTime
   m_EditorClassIdentifier: 
-  Description: The standard amount of time to stun.
-  initialValue: 15
-  currentValue: 5
+  Description: The amount of time it takes for the Dragonfly to fly to the end.
+  initialValue: 30
+  currentValue: 10
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:

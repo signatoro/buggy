@@ -32,11 +32,6 @@ public class Sense_Sound : SenseSystem
     /// <param name="value">The new value of the data.</param>
     private void SetCurrentVolumeThreshold(float value) => _currentVolumeThreshold = value;
 
-    internal override void Update()
-    {
-        base.Update();
-    }
-
     /// <summary>
     /// Checks the Life Form's Radius.
     /// </summary>
