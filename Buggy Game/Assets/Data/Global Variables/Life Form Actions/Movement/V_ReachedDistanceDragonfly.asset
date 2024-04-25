@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_ReachedDistanceDragonfly
   m_EditorClassIdentifier: 
   Description: Distance where we think we've reached our destination.
-  initialValue: 0.2
-  currentValue: 4
+  initialValue: 1.7
+  currentValue: 0.2
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:

@@ -49,3 +49,7 @@ MonoBehaviour:
   spawnRadius: {fileID: 11400000, guid: af9d3432f2e7e42eca8a0b4921136cb3, type: 2}
   spawnAmount: {fileID: 11400000, guid: d8ee4f2f6a3b345e1aabe512c8aec496, type: 2}
   spawnCadence: {fileID: 11400000, guid: a3fcb07986b4c4009bfe7d3460040fb1, type: 2}
+  spawnVisuals: []
+  isNight: {fileID: 11400000, guid: 55b28cd8257964dbcac2f593739eb114, type: 2}
+  spawnDay: 1
+  spawnNight: 1
