@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description: Distance where we think we've reached our destination.
   initialValue: 0.2
-  currentValue: 4
+  currentValue: 0.5
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:

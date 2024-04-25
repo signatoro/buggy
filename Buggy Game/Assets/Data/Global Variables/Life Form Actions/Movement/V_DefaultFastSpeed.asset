@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_DefaultFastSpeed
   m_EditorClassIdentifier: 
   Description: Default Fast Movement Speed.
-  initialValue: 10
-  currentValue: 5
+  initialValue: 15
+  currentValue: 15
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
