@@ -324,7 +324,7 @@ public class LifeFormBrain : MonoBehaviour
             }
         }
 
-        yield return new WaitForEndOfFrame();
+        yield return null;
 
         // Now that the actions are done we Update the Brain again
         UpdateBrain();

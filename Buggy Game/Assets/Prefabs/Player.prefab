@@ -629,7 +629,7 @@ MonoBehaviour:
   unlockedPowers: []
   useableUnlockablePowers:
   - PowerUnlock: {fileID: 8463329232410119612}
-    SpeciesUnlock: {fileID: 11400000, guid: 33f5955bd402942c0b5ef452adb48ff5, type: 2}
+    SpeciesUnlock: {fileID: 11400000, guid: 86141fb1143084019a01e2eddd163de1, type: 2}
   - PowerUnlock: {fileID: 1936972758510660196}
     SpeciesUnlock: {fileID: 11400000, guid: 5af459e0a650046f09674917c6f06a3a, type: 2}
   - PowerUnlock: {fileID: 8270775979415227083}

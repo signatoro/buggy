@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_DefaultSlowSpeed
   m_EditorClassIdentifier: 
   Description: Default Slow Movement Speed.
-  initialValue: 2
-  currentValue: 10
+  initialValue: 1.7
+  currentValue: 1.7
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:

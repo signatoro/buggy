@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 8997365163155274866}
   - component: {fileID: 2235977554043265147}
   - component: {fileID: 6522470845372001949}
-  - component: {fileID: 4405638472989245543}
   - component: {fileID: 1022258427022233233}
   - component: {fileID: 1391182620161416719}
+  - component: {fileID: 2873108939476408844}
+  - component: {fileID: 1633627840293099729}
+  - component: {fileID: 7993019728063017056}
   m_Layer: 6
   m_Name: LF_BasicLifeForm
   m_TagString: Untagged
@@ -52,7 +54,19 @@ MonoBehaviour:
   species: {fileID: 11400000, guid: 138d4195f69ad48109de5ed79711945d, type: 2}
   OnCaught:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7993019728063017056}
+        m_TargetAssemblyTypeName: LifeFormDestruction, Assembly-CSharp
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnReleased:
     m_PersistentCalls:
       m_Calls: []
@@ -69,27 +83,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachedDistance: {fileID: 11400000, guid: c37d350002476417b9474f6b3275c7bf, type: 2}
-  gravity: {fileID: 0}
-  canFly: {fileID: 0}
-  useDebugMode: 0
---- !u!143 &4405638472989245543
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6862165605202001890}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  movementSound: {fileID: 0}
+  useDebugPath: 0
+  debugPathLocation: {x: 0, y: 0, z: 0}
+  useDebugGizmos: 0
 --- !u!114 &1022258427022233233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +118,57 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!195 &2873108939476408844
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862165605202001890}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1633627840293099729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862165605202001890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 492a3a69407714eff9e76a0b63e11b13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  senseSight: {fileID: 0}
+  senseSound: {fileID: 0}
+  defaultActions: []
+  lifeFormStates: []
+--- !u!114 &7993019728063017056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862165605202001890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 714d9a8746dfd4cf0ae9fc014a0c9bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionVisuals: []
 --- !u!1 &7103778193922560499
 GameObject:
   m_ObjectHideFlags: 0

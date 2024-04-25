@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57ceeef333b4141e49e75a20bac682fd, type: 3}
+  m_Name: Species_Ant2
+  m_EditorClassIdentifier: 
+  speciesName: Ant2
+  preCaughtDescription: 
+  postCaughtDescription: Ant2
+  silhouette: {fileID: 21300000, guid: adcc58033d9dd0a4a8491814b987040a, type: 3}
+  fullSprite: {fileID: 21300000, guid: 758007a5476164649aed4538e4f3dc9b, type: 3}
+  prey: []
+  predators:
+  - {fileID: 11400000, guid: 81c380cf6d7f6427daceb2787461326f, type: 2}
+  neutral: []
+  enemies:
+  - {fileID: 11400000, guid: bf60e0531256142feb4f729224413aaa, type: 2}
