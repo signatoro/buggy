@@ -1133,6 +1133,26 @@ CapsuleCollider:
   m_Height: 3.94
   m_Direction: 1
   m_Center: {x: 0, y: -0.61, z: 0}
+--- !u!95 &3403950455451250955
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5464994174246632315}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0d0b776fe0c1d25429fba7af8cedf1cf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &1222889569641222564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1203,26 +1223,6 @@ MonoBehaviour:
   fieldOfViewAngle: {fileID: 11400000, guid: 90ea134e2301341f283fb6ee28be3448, type: 2}
   directionalLightCheckDistance: {fileID: 11400000, guid: 204cff21f1089420ab1bfb451a7e5d16,
     type: 2}
---- !u!95 &3403950455451250955
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5464994174246632315}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7a389c2da494f054cbec8f6a3a7c541c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &8536978662402086250 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7103778193922560499, guid: b5feee2d80cc44451a442009b58d98f9,
