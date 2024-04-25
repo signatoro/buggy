@@ -1094,6 +1094,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.3306093, y: 1, z: 4.410223}
   m_Center: {x: 0, y: 0, z: 0.2848971}
+--- !u!95 &3054905072722092505
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627632567898656400}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d4434cc360930546b0563e46e4da59b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &1835120208512302783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1222,7 +1242,20 @@ MonoBehaviour:
   speed: {fileID: 11400000, guid: e69e02e613b794450864b07954aa88a1, type: 2}
   onPathComplete:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8458811487482314723}
+        m_TargetAssemblyTypeName: SoundGenerator, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8036878456535522271, guid: 42a6e21322f064ff6b69745ce85677c5,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InUniverseSound, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   distanceStopFollowing: {fileID: 11400000, guid: e1a311d38e34e4705a41e04cbc317166,
     type: 2}
 --- !u!114 &5862140482713705021
@@ -1269,29 +1302,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!95 &3054905072722092505
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2627632567898656400}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4d4434cc360930546b0563e46e4da59b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!4 &6780357929098030356 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2690018111977626726, guid: b5feee2d80cc44451a442009b58d98f9,
     type: 3}
   m_PrefabInstance: {fileID: 8884606614429970802}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8458811487482314723 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1022258427022233233, guid: b5feee2d80cc44451a442009b58d98f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8884606614429970802}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627632567898656400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac2e9c74bb284933a42f2b3a2cba5cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
