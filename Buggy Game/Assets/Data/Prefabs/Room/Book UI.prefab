@@ -54,12 +54,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speciesPageDataList:
-  - species: {fileID: 11400000, guid: 5c232db63838c4d25a2e3d4741bef656, type: 2}
+  - species: {fileID: 11400000, guid: bf60e0531256142feb4f729224413aaa, type: 2}
     unlockSpecies: {fileID: 0}
-  - species: {fileID: 11400000, guid: 5af459e0a650046f09674917c6f06a3a, type: 2}
+  - species: {fileID: 11400000, guid: c1bad7e1296204b0591f998bcae7f604, type: 2}
+    unlockSpecies: {fileID: 11400000, guid: bf60e0531256142feb4f729224413aaa, type: 2}
+  - species: {fileID: 11400000, guid: ce4cb30da34d245efbeb0efbb3de1786, type: 2}
     unlockSpecies: {fileID: 0}
-  - species: {fileID: 11400000, guid: d687abfd851df4209a08f6f8ce649520, type: 2}
-    unlockSpecies: {fileID: 11400000, guid: 5c232db63838c4d25a2e3d4741bef656, type: 2}
+  - species: {fileID: 11400000, guid: 228665dbdd4a941a5805d09d74195984, type: 2}
+    unlockSpecies: {fileID: 11400000, guid: 86141fb1143084019a01e2eddd163de1, type: 2}
+  - species: {fileID: 11400000, guid: 26dc5eb77fb7841d3be85d80eb6445df, type: 2}
+    unlockSpecies: {fileID: 0}
+  - species: {fileID: 11400000, guid: 0802ebca2ea2e40568dc0b7daff76ad1, type: 2}
+    unlockSpecies: {fileID: 11400000, guid: 86141fb1143084019a01e2eddd163de1, type: 2}
+  - species: {fileID: 11400000, guid: b353d22b8c1b74cdfbcfca0a7602a74d, type: 2}
+    unlockSpecies: {fileID: 11400000, guid: 17089f5ef521c4639bcfd470d4106e83, type: 2}
+  - species: {fileID: 11400000, guid: 86141fb1143084019a01e2eddd163de1, type: 2}
+    unlockSpecies: {fileID: 0}
+  - species: {fileID: 11400000, guid: 17089f5ef521c4639bcfd470d4106e83, type: 2}
+    unlockSpecies: {fileID: 11400000, guid: 86141fb1143084019a01e2eddd163de1, type: 2}
   leftName: {fileID: 6557097431913968387}
   rightName: {fileID: 6555936230934169912}
   leftDescription: {fileID: 2245337235067905138}
