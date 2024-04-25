@@ -21,11 +21,13 @@ public class CatchingInteraction : MonoBehaviour
     [Tooltip("The color of the reticule when you can't catch something.")] [SerializeField]
     private GlobalColor cannotCatchColor;
 
-    [Tooltip("The color of the reticule when nothing is interactable.")] [SerializeField]
+    [Tooltip("The color of the reticule when nothing is intractable.")] [SerializeField]
     private GlobalColor reticuleInactive;
 
     [Tooltip("Catch KeyCodes.")] [SerializeField]
     private GlobalKeyCodeList catchKeycodes;
+
+    private Animator _animator;
 
     private CatchableLifeForm _currentLifeForm = null;
     private Camera _camera;
@@ -34,21 +36,19 @@ public class CatchingInteraction : MonoBehaviour
     [Header("Debug")] [Tooltip("Should we show the catching range gizmos?")] [SerializeField]
     private GlobalBool showCatchingRangeGizmos;
 
+    private static readonly int IsAttacking = Animator.StringToHash("isAttacking");
+
     private void Start()
     {
-         ResetReticuleColor();
+        ResetReticuleColor();
         _camera = GetComponent<CameraController>().Camera;
         _bugInventory = GetComponent<BugInventory>();
+        _animator = GetComponent<Animator>();
         SetReticuleVisibility(true);
     }
 
     void Update()
     {
-        if (catchKeycodes.PressingOneOfTheKeys())
-        {
-            // Do Catch Animation
-        }
-
         CatchableLifeForm lifeForm = GetCatchableLifeFormWereFacing();
         if (lifeForm == null) // Not looking at an interactable
         {
@@ -69,6 +69,11 @@ public class CatchingInteraction : MonoBehaviour
             SetReticuleColor(canCatchColor.CurrentValue);
             if (catchKeycodes.PressingOneOfTheKeys())
             {
+                if (_animator)
+                {
+                    _animator.SetBool(IsAttacking, true);
+                }
+
                 _bugInventory.GetBugInventoryData().CatchBug(lifeForm.Species);
                 lifeForm.BugCaught();
             }
@@ -78,6 +83,11 @@ public class CatchingInteraction : MonoBehaviour
             SetReticuleColor(canAttemptToCatchColor.CurrentValue);
             if (catchKeycodes.PressingOneOfTheKeys())
             {
+                if (_animator)
+                {
+                    _animator.SetBool(IsAttacking, true);
+                }
+
                 lifeForm.BugReleased();
             }
         }
