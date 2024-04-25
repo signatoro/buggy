@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_StandardSpawnAmount Single
   m_EditorClassIdentifier: 
   Description: The standard amount of life forms to spawn
-  initialValue: 10
-  currentValue: 10
+  initialValue: 1
+  currentValue: 1
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
