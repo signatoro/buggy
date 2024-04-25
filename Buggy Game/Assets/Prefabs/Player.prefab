@@ -500,21 +500,21 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      value: 5
+      inSlope: -4
+      outSlope: -4
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -4
+      outSlope: -4
       tangentMode: 34
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -631,7 +631,7 @@ MonoBehaviour:
   - PowerUnlock: {fileID: 8463329232410119612}
     SpeciesUnlock: {fileID: 11400000, guid: 86141fb1143084019a01e2eddd163de1, type: 2}
   - PowerUnlock: {fileID: 1936972758510660196}
-    SpeciesUnlock: {fileID: 11400000, guid: 5af459e0a650046f09674917c6f06a3a, type: 2}
+    SpeciesUnlock: {fileID: 11400000, guid: 17089f5ef521c4639bcfd470d4106e83, type: 2}
   - PowerUnlock: {fileID: 8270775979415227083}
     SpeciesUnlock: {fileID: 11400000, guid: 5c232db63838c4d25a2e3d4741bef656, type: 2}
   - PowerUnlock: {fileID: 7173555795936899370}

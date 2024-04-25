@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,11 +17,11 @@ public class LFA_Stun : LifeFormAction
     [Tooltip("On Not Stunned Event.")] [SerializeField]
     private UnityEvent onNotStunned = new();
 
-    private LifeFormBrain _brain;
+    private LifeFormMovement _lifeFormMovement;
     
     private void Awake()
     {
-        _brain = GetComponent<LifeFormBrain>();
+        _lifeFormMovement = GetComponent<LifeFormMovement>();
     }
 
     /// <summary>
@@ -30,7 +29,6 @@ public class LFA_Stun : LifeFormAction
     /// </summary>
     public void ForceStun()
     {
-        _brain.enabled = false;
         StartCoroutine(PerformAction());
     }
     
@@ -39,6 +37,10 @@ public class LFA_Stun : LifeFormAction
     /// </summary>
     public override IEnumerator PerformAction(Vector3 position = new Vector3())
     {
+        if (_lifeFormMovement)
+        {
+            _lifeFormMovement.CanMove = false;
+        }
         onStunned.Invoke();
         foreach (GameObject visual in visuals)
         {
@@ -47,11 +49,15 @@ public class LFA_Stun : LifeFormAction
         
         yield return new WaitForSeconds(stunTime.CurrentValue);
 
-        _brain.enabled = true;
         onNotStunned.Invoke();
         foreach (GameObject visual in visuals)
         {
             visual.SetActive(false);
+        }
+        
+        if (_lifeFormMovement)
+        {
+            _lifeFormMovement.CanMove = true;
         }
     }
 }
