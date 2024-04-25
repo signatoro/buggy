@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3304
+  m_SortingOrder: -2977
   m_Sprite: {fileID: 21300000, guid: c39e1730bcecacb4bb8c4c5d8f2d164d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -173,7 +173,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3304
+  m_SortingOrder: -2977
   m_Sprite: {fileID: 21300000, guid: 3349d6b67ad9e4943ace90cbe8c7f1a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -289,7 +289,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3304
+  m_SortingOrder: -2977
   m_Sprite: {fileID: 21300000, guid: c39e1730bcecacb4bb8c4c5d8f2d164d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -389,7 +389,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3305
+  m_SortingOrder: -2978
   m_Sprite: {fileID: 21300000, guid: adfb2e789e732984595f80aff825b607, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -473,7 +473,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3305
+  m_SortingOrder: -2978
   m_Sprite: {fileID: 21300000, guid: adfb2e789e732984595f80aff825b607, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -557,7 +557,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3303
+  m_SortingOrder: -2976
   m_Sprite: {fileID: 21300000, guid: 2feda708c310d984eb043702a5f842aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -641,7 +641,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3304
+  m_SortingOrder: -2977
   m_Sprite: {fileID: 21300000, guid: 3349d6b67ad9e4943ace90cbe8c7f1a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -668,7 +668,7 @@ PrefabInstance:
     - target: {fileID: 1633627840293099729, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: defaultActions.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1633627840293099729, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
@@ -679,7 +679,7 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultActions.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7883259142092023935}
     - target: {fileID: 1633627840293099729, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: lifeFormStates.Array.data[0].priority
@@ -1077,7 +1077,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  distanceStartFollowing: {fileID: 11400000, guid: 13644a6d7c80f4d468580e9c5301b98c,
+  distanceStartFollowing: {fileID: 11400000, guid: ca63b58a9627c49f58902b7cbfbbf25e,
     type: 2}
   pathNodes: []
 --- !u!4 &2648300309771306372 stripped
