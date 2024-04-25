@@ -21,6 +21,14 @@ public class LifeFormSpawner : MonoBehaviour
     [Tooltip("Spawn Visuals. Should Destroy themselves.")] [SerializeField]
     private List<GameObject> spawnVisuals = new();
 
+    [Tooltip("Is Night")] [SerializeField] private GlobalBool isNight;
+
+    [Tooltip("Spawn during day.")] [SerializeField]
+    private bool spawnDay = true;
+
+    [Tooltip("Spawn during night.")] [SerializeField]
+    private bool spawnNight = true;
+
     private List<CatchableLifeForm> _currentlyActiveLifeForms = new();
 
     private void Start()
@@ -34,9 +42,18 @@ public class LifeFormSpawner : MonoBehaviour
     /// <returns>Nothing.</returns>
     private IEnumerator ShouldSpawn()
     {
-        if (_currentlyActiveLifeForms.Count < spawnAmount.CurrentValue)
+        if (_currentlyActiveLifeForms.Count < spawnAmount.CurrentValue &&
+            ((isNight.CurrentValue && spawnNight) || (!isNight.CurrentValue && spawnDay)))
         {
             Spawn();
+        }
+
+        if ((isNight.CurrentValue && !spawnNight) || (!isNight.CurrentValue && !spawnDay))
+        {
+            for (int i = _currentlyActiveLifeForms.Count - 1; i >= 0; i--)
+            {
+                _currentlyActiveLifeForms[i].GetComponent<LifeFormDestruction>().Destroy();
+            }
         }
 
         yield return new WaitForSeconds(spawnCadence.CurrentValue);

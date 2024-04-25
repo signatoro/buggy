@@ -13,6 +13,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 858790876498207970, guid: 885bdb423f0fbb04fb5712247d02e1db,
         type: 3}
+    - target: {fileID: -5984967807144191272, guid: 7ba60028a600148288077a964d67bc29,
+        type: 3}
+      propertyPath: spawnDay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1353308693310974504, guid: 7ba60028a600148288077a964d67bc29,
         type: 3}
       propertyPath: m_RootOrder

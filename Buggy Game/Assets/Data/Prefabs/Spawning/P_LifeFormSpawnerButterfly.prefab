@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5984967807144191272, guid: 7ba60028a600148288077a964d67bc29,
+        type: 3}
+      propertyPath: spawnNight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1353308693310974504, guid: 7ba60028a600148288077a964d67bc29,
         type: 3}
       propertyPath: m_RootOrder
@@ -65,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 8212516973138119546, guid: 7ba60028a600148288077a964d67bc29,
         type: 3}
       propertyPath: m_Name
-      value: P_LifeFormSpawner
+      value: P_LifeFormSpawnerButterfly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ba60028a600148288077a964d67bc29, type: 3}
