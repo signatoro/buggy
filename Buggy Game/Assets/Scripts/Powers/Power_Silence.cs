@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.VFX;
 
 public class Power_Silence : Power
 {
@@ -22,6 +23,8 @@ public class Power_Silence : Power
 
     [Tooltip("Time the Sphere remains at")] [SerializeField]
     private GlobalFloat timeActive;
+
+    [Tooltip("VFX")] [SerializeField] private VisualEffect silenceVFX;
 
     private bool _canUse;
 
@@ -82,6 +85,12 @@ public class Power_Silence : Power
         _lifeFormsSilenced = new HashSet<CatchableLifeForm>();
         _soundsSilenced = new HashSet<InUniverseSound>();
         _canUse = true;
+
+        if (silenceVFX)
+        {
+            silenceVFX.Stop();
+        }
+        
         yield return null;
     }
 
@@ -150,6 +159,10 @@ public class Power_Silence : Power
     /// <returns>Nothing.</returns>
     private IEnumerator MaintainSphere()
     {
+        if (silenceVFX)
+        {
+            silenceVFX.Play();
+        }
         float timer = 0;
 
         while (timer < timeActive.CurrentValue)

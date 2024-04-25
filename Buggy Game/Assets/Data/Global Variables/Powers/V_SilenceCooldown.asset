@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_SilenceCooldown
   m_EditorClassIdentifier: 
   Description: The additional cooldown for Silence.
-  initialValue: 5
-  currentValue: 0
+  initialValue: 3
+  currentValue: 5
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
