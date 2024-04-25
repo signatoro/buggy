@@ -19,7 +19,6 @@ public class LFA_Silence : LifeFormAction
         if (Vector3.Distance(position, transform.position) < distanceToUse.CurrentValue)
         {
             _powerSilence.AttemptToExecute();
-            Debug.Break();
         }
 
         yield return null;
