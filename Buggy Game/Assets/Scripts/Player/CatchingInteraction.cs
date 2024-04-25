@@ -153,4 +153,15 @@ public class CatchingInteraction : MonoBehaviour
             Gizmos.DrawWireSphere(_camera.transform.position, catchRange.CurrentValue);
         }
     }
+
+    /// <summary>
+    /// Ends the animation.
+    /// </summary>
+    public void EndAnimation()
+    {
+        if (_animator)
+        {
+            _animator.SetBool(IsAttacking, false);
+        }
+    }
 }
