@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &948570318489576514
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1444944757356615299, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: lifeForm
+      value: 
+      objectReference: {fileID: 6071092272340375704, guid: bc00ab2a0cf394242ac22913e9c7e8ca,
+        type: 3}
+    - target: {fileID: 1444944757356615299, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: spawnAmount
+      value: 
+      objectReference: {fileID: 11400000, guid: d8ee4f2f6a3b345e1aabe512c8aec496,
+        type: 2}
+    - target: {fileID: 1444944757356615299, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: spawnRadius
+      value: 
+      objectReference: {fileID: 11400000, guid: af9d3432f2e7e42eca8a0b4921136cb3,
+        type: 2}
+    - target: {fileID: 3043182047791670899, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043182047791670899, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043182047791670899, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043182047791670899, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043182047791670899, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043182047791670899, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043182047791670899, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043182047791670899, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043182047791670899, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043182047791670899, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043182047791670899, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261574665738635041, guid: 7880821f5237b4316b81ec814e8c40e7,
+        type: 3}
+      propertyPath: m_Name
+      value: P_LifeFormSpawnerBeetle2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7880821f5237b4316b81ec814e8c40e7, type: 3}
