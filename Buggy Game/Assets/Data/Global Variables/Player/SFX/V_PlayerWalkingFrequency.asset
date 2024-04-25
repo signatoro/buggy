@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_PlayerWalkingFrequency
   m_EditorClassIdentifier: 
   Description: The amount of time between walking sounds for the player
-  initialValue: 0.1
-  currentValue: 0.2
+  initialValue: 0.45
+  currentValue: 0.45
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
