@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_PlayerGlowBallLightRange
   m_EditorClassIdentifier: 
   Description: Range of the Player's Glow Light
-  initialValue: 5
-  currentValue: 5
+  initialValue: 28.36
+  currentValue: 28.36
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:

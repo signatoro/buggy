@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_PlayerGlowBallLightIntensity
   m_EditorClassIdentifier: 
   Description: Intensity of the Player's Glow Light
-  initialValue: 500
-  currentValue: 0
+  initialValue: 65
+  currentValue: 65
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:
