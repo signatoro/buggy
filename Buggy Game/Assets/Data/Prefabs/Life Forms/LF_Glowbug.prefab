@@ -24,14 +24,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997357040077666913}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.16, y: 2.98, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.22026217, w: 0.97544074}
+  m_LocalPosition: {x: -3.13, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3582645689583163647}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -25.449}
 --- !u!212 &6681909669780334581
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 32366
-  m_Sprite: {fileID: 21300000, guid: 9332d163ee45e474e89a74f5b965450b, type: 3}
+  m_SortingOrder: -19224
+  m_Sprite: {fileID: 21300000, guid: 7bacbcb3c7d65c64c8e07d2055523f0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -156,7 +156,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 32365
+  m_SortingOrder: -19225
   m_Sprite: {fileID: 21300000, guid: 472258deca7f0684597e43233c2ed62c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -240,7 +240,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 32365
+  m_SortingOrder: -19225
   m_Sprite: {fileID: 21300000, guid: 7bacbcb3c7d65c64c8e07d2055523f0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -324,7 +324,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 32365
+  m_SortingOrder: -19225
   m_Sprite: {fileID: 21300000, guid: 6bbd1c492db91b44083fe5edaf595063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -408,7 +408,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 32365
+  m_SortingOrder: -19225
   m_Sprite: {fileID: 21300000, guid: 9ce72eb2e5526de4f8c6a424bbe2e361, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 2037495604475978907}
   - component: {fileID: 3278417508973488582}
   m_Layer: 0
-  m_Name: GlowbugBody 1
+  m_Name: GlowbugBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -492,8 +492,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 32367
-  m_Sprite: {fileID: 21300000, guid: d0ccfb67d26a75c4a8ea3b6fa2343ef3, type: 3}
+  m_SortingOrder: -19223
+  m_Sprite: {fileID: 21300000, guid: fc0f85acfbad45042aaba70c7534eca1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -576,7 +576,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 32365
+  m_SortingOrder: -19225
   m_Sprite: {fileID: 21300000, guid: d39088f8230289d4eb82e2b33899964a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
