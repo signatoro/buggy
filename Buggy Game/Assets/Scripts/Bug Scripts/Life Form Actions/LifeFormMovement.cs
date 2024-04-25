@@ -11,6 +11,8 @@ public class LifeFormMovement : MonoBehaviour
     [Tooltip("Movement Sound")] [SerializeField]
     private InUniverseSound movementSound;
 
+    [Tooltip("Can we move?")] public bool CanMove { get; set; } = true;
+
     [Header("Debug Mode")] [Tooltip("Make Life Form Move to the Debug Mode")] [SerializeField]
     private bool useDebugPath;
 
@@ -20,39 +22,22 @@ public class LifeFormMovement : MonoBehaviour
     [Tooltip("Turn on Debug Gizmos")] [SerializeField]
     private bool useDebugGizmos;
 
-    private CharacterController _characterController;
     private SoundGenerator _soundGenerator;
     private NavMeshAgent _navMeshAgent;
 
     private void Awake()
     {
-        _characterController = GetComponent<CharacterController>();
         _soundGenerator = GetComponent<SoundGenerator>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
     private void FixedUpdate()
     {
-       // ApplyGravity();
         if (useDebugPath)
         {
             Move(debugPathLocation, 5);
         }
     }
-
-    /// <summary>
-    /// Applies gravity to the Life Form.
-    /// </summary>
-   /* private void ApplyGravity()
-    {
-        Vector3 movementVector = Vector3.zero;
-        // Add Gravity if we can't fly
-        movementVector.y = canFly && !canFly.CurrentValue
-            ? movementVector.y - gravity.CurrentValue * Time.fixedDeltaTime
-            : movementVector.y;
-
-        _characterController.Move(movementVector);
-    }*/
 
     /// <summary>
     /// Try to follow the given path.
@@ -62,6 +47,12 @@ public class LifeFormMovement : MonoBehaviour
     /// <returns>True if the final position was reached, else false.</returns>
     public bool Move(Vector3 destination, float speed)
     {
+        if (!CanMove)
+        {
+            _navMeshAgent.speed = 0f;
+            return false;
+        }
+
         // If we are close enough to the final position, we don't move
         float distanceToEnd = Vector3.Distance(transform.position, destination);
         if (distanceToEnd <= reachedDistance.CurrentValue)

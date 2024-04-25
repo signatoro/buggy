@@ -44,6 +44,10 @@ public class LFA_Attack : LifeFormAction
                     {
                         hit.GetComponent<LifeFormDestruction>().Destroy();
                     }
+                    if (hit && hit.gameObject != gameObject && hit.GetComponent<PlayerMovement>())
+                    {
+                        StartCoroutine(hit.GetComponent<PlayerMovement>().Respawn());
+                    }
                 }
 
                 timer += Time.deltaTime;

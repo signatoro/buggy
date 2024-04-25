@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(LifeFormMovement))]
@@ -8,19 +7,14 @@ public class LFA_RandomMovementInArea : LifeFormAction
     [Tooltip("The speed to move at.")] [SerializeField]
     private GlobalFloat speed;
 
-    [Tooltip("Root of the area.")] [SerializeField]
-    private Transform areaRoot;
-
-    [Tooltip("Area Radius.")] [SerializeField]
-    private GlobalFloat areaRadius;
-
     private Vector3 _currentPositionToReach = new Vector3();
 
     private LifeFormMovement _lifeFormMovement;
 
-    private void Awake()
+    internal override void Awake()
     {
         _lifeFormMovement = GetComponent<LifeFormMovement>();
+        base.Awake();
     }
 
     /// <summary>
@@ -30,11 +24,14 @@ public class LFA_RandomMovementInArea : LifeFormAction
     {
         if (_currentPositionToReach == new Vector3())
         {
-            float randomX = Random.Range(-1.0f * areaRadius.CurrentValue, areaRadius.CurrentValue);
-            float randomZ = Random.Range(-1.0f * areaRadius.CurrentValue, areaRadius.CurrentValue);
+            float randomX = Random.Range(-1.0f * CatchableLifeForm.Spawner.GetSpawnRadius(),
+                CatchableLifeForm.Spawner.GetSpawnRadius());
+            float randomZ = Random.Range(-1.0f * CatchableLifeForm.Spawner.GetSpawnRadius(),
+                CatchableLifeForm.Spawner.GetSpawnRadius());
             Vector2 twoDVector = new Vector2(randomX, randomZ).normalized;
-            _currentPositionToReach = new Vector3(twoDVector.x * areaRadius.CurrentValue, 0f,
-                twoDVector.y * areaRadius.CurrentValue) + areaRoot.position;
+            _currentPositionToReach = new Vector3(twoDVector.x * CatchableLifeForm.Spawner.GetSpawnRadius(), 0f,
+                                          twoDVector.y * CatchableLifeForm.Spawner.GetSpawnRadius()) +
+                                      CatchableLifeForm.Spawner.transform.position;
         }
 
         bool reached = _lifeFormMovement.Move(_currentPositionToReach, speed.CurrentValue);

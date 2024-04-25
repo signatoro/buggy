@@ -14,6 +14,8 @@ public sealed class CatchableLifeForm : MonoBehaviour
     [Tooltip("Called when a bug is going to be released.")]
     public UnityEvent<CatchableLifeForm> OnReleased;
 
+    public LifeFormSpawner Spawner { get; set; }
+
     private readonly List<CatchableModule> _catchableModules = new();
 
     private bool _canBeSeen = true;

@@ -72,8 +72,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 31182
-  m_Sprite: {fileID: 21300000, guid: 876f712b7135e034ab0225da66060057, type: 3}
+  m_SortingOrder: -19224
+  m_Sprite: {fileID: 21300000, guid: d3a731d12cbe2924b98ac8ac75efec60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -156,8 +156,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 31182
-  m_Sprite: {fileID: 21300000, guid: 72d879abb09e71340922385b865b9058, type: 3}
+  m_SortingOrder: -19224
+  m_Sprite: {fileID: 21300000, guid: d738497bb86feee4aa6712dea3182387, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -240,8 +240,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 31182
-  m_Sprite: {fileID: 21300000, guid: 075a13aa541ad324a92d90bd97826ab2, type: 3}
+  m_SortingOrder: -19224
+  m_Sprite: {fileID: 21300000, guid: 9f75414328c6bed49839510a7ee80edc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -324,8 +324,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 31183
-  m_Sprite: {fileID: 21300000, guid: f491a071a1d30574088ad970ec70ba5d, type: 3}
+  m_SortingOrder: -19223
+  m_Sprite: {fileID: 21300000, guid: 952a66f65251c654081de0e3ebca61a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -408,8 +408,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 31182
-  m_Sprite: {fileID: 21300000, guid: 075a13aa541ad324a92d90bd97826ab2, type: 3}
+  m_SortingOrder: -19224
+  m_Sprite: {fileID: 21300000, guid: 9f75414328c6bed49839510a7ee80edc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -492,8 +492,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 31182
-  m_Sprite: {fileID: 21300000, guid: 72d879abb09e71340922385b865b9058, type: 3}
+  m_SortingOrder: -19224
+  m_Sprite: {fileID: 21300000, guid: d738497bb86feee4aa6712dea3182387, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -576,8 +576,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 31182
-  m_Sprite: {fileID: 21300000, guid: f49ff754883174646a20c56c341b8867, type: 3}
+  m_SortingOrder: -19224
+  m_Sprite: {fileID: 21300000, guid: d40d032d71ad5cc42af80fcaf84ae959, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -660,8 +660,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 31182
-  m_Sprite: {fileID: 21300000, guid: 876f712b7135e034ab0225da66060057, type: 3}
+  m_SortingOrder: -19224
+  m_Sprite: {fileID: 21300000, guid: d3a731d12cbe2924b98ac8ac75efec60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -744,8 +744,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 31182
-  m_Sprite: {fileID: 21300000, guid: f49ff754883174646a20c56c341b8867, type: 3}
+  m_SortingOrder: -19224
+  m_Sprite: {fileID: 21300000, guid: d40d032d71ad5cc42af80fcaf84ae959, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -792,7 +792,7 @@ PrefabInstance:
     - target: {fileID: 6862165605202001890, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
       propertyPath: m_Name
-      value: LF_Beetle
+      value: LF_Beetle 2
       objectReference: {fileID: 0}
     - target: {fileID: 8300718088748001967, guid: b5feee2d80cc44451a442009b58d98f9,
         type: 3}
@@ -974,23 +974,3 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!95 &1532970001203118485
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8685423396050666790}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 781973d12c6e87c45ba74bfbdee09ae4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0

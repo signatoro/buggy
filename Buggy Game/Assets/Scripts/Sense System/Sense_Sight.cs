@@ -10,12 +10,6 @@ public class Sense_Sight : SenseSystem
     [Tooltip("How long should the ray be when checking for stuff in the way of a directional light")] [SerializeField]
     private GlobalFloat directionalLightCheckDistance;
 
-    internal override void Update()
-    {
-        //CheckFOV();
-        base.Update();
-    }
-
     /// <summary>
     /// Checks the Life Form's FOV.
     /// </summary>
@@ -62,7 +56,7 @@ public class Sense_Sight : SenseSystem
     /// </summary>
     /// <param name="point">The point we want to find the intensity at.</param>
     /// <returns>The intensity of the light at the point</returns>
-    private float GetLightIntensityAtPoint(Vector3 point)
+    public float GetLightIntensityAtPoint(Vector3 point)
     {
         List<Light> allEnabledLight = FindObjectsOfType<Light>().ToList();
 

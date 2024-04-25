@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: V_StunTime
   m_EditorClassIdentifier: 
   Description: The standard amount of time to stun.
-  initialValue: 5
-  currentValue: 0
+  initialValue: 15
+  currentValue: 5
   ResetOnStart: 1
   BuildStackTrace: 0
   OnChanged:

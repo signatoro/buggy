@@ -152,9 +152,6 @@ public class BookUI : MonoBehaviour
 
     void Awake()
     {
-        _player = GameObject.FindGameObjectWithTag("Player");
-        _bugInventoryData = _player.GetComponent<BugInventory>().GetBugInventoryData();
-
         UpdatePageLayouts();
     }
 
@@ -171,6 +168,8 @@ public class BookUI : MonoBehaviour
     [ContextMenu("Update Page Layouts")]
     public void UpdatePageLayouts()
     {
+        _player = GameObject.FindGameObjectWithTag("Player");
+        _bugInventoryData = _player.GetComponent<BugInventory>().GetBugInventoryData();
         _currentPageLayouts.Clear();
         foreach (SpeciesPageLayout layout in speciesPageDataList
                      .Select(speciesPageData => speciesPageData.GetPageLayout(_bugInventoryData))
