@@ -18,7 +18,7 @@ MonoBehaviour:
     their body. These pests are vicious to many creatures. As they are stalking their
     prey, the air around the prey would seeming become still, not a sound can be
     heard. The prey is unable to hear the Prickiler approaching.
-  silhouette: {fileID: 0}
+  silhouette: {fileID: 21300000, guid: d873e0d1820d542e589bc314abc03d8f, type: 3}
   fullSprite: {fileID: 21300000, guid: c6e3022d8e192374bb673690e1548b7e, type: 3}
   prey:
   - {fileID: 11400000, guid: 228665dbdd4a941a5805d09d74195984, type: 2}

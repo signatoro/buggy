@@ -18,7 +18,7 @@ MonoBehaviour:
     These beetles stands out in their environment and are a common prey to the Riverblue
     Butterfly and the population is not as abundant as their other beetle counterparts,
     the The Woodstuck Beetle.
-  silhouette: {fileID: 0}
+  silhouette: {fileID: 21300000, guid: d873e0d1820d542e589bc314abc03d8f, type: 3}
   fullSprite: {fileID: 21300000, guid: af4aab32630477c458d8409ee21df4ce, type: 3}
   prey:
   - {fileID: 11400000, guid: 0802ebca2ea2e40568dc0b7daff76ad1, type: 2}

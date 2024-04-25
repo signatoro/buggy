@@ -15,10 +15,12 @@ MonoBehaviour:
   speciesName: Has Prey
   preCaughtDescription: 
   postCaughtDescription: 
-  silhouette: {fileID: 0}
+  silhouette: {fileID: 21300000, guid: d873e0d1820d542e589bc314abc03d8f, type: 3}
   fullSprite: {fileID: 0}
   prey:
   - {fileID: 11400000, guid: 9e19058d4ace643fb959f257383ecd9a, type: 2}
   - {fileID: 11400000, guid: 251ba45ddd12d4ddbbea9cfab6e93fee, type: 2}
   predators: []
   neutral: []
+  enemies:
+  - {fileID: 11400000, guid: 33f5955bd402942c0b5ef452adb48ff5, type: 2}
