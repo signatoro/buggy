@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(LifeFormMovement))]
@@ -8,12 +7,6 @@ public class LFA_SilencerGuardNest : LifeFormAction
 {
     [Tooltip("The speed to move at.")] [SerializeField]
     private GlobalFloat speed;
-
-    [Tooltip("Root of the area.")] [SerializeField]
-    private Transform areaRoot;
-
-    [Tooltip("Area Radius.")] [SerializeField]
-    private GlobalFloat areaRadius;
 
     [Tooltip("Maximum Allowed Light Value.")] [SerializeField]
     private GlobalFloat maxAllowedLight;
@@ -24,10 +17,11 @@ public class LFA_SilencerGuardNest : LifeFormAction
 
     private Sense_Sight _senseSight;
 
-    private void Awake()
+    internal override void Awake()
     {
         _lifeFormMovement = GetComponent<LifeFormMovement>();
         _senseSight = GetComponent<Sense_Sight>();
+        base.Awake();
     }
 
     /// <summary>
@@ -44,11 +38,14 @@ public class LFA_SilencerGuardNest : LifeFormAction
                     $"{name} is finding a new spot to move to because the light value was {_senseSight.GetLightIntensityAtPoint(transform.position)}");
             }
 
-            float randomX = Random.Range(-1.0f * areaRadius.CurrentValue, areaRadius.CurrentValue);
-            float randomZ = Random.Range(-1.0f * areaRadius.CurrentValue, areaRadius.CurrentValue);
+            float randomX = Random.Range(-1.0f * CatchableLifeForm.Spawner.GetSpawnRadius(),
+                CatchableLifeForm.Spawner.GetSpawnRadius());
+            float randomZ = Random.Range(-1.0f * CatchableLifeForm.Spawner.GetSpawnRadius(),
+                CatchableLifeForm.Spawner.GetSpawnRadius());
             Vector2 twoDVector = new Vector2(randomX, randomZ).normalized;
-            _currentPositionToReach = new Vector3(twoDVector.x * areaRadius.CurrentValue, 0f,
-                twoDVector.y * areaRadius.CurrentValue) + areaRoot.position;
+            _currentPositionToReach = new Vector3(twoDVector.x * CatchableLifeForm.Spawner.GetSpawnRadius(), 0f,
+                                          twoDVector.y * CatchableLifeForm.Spawner.GetSpawnRadius()) +
+                                      CatchableLifeForm.Spawner.transform.position;
         }
 
         bool reached = _lifeFormMovement.Move(_currentPositionToReach, speed.CurrentValue);
