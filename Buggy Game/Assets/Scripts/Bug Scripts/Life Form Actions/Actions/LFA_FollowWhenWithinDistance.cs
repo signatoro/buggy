@@ -2,13 +2,17 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class LFA_FollowTarget : LifeFormAction
+[RequireComponent(typeof(LifeFormMovement))]
+public class LFA_FollowWhenWithinDistance : LifeFormAction
 {
     [Tooltip("The speed to move at.")] [SerializeField]
     private GlobalFloat speed;
     
     [Tooltip("What to do when the path is completed.")] [SerializeField]
     private UnityEvent onPathComplete = new();
+
+    [Tooltip("Distance Away that this starts following.")] [SerializeField]
+    private GlobalFloat distanceStartFollowing;
 
     private LifeFormMovement _lifeFormMovement;
 
@@ -24,12 +28,14 @@ public class LFA_FollowTarget : LifeFormAction
     /// <returns>Nothing.</returns>
     public override IEnumerator PerformAction(Vector3 position = new Vector3())
     {
-        bool reached = _lifeFormMovement.Move(position, speed.CurrentValue);
-        if (reached)
+        if (Vector3.Distance(position, transform.position) < distanceStartFollowing.CurrentValue)
         {
-            onPathComplete.Invoke();
+            bool reached = _lifeFormMovement.Move(position, speed.CurrentValue);
+            if (reached)
+            {
+                onPathComplete.Invoke();
+            }
         }
-
         yield return null;
     }
 }

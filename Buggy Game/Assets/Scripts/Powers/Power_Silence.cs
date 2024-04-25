@@ -248,7 +248,10 @@ public class Power_Silence : Power
         // Unmute all sounds that are no longer hit
         foreach (InUniverseSound sound in _soundsSilenced.Where(sound => !sounds.Contains(sound)))
         {
-            sound.audioSource.mute = false;
+            if (sound.audioSource != null)
+            {
+                sound.audioSource.mute = false;
+            }
         }
 
         // Reset Silenced Life Forms
