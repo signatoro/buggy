@@ -47,7 +47,12 @@ public class LifeFormMovement : MonoBehaviour
     /// <returns>True if the final position was reached, else false.</returns>
     public bool Move(Vector3 destination, float speed)
     {
-        if (!CanMove) return false;
+        if (!CanMove)
+        {
+            _navMeshAgent.speed = 0f;
+            return false;
+        }
+
         // If we are close enough to the final position, we don't move
         float distanceToEnd = Vector3.Distance(transform.position, destination);
         if (distanceToEnd <= reachedDistance.CurrentValue)

@@ -21,5 +21,6 @@ MonoBehaviour:
   predators:
   - {fileID: 11400000, guid: 228665dbdd4a941a5805d09d74195984, type: 2}
   - {fileID: 11400000, guid: 17089f5ef521c4639bcfd470d4106e83, type: 2}
-  neutral: []
+  neutral:
+  - {fileID: 11400000, guid: 81c380cf6d7f6427daceb2787461326f, type: 2}
   enemies: []
